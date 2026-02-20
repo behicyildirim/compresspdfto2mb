@@ -1,4 +1,14 @@
-{
+[phases.setup]
+nixPkgs = ["nodejs_20", "ghostscript"]
+
+[phases.install]
+cmds = ["npm ci"]
+
+[phases.build]
+cmds = ["npm run build"]
+
+[start]
+cmd = "npm run start"{
   "name": "compresspdfto2mb",
   "version": "0.1.0",
   "private": true,
