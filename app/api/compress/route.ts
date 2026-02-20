@@ -4,7 +4,9 @@ import { promisify } from "node:util";
 import fs from "node:fs/promises";
 import path from "node:path";
 import os from "node:os";
-
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
+const execFileAsync = promisify(execFile);
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 export async function GET() {
@@ -34,7 +36,15 @@ async function compressWithGhostscript(inputPath: string, outputPath: string) {
 
   await execFileAsync("gs", args);
 }
+const TARGET = 2 * 1024 * 1024;
 
+await compressWithGhostscript(inputPath, outputPath, "ebook");
+let outBytes = await fs.readFile(outputPath);
+
+if (outBytes.length > TARGET) {
+  await compressWithGhostscript(inputPath, outputPath, "screen");
+  outBytes = await fs.readFile(outputPath);
+}
 export async function POST(req: Request) {
   try {
     const form = await req.formData();
@@ -43,7 +53,23 @@ export async function POST(req: Request) {
     if (!file || !(file instanceof File)) {
       return NextResponse.json({ error: "No file uploaded" }, { status: 400 });
     }
+    try {
+  const { stdout } = await execFileAsync("gs", ["--version"]);
+  console.log("Ghostscript version:", stdout);
+} catch (e) {
+  console.error("Ghostscript not found:", e);
+  return NextResponse.json({ error: "Ghostscript not installed on server" }, { status: 500 });
+}
+// 1) PDF mi?
+if (file.type !== "application/pdf") {
+  return NextResponse.json({ error: "Only PDF files are allowed" }, { status: 400 });
+}
 
+// 2) Max boyut (örnek 25MB)
+const MAX_BYTES = 25 * 1024 * 1024;
+if (file.size > MAX_BYTES) {
+  return NextResponse.json({ error: "File too large (max 25MB)" }, { status: 413 });
+}
     const bytes = Buffer.from(await file.arrayBuffer());
 
     const inputPath = makeTempPath(file.name);
