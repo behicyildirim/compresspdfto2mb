@@ -7,7 +7,12 @@ import os from "node:os";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
-
+export async function GET() {
+  return new Response(
+    "OK: /api/compress çalışıyor. Bu endpoint PDF sıkıştırma için POST bekler.",
+    { status: 200, headers: { "content-type": "text/plain; charset=utf-8" } }
+  );
+}
 const execFileAsync = promisify(execFile);
 
 function makeTempPath(name: string) {
