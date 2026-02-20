@@ -1,10 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
+
+function formatMB(bytes: number) {
+  return (bytes / (1024 * 1024)).toFixed(2);
+}
 
 export default function Home() {
+  const inputRef = useRef<HTMLInputElement | null>(null);
   const [file, setFile] = useState<File | null>(null);
   const [loading, setLoading] = useState(false);
+
+  const pickFile = () => inputRef.current?.click();
 
   const handleUpload = async () => {
     if (!file) return alert("Lütfen PDF seçin");
@@ -27,7 +34,7 @@ export default function Home() {
 
       const a = document.createElement("a");
       a.href = url;
-      a.download = "compressed.pdf";
+      a.download = `compressed_${file.name || "file"}.pdf`;
       a.click();
 
       window.URL.revokeObjectURL(url);
@@ -39,26 +46,59 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-white">
+    <main className="min-h-screen flex items-center justify-center bg-white px-4">
       <div className="w-full max-w-md bg-gray-100 p-8 rounded-xl shadow-lg text-center">
-        <h1 className="text-2xl font-bold text-gray-800 mb-6">
+        <h1 className="text-2xl font-bold text-gray-800 mb-2">
           PDF 2MB Altına Sıkıştır
         </h1>
+        <p className="text-sm text-gray-600 mb-6">
+          PDF dosyanı seç, tek tıkla sıkıştırıp indir.
+        </p>
 
+        {/* Hidden real input */}
         <input
+          ref={inputRef}
           type="file"
           accept="application/pdf"
+          className="hidden"
           onChange={(e) => setFile(e.target.files?.[0] || null)}
-          className="w-full mb-4"
         />
 
+        {/* Nice file picker */}
+        <button
+          type="button"
+          onClick={pickFile}
+          className="w-full border-2 border-dashed border-gray-300 hover:border-gray-400 bg-white rounded-lg py-4 px-4 text-gray-700 transition"
+        >
+          <div className="font-medium">PDF Seç</div>
+          <div className="text-xs text-gray-500 mt-1">
+            {file ? "Dosya değiştir" : "Sadece .pdf"}
+          </div>
+        </button>
+
+        {/* File info */}
+        <div className="mt-3 text-sm text-gray-700 min-h-[20px]">
+          {file ? (
+            <span>
+              <b>{file.name}</b> • {formatMB(file.size)} MB
+            </span>
+          ) : (
+            <span className="text-gray-500">Henüz dosya seçilmedi</span>
+          )}
+        </div>
+
+        {/* Action */}
         <button
           onClick={handleUpload}
-          disabled={loading}
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition"
+          disabled={loading || !file}
+          className="w-full mt-5 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-300 text-white py-3 rounded-lg transition"
         >
           {loading ? "Sıkıştırılıyor..." : "Sıkıştır"}
         </button>
+
+        <div className="mt-4 text-xs text-gray-500">
+          Dosya sunucuda kalmaz, işlem sonrası silinir.
+        </div>
       </div>
     </main>
   );
