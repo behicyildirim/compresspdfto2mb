@@ -49,10 +49,10 @@ export default function Home() {
     <main className="min-h-screen flex items-center justify-center bg-white px-4">
       <div className="w-full max-w-md bg-gray-100 p-8 rounded-xl shadow-lg text-center">
         <h1 className="text-2xl font-bold text-gray-800 mb-2">
-          PDF 2MB Altına Sıkıştır
+          Compress PDF to Under 2MB
         </h1>
         <p className="text-sm text-gray-600 mb-6">
-          PDF dosyanı seç, tek tıkla sıkıştırıp indir.
+          Upload your PDF and compress it instantly.
         </p>
 
         {/* Hidden real input */}
@@ -70,9 +70,9 @@ export default function Home() {
           onClick={pickFile}
           className="w-full border-2 border-dashed border-gray-300 hover:border-gray-400 bg-white rounded-lg py-4 px-4 text-gray-700 transition"
         >
-          <div className="font-medium">PDF Seç</div>
+          <div className="font-medium">Select PDF</div>
           <div className="text-xs text-gray-500 mt-1">
-            {file ? "Dosya değiştir" : "Sadece .pdf"}
+            {file ? "Dosya değiştir" : "Only .pdf files"}
           </div>
         </button>
 
@@ -83,7 +83,7 @@ export default function Home() {
               <b>{file.name}</b> • {formatMB(file.size)} MB
             </span>
           ) : (
-            <span className="text-gray-500">Henüz dosya seçilmedi</span>
+            <span className="text-gray-500">No file selected</span>
           )}
         </div>
 
@@ -93,11 +93,11 @@ export default function Home() {
           disabled={loading || !file}
           className="w-full mt-5 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-300 text-white py-3 rounded-lg transition"
         >
-          {loading ? "Sıkıştırılıyor..." : "Sıkıştır"}
+          {loading ? "Compressing..." : "Compress"}
         </button>
 
         <div className="mt-4 text-xs text-gray-500">
-          Dosya sunucuda kalmaz, işlem sonrası silinir.
+          Your file is not stored and is deleted after processing.
         </div>
       </div>
     </main>
