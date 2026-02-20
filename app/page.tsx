@@ -14,7 +14,7 @@ export default function Home() {
   const pickFile = () => inputRef.current?.click();
 
   const handleUpload = async () => {
-    if (!file) return alert("Lütfen PDF seçin");
+    if (!file) return alert("Select PDF");
 
     const formData = new FormData();
     formData.append("file", file);

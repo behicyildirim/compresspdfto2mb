@@ -13,10 +13,28 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Compress PDF to 2MB",
+export const metadata = {
+  metadataBase: new URL("https://compresspdfto2mb.com"),
+  title: "Compress PDF to Under 2MB — Free Online Tool",
   description:
-    "Reduce your PDF file size to 2MB quickly and easily. Perfect for job applications, email attachments, and upload limits.",
+    "Free online tool to compress PDF files to under 2MB. Fast, simple, and secure.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Compress PDF to Under 2MB",
+    description:
+      "Free online tool to compress PDF files to under 2MB. Fast, simple, and secure.",
+    url: "https://compresspdfto2mb.com",
+    siteName: "CompressPDFto2MB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Compress PDF to Under 2MB",
+    description:
+      "Free online tool to compress PDF files to under 2MB. Fast, simple, and secure.",
+  },
 };
 
 export default function RootLayout({
