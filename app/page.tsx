@@ -20,7 +20,7 @@ export default function Home() {
         body: formData,
       });
 
-      if (!res.ok) throw new Error("Sıkıştırma başarısız");
+      if (!res.ok) throw new Error();
 
       const blob = await res.blob();
       const url = window.URL.createObjectURL(blob);
@@ -31,31 +31,35 @@ export default function Home() {
       a.click();
 
       window.URL.revokeObjectURL(url);
-    } catch (err) {
-      alert("Hata oluştu");
+    } catch {
+      alert("Sıkıştırma sırasında hata oluştu.");
     }
 
     setLoading(false);
   };
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center gap-6 bg-gray-50">
-      <h1 className="text-3xl font-bold">PDF 2MB Altına Sıkıştır</h1>
+    <main className="min-h-screen flex items-center justify-center bg-white">
+      <div className="w-full max-w-md bg-gray-100 p-8 rounded-xl shadow-lg text-center">
+        <h1 className="text-2xl font-bold text-gray-800 mb-6">
+          PDF 2MB Altına Sıkıştır
+        </h1>
 
-      <input
-        type="file"
-        accept="application/pdf"
-        onChange={(e) => setFile(e.target.files?.[0] || null)}
-        className="border p-2"
-      />
+        <input
+          type="file"
+          accept="application/pdf"
+          onChange={(e) => setFile(e.target.files?.[0] || null)}
+          className="w-full mb-4"
+        />
 
-      <button
-        onClick={handleUpload}
-        disabled={loading}
-        className="bg-blue-600 text-white px-6 py-2 rounded"
-      >
-        {loading ? "Sıkıştırılıyor..." : "Sıkıştır"}
-      </button>
+        <button
+          onClick={handleUpload}
+          disabled={loading}
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition"
+        >
+          {loading ? "Sıkıştırılıyor..." : "Sıkıştır"}
+        </button>
+      </div>
     </main>
   );
 }
