@@ -1,9 +1,7 @@
 export default function sitemap() {
-  const baseUrl = "https://compresspdfto2mb.com";
-
   return [
     {
-      url: `${baseUrl}/`,
+      url: "https://compresspdfto2mb.com/",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
