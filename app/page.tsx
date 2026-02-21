@@ -57,7 +57,9 @@ export default function Home() {
         <p className="mt-4 text-lg text-gray-600">
           Free, fast and secure PDF compression tool. No registration required.
         </p>
-
+       <p className="text-xs text-gray-500 mb-6 tracking-wide">
+  Trusted worldwide for fast, secure PDF compression.
+</p>
         {/* Tool Card */}
         <div className="mt-10 bg-gray-50 p-8 rounded-xl shadow-lg">
 
