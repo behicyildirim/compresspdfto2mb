@@ -144,6 +144,17 @@ export default function Home() {
     Learn how to reduce your PDF under the 2MB USCIS upload limit.
   </div>
 </a>
+<a
+  href="/canada-immigration-pdf-size-limit"
+  className="block rounded-lg border bg-white p-4 hover:shadow transition"
+>
+  <div className="font-medium text-gray-900">
+    Canada Immigration PDF Size Limit
+  </div>
+  <div className="mt-1 text-sm text-gray-600">
+    Compress PDFs under 2MB for IRCC uploads and immigration portals.
+  </div>
+</a>
     <a
       href="/compress-pdf-for-job-application"
       className="block rounded-lg border bg-white p-4 hover:shadow transition"

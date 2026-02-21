@@ -8,6 +8,8 @@ export async function GET() {
     "/compress-pdf-for-email",
     "/compress-pdf-for-job-application",
     "/compress-pdf-for-government-forms",
+    "/uscis-pdf-size-limit",
+    "/canada-immigration-pdf-size-limit",
     "/privacy",
     "/terms",
     "/contact",
