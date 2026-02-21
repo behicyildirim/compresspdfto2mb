@@ -1,5 +1,5 @@
 "use client";
-
+import InternalLinks from "@/app/components/InternalLinks";
 import { useRef, useState } from "react";
 
 function formatMB(bytes: number) {
@@ -119,6 +119,7 @@ export default function CompressPdfForEmailPage() {
             <li>For best results, try exporting scans at a lower DPI before compressing.</li>
           </ul>
         </section>
+        <InternalLinks />
       </div>
     </main>
   );

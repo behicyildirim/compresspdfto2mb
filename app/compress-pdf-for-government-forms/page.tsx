@@ -1,5 +1,5 @@
 "use client";
-
+import InternalLinks from "@/app/components/InternalLinks";
 import { useRef, useState } from "react";
 
 function formatMB(bytes: number) {
@@ -128,6 +128,7 @@ export default function CompressPdfForGovernmentFormsPage() {
             <li>Always double-check readability before submitting.</li>
           </ul>
         </section>
+        <InternalLinks />
       </div>
     </main>
   );

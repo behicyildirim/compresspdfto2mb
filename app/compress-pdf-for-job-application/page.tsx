@@ -1,5 +1,5 @@
 "use client";
-
+import InternalLinks from "@/app/components/InternalLinks";
 import { useRef, useState } from "react";
 
 function formatMB(bytes: number) {
@@ -131,6 +131,7 @@ export default function CompressPdfForJobApplication() {
             <li>Always preview your compressed resume before uploading.</li>
           </ul>
         </section>
+         <InternalLinks />
       </div>
     </main>
   );
