@@ -107,6 +107,25 @@ export default function RootLayout({
         </header>
 
         {children}
+        <footer className="mt-16 border-t bg-gray-50">
+  <div className="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-4">
+    <div>
+      © {new Date().getFullYear()} CP2 - CompressPDFto2MB
+    </div>
+
+    <div className="flex gap-6">
+      <a href="/privacy" className="hover:text-gray-900">
+        Privacy Policy
+      </a>
+      <a href="/terms" className="hover:text-gray-900">
+        Terms of Service
+      </a>
+      <a href="/contact" className="hover:text-gray-900">
+        Contact
+      </a>
+    </div>
+  </div>
+</footer>
       </body>
     </html>
   );
