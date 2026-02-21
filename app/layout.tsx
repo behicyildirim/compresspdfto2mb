@@ -13,47 +13,35 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL("https://compresspdfto2mb.com"),
-
   title: "Compress PDF to Under 2MB Online Free | CP2 Tool",
-
   description:
     "Compress PDF files to under 2MB instantly. Free online PDF compressor. Fast, secure and no registration required.",
-
-  keywords: [
-    "compress pdf to 2mb",
-    "compress pdf under 2mb",
-    "reduce pdf size",
-    "pdf compressor online",
-    "compress pdf for email",
-    "free pdf compressor",
-  ],
-
   alternates: {
     canonical: "/",
   },
-
   openGraph: {
-  title: "Compress PDF to Under 2MB Online",
-  description: "Free online tool to compress PDF files under 2MB instantly.",
-  url: "https://compresspdfto2mb.com",
-  siteName: "CP2 - CompressPDFto2MB",
-  type: "website",
-  images: [
-    {
-      url: "/og.png",
-      width: 1200,
-      height: 630,
-      alt: "CP2 - Compress PDF to Under 2MB",
-    },
-  ],
-
+    title: "Compress PDF to Under 2MB Online",
+    description: "Free online tool to compress PDF files under 2MB instantly.",
+    url: "https://compresspdfto2mb.com",
+    siteName: "CP2 - CompressPDFto2MB",
+    type: "website",
+    images: [
+      {
+        url: "https://compresspdfto2mb.com/og.png",
+        width: 1200,
+        height: 630,
+        alt: "CP2 - Compress PDF to Under 2MB",
+      },
+    ],
+  },
   twitter: {
-  card: "summary_large_image",
-  title: "Compress PDF to Under 2MB Online",
-  description: "Fast and secure PDF compression tool. Reduce file size in seconds.",
-  images: ["/og.png"],
+    card: "summary_large_image",
+    title: "Compress PDF to Under 2MB Online",
+    description:
+      "Fast and secure PDF compression tool. Reduce file size in seconds.",
+    images: ["https://compresspdfto2mb.com/og.png"],
   },
 };
 
@@ -62,6 +50,27 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Compress PDF to Under 2MB (CP2)",
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Web",
+    url: "https://compresspdfto2mb.com",
+    description:
+      "Free online tool to compress PDF files to under 2MB instantly. Fast, secure and no registration required.",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    creator: {
+      "@type": "Organization",
+      name: "CP2",
+      url: "https://compresspdfto2mb.com",
+    },
+  };
+
   return (
     <html lang="en">
       <head>
@@ -77,44 +86,28 @@ export default function RootLayout({
             gtag('config', 'G-3N807065XP');
           `}
         </Script>
-      </head>
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      name: "Compress PDF to Under 2MB (CP2)",
-      applicationCategory: "UtilitiesApplication",
-      operatingSystem: "Web",
-      url: "https://compresspdfto2mb.com",
-      description:
-        "Free online tool to compress PDF files to under 2MB instantly. Fast, secure and no registration required.",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-      },
-      creator: {
-        "@type": "Organization",
-        name: "CP2",
-        url: "https://compresspdfto2mb.com",
-      },
-    }),
-  }}
-/>
-      <body>
-  <header className="w-full border-b bg-white">
-    <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="/" className="flex items-center gap-2">
-        <img src="/logo.svg" alt="CP2 Logo" className="h-8" />
-        <span className="font-semibold text-gray-800">CompressPDFto2MB</span>
-      </a>
-    </div>
-  </header>
 
-  {children}
-</body>
+        {/* Structured Data (Schema.org) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      </head>
+
+      <body>
+        <header className="w-full border-b bg-white">
+          <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="/" className="flex items-center gap-2">
+              <img src="/logo.svg" alt="CP2 Logo" className="h-8" />
+              <span className="font-semibold text-gray-800">
+                CompressPDFto2MB
+              </span>
+            </a>
+          </div>
+        </header>
+
+        {children}
+      </body>
     </html>
   );
 }
