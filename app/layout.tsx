@@ -15,25 +15,39 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   metadataBase: new URL("https://compresspdfto2mb.com"),
-  title: "Compress PDF to Under 2MB — Free Online Tool",
+
+  title: "Compress PDF to Under 2MB Online Free | CP2 Tool",
+
   description:
-    "Free online tool to compress PDF files to under 2MB. Fast, simple, and secure.",
+    "Compress PDF files to under 2MB instantly. Free online PDF compressor. Fast, secure and no registration required.",
+
+  keywords: [
+    "compress pdf to 2mb",
+    "compress pdf under 2mb",
+    "reduce pdf size",
+    "pdf compressor online",
+    "compress pdf for email",
+    "free pdf compressor",
+  ],
+
   alternates: {
     canonical: "/",
   },
+
   openGraph: {
-    title: "Compress PDF to Under 2MB",
+    title: "Compress PDF to Under 2MB Online",
     description:
-      "Free online tool to compress PDF files to under 2MB. Fast, simple, and secure.",
+      "Free online tool to compress PDF files under 2MB instantly.",
     url: "https://compresspdfto2mb.com",
-    siteName: "CompressPDFto2MB",
+    siteName: "CP2 - CompressPDFto2MB",
     type: "website",
   },
+
   twitter: {
     card: "summary",
-    title: "Compress PDF to Under 2MB",
+    title: "Compress PDF to Under 2MB Online",
     description:
-      "Free online tool to compress PDF files to under 2MB. Fast, simple, and secure.",
+      "Fast and secure PDF compression tool. Reduce file size in seconds.",
   },
 };
 
@@ -59,9 +73,18 @@ export default function RootLayout({
         </Script>
       </head>
 
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
-      </body>
+      <body>
+  <header className="w-full border-b bg-white">
+    <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/" className="flex items-center gap-2">
+        <img src="/logo.svg" alt="CP2 Logo" className="h-8" />
+        <span className="font-semibold text-gray-800">CompressPDFto2MB</span>
+      </a>
+    </div>
+  </header>
+
+  {children}
+</body>
     </html>
   );
 }
