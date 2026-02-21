@@ -72,7 +72,31 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      name: "Compress PDF to Under 2MB (CP2)",
+      applicationCategory: "UtilitiesApplication",
+      operatingSystem: "Web",
+      url: "https://compresspdfto2mb.com",
+      description:
+        "Free online tool to compress PDF files to under 2MB instantly. Fast, secure and no registration required.",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+      },
+      creator: {
+        "@type": "Organization",
+        name: "CP2",
+        url: "https://compresspdfto2mb.com",
+      },
+    }),
+  }}
+/>
       <body>
   <header className="w-full border-b bg-white">
     <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
