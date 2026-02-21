@@ -143,6 +143,17 @@ export default function Home() {
         Make your resume PDF fit common upload limits (1–2MB).
       </div>
     </a>
+    <a
+  href="/compress-pdf-for-government-forms"
+  className="block rounded-lg border bg-white p-4 hover:shadow transition"
+>
+  <div className="font-medium text-gray-900">
+    Compress PDF for Government Forms
+  </div>
+  <div className="mt-1 text-sm text-gray-600">
+    Meet strict 2MB upload limits for official portals.
+  </div>
+</a>
   </div>
 </div>
         {/* How it works */}

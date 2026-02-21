@@ -7,6 +7,7 @@ export async function GET() {
     "/",
     "/compress-pdf-for-email",
     "/compress-pdf-for-job-application",
+    "/compress-pdf-for-government-forms",
     "/privacy",
     "/terms",
     "/contact",
