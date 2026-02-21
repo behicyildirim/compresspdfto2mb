@@ -133,7 +133,17 @@ export default function Home() {
         Reduce file size to meet email attachment limits.
       </div>
     </a>
-
+<a
+  href="/uscis-pdf-size-limit"
+  className="block rounded-lg border bg-white p-4 hover:shadow transition"
+>
+  <div className="font-medium text-gray-900">
+    USCIS PDF Size Limit
+  </div>
+  <div className="mt-1 text-sm text-gray-600">
+    Learn how to reduce your PDF under the 2MB USCIS upload limit.
+  </div>
+</a>
     <a
       href="/compress-pdf-for-job-application"
       className="block rounded-lg border bg-white p-4 hover:shadow transition"
