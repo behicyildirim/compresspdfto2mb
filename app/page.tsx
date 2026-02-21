@@ -163,7 +163,17 @@ export default function Home() {
     Reduce file size to 1MB instantly.
   </div>
 </a>
-
+<a
+  href="/reduce-pdf-size-without-losing-quality"
+  className="block rounded-lg border bg-white p-4 hover:shadow transition"
+>
+  <div className="font-medium text-gray-900">
+    Reduce PDF Size Without Losing Quality
+  </div>
+  <div className="mt-1 text-sm text-gray-600">
+    Compress files while keeping text and images clear.
+  </div>
+</a>
 <a href="/schengen-visa-pdf-size-limit" className="block rounded-lg border bg-white p-4 hover:shadow transition">
   <div className="font-medium text-gray-900">
     Schengen Visa PDF Size Limit
