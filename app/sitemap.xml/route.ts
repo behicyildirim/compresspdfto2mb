@@ -10,6 +10,7 @@ export async function GET() {
     "/compress-pdf-for-government-forms",
     "/uscis-pdf-size-limit",
     "/canada-immigration-pdf-size-limit",
+    "/uk-visa-pdf-size-limit",
     "/privacy",
     "/terms",
     "/contact",

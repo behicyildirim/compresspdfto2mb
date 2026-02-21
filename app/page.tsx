@@ -155,6 +155,17 @@ export default function Home() {
     Compress PDFs under 2MB for IRCC uploads and immigration portals.
   </div>
 </a>
+<a
+  href="/uk-visa-pdf-size-limit"
+  className="block rounded-lg border bg-white p-4 hover:shadow transition"
+>
+  <div className="font-medium text-gray-900">
+    UK Visa PDF Size Limit
+  </div>
+  <div className="mt-1 text-sm text-gray-600">
+    Reduce PDF size for UKVI document uploads.
+  </div>
+</a>
     <a
       href="/compress-pdf-for-job-application"
       className="block rounded-lg border bg-white p-4 hover:shadow transition"
