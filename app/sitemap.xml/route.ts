@@ -11,6 +11,8 @@ export async function GET() {
     "/uscis-pdf-size-limit",
     "/canada-immigration-pdf-size-limit",
     "/uk-visa-pdf-size-limit",
+    "/compress-pdf-to-1mb",
+    "/schengen-visa-pdf-size-limit",
     "/privacy",
     "/terms",
     "/contact",

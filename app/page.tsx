@@ -155,6 +155,23 @@ export default function Home() {
     Compress PDFs under 2MB for IRCC uploads and immigration portals.
   </div>
 </a>
+<a href="/compress-pdf-to-1mb" className="block rounded-lg border bg-white p-4 hover:shadow transition">
+  <div className="font-medium text-gray-900">
+    Compress PDF to 1MB
+  </div>
+  <div className="mt-1 text-sm text-gray-600">
+    Reduce file size to 1MB instantly.
+  </div>
+</a>
+
+<a href="/schengen-visa-pdf-size-limit" className="block rounded-lg border bg-white p-4 hover:shadow transition">
+  <div className="font-medium text-gray-900">
+    Schengen Visa PDF Size Limit
+  </div>
+  <div className="mt-1 text-sm text-gray-600">
+    Meet common Schengen upload requirements.
+  </div>
+</a>
 <a
   href="/uk-visa-pdf-size-limit"
   className="block rounded-lg border bg-white p-4 hover:shadow transition"
