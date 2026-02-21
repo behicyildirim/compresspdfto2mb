@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import InternalLinks from "@/app/components/InternalLinks";
 
 export default function UscisPdfLimitPage() {
   return (
@@ -50,6 +51,10 @@ export default function UscisPdfLimitPage() {
           </p>
 
         </div>
+        <p className="mt-10 text-sm text-gray-500">
+Looking for a different file size? Try compressing your PDF to 100KB, 200KB, 500KB or 2MB depending on your needs.
+</p>
+         <InternalLinks />
       </div>
     </main>
   );
