@@ -115,7 +115,36 @@ export default function Home() {
             💰 Completely Free
           </div>
         </div>
+{/* Popular Use Cases */}
+<div className="mt-12">
+  <h2 className="text-xl font-semibold text-gray-900">
+    Popular Use Cases
+  </h2>
 
+  <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+    <a
+      href="/compress-pdf-for-email"
+      className="block rounded-lg border bg-white p-4 hover:shadow transition"
+    >
+      <div className="font-medium text-gray-900">Compress PDF for Email</div>
+      <div className="mt-1 text-sm text-gray-600">
+        Reduce file size to meet email attachment limits.
+      </div>
+    </a>
+
+    <a
+      href="/compress-pdf-for-job-application"
+      className="block rounded-lg border bg-white p-4 hover:shadow transition"
+    >
+      <div className="font-medium text-gray-900">
+        Compress PDF for Job Application
+      </div>
+      <div className="mt-1 text-sm text-gray-600">
+        Make your resume PDF fit common upload limits (1–2MB).
+      </div>
+    </a>
+  </div>
+</div>
         {/* How it works */}
         <div className="mt-16 text-left">
           <h2 className="text-2xl font-semibold text-gray-900 text-center">
