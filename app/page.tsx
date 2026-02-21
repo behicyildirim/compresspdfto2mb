@@ -178,7 +178,35 @@ export default function Home() {
             our tool helps you compress PDF files under 2MB in seconds.
           </p>
         </div>
+{/* FAQ */}
+<div className="mt-14 text-left">
+  <h2 className="text-2xl font-semibold text-gray-900 text-center">
+    FAQ
+  </h2>
 
+  <div className="mt-6 space-y-6 text-gray-700">
+    <div>
+      <h3 className="font-semibold text-gray-900">Is this PDF compressor free?</h3>
+      <p className="mt-1">
+        Yes. You can compress PDFs online for free without creating an account.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold text-gray-900">Will my file be stored?</h3>
+      <p className="mt-1">
+        No. Files are processed for compression and deleted after the request completes.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold text-gray-900">Can you always get under 2MB?</h3>
+      <p className="mt-1">
+        Results depend on your PDF content. Image-heavy PDFs usually compress well, but already-optimized files may not shrink much.
+      </p>
+    </div>
+  </div>
+</div>
       </div>
     </main>
   );
