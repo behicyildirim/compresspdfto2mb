@@ -1,4 +1,5 @@
 import Link from "next/link";
+import InternalLinks from "@/app/components/InternalLinks";
 
 export const metadata = {
   title: "Compress PDF to 1MB Online Free | CP2",
@@ -50,6 +51,7 @@ export default function CompressPdfTo1MbPage() {
             Compressing your file ensures successful uploads.
           </p>
         </div>
+        <InternalLinks />
       </div>
     </main>
   );
