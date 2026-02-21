@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { NextResponse } from "next/server";
 
 export async function GET() {
@@ -5,17 +7,26 @@ export async function GET() {
 
   const paths = [
     "/",
+
+    // Size pages
+    "/compress-pdf-to-500kb",
+    "/compress-pdf-to-1mb",
+    "/compress-pdf-to-2mb",
+
+    // Use case pages
     "/compress-pdf-for-email",
+    "/compress-pdf-for-whatsapp",
+    "/compress-pdf-for-visa",
     "/compress-pdf-for-job-application",
-    "/compress-pdf-for-government-forms",
+
+    // Informational pages
+    "/reduce-pdf-size-without-losing-quality",
     "/uscis-pdf-size-limit",
     "/canada-immigration-pdf-size-limit",
     "/uk-visa-pdf-size-limit",
-    "/compress-pdf-to-1mb",
     "/schengen-visa-pdf-size-limit",
-    "/reduce-pdf-size-without-losing-quality",
-    "/compress-pdf-for-whatsapp",
-    "/reduce-pdf-to-500kb",
+
+    // Legal
     "/privacy",
     "/terms",
     "/contact",
