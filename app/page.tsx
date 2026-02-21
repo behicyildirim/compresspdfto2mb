@@ -182,6 +182,23 @@ export default function Home() {
     Meet common Schengen upload requirements.
   </div>
 </a>
+<a href="/compress-pdf-for-whatsapp" className="block rounded-lg border bg-white p-4 hover:shadow transition">
+  <div className="font-medium text-gray-900">
+    Compress PDF for WhatsApp
+  </div>
+  <div className="mt-1 text-sm text-gray-600">
+    Send PDFs easily via WhatsApp.
+  </div>
+</a>
+
+<a href="/reduce-pdf-to-500kb" className="block rounded-lg border bg-white p-4 hover:shadow transition">
+  <div className="font-medium text-gray-900">
+    Reduce PDF to 500KB
+  </div>
+  <div className="mt-1 text-sm text-gray-600">
+    Meet strict upload limits.
+  </div>
+</a>
 <a
   href="/uk-visa-pdf-size-limit"
   className="block rounded-lg border bg-white p-4 hover:shadow transition"
