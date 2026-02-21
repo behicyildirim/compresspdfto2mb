@@ -35,19 +35,25 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Compress PDF to Under 2MB Online",
-    description:
-      "Free online tool to compress PDF files under 2MB instantly.",
-    url: "https://compresspdfto2mb.com",
-    siteName: "CP2 - CompressPDFto2MB",
-    type: "website",
-  },
+  title: "Compress PDF to Under 2MB Online",
+  description: "Free online tool to compress PDF files under 2MB instantly.",
+  url: "https://compresspdfto2mb.com",
+  siteName: "CP2 - CompressPDFto2MB",
+  type: "website",
+  images: [
+    {
+      url: "/og.png",
+      width: 1200,
+      height: 630,
+      alt: "CP2 - Compress PDF to Under 2MB",
+    },
+  ],
 
   twitter: {
-    card: "summary",
-    title: "Compress PDF to Under 2MB Online",
-    description:
-      "Fast and secure PDF compression tool. Reduce file size in seconds.",
+  card: "summary_large_image",
+  title: "Compress PDF to Under 2MB Online",
+  description: "Fast and secure PDF compression tool. Reduce file size in seconds.",
+  images: ["/og.png"],
   },
 };
 
