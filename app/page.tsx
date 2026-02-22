@@ -294,20 +294,22 @@ export default function Home() {
     Unlimited compressions, batch uploads, faster processing, and no ads.
   </p>
 
-  <form className="mt-4 flex flex-col sm:flex-row gap-3">
+  <div className="mt-4 flex flex-col sm:flex-row gap-3">
     <input
       type="email"
       required
       placeholder="Your email address"
       className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-200"
     />
-    <button
-      type="submit"
-      className="rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white hover:bg-blue-700 transition"
-    >
-      Notify me
-    </button>
-  </form>
+    <a
+  href="https://forms.gle/BM1DjKrabQ2FSuiUA"
+  target="_blank"
+  rel="noreferrer"
+  className="rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white hover:bg-blue-700 transition text-center"
+>
+  Notify me
+</a>
+  </div>
 
   <p className="mt-2 text-xs text-gray-500">
     No spam. You can unsubscribe anytime.
