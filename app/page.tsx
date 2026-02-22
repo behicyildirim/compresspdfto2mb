@@ -286,21 +286,36 @@ export default function Home() {
   </div>
 </div>
       </div>
-      <section className="mt-16">
-  <h2 className="text-2xl font-semibold mb-4 text-center">
-    Popular PDF Compression Sizes
-  </h2>
+ <section className="mt-16 rounded-2xl border border-gray-200 bg-gray-50 p-6">
+  <div className="mx-auto max-w-3xl">
+    <h2 className="text-xl md:text-2xl font-semibold text-gray-900 text-center">
+      Popular PDF Compression Sizes
+    </h2>
+    <p className="mt-2 text-sm md:text-base text-gray-600 text-center">
+      Choose a target size and get your PDF ready for uploads in seconds.
+    </p>
 
-  <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
-    <a href="/compress-pdf-to-100kb" className="text-blue-700 hover:underline">100KB</a>
-    <a href="/compress-pdf-to-200kb" className="text-blue-700 hover:underline">200KB</a>
-    <a href="/compress-pdf-to-300kb" className="text-blue-700 hover:underline">300KB</a>
-    <a href="/compress-pdf-to-500kb" className="text-blue-700 hover:underline">500KB</a>
-    <a href="/compress-pdf-to-1mb" className="text-blue-700 hover:underline">1MB</a>
-    <a href="/compress-pdf-to-2mb" className="text-blue-700 hover:underline">2MB</a>
-    <a href="/compress-pdf-to-3mb" className="text-blue-700 hover:underline">3MB</a>
-    <a href="/compress-pdf-to-5mb" className="text-blue-700 hover:underline">5MB</a>
-    <a href="/compress-pdf-to-10mb" className="text-blue-700 hover:underline">10MB</a>
+    <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-3">
+      {[
+        { href: "/compress-pdf-to-100kb", label: "100KB" },
+        { href: "/compress-pdf-to-200kb", label: "200KB" },
+        { href: "/compress-pdf-to-300kb", label: "300KB" },
+        { href: "/compress-pdf-to-500kb", label: "500KB" },
+        { href: "/compress-pdf-to-1mb", label: "1MB" },
+        { href: "/compress-pdf-to-2mb", label: "2MB" },
+        { href: "/compress-pdf-to-3mb", label: "3MB" },
+        { href: "/compress-pdf-to-5mb", label: "5MB" },
+        { href: "/compress-pdf-to-10mb", label: "10MB" },
+      ].map((item) => (
+        <a
+          key={item.href}
+          href={item.href}
+          className="rounded-xl bg-white px-4 py-3 text-center font-semibold text-blue-700 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 hover:ring-blue-200 transition"
+        >
+          {item.label}
+        </a>
+      ))}
+    </div>
   </div>
 </section>
     </main>
