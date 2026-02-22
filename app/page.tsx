@@ -286,6 +286,33 @@ export default function Home() {
   </div>
 </div>
       </div>
+      <section className="mt-10 rounded-2xl border border-gray-200 bg-white p-6">
+  <h2 className="text-lg font-semibold text-gray-900">
+    Get notified when Premium launches
+  </h2>
+  <p className="mt-2 text-sm text-gray-600">
+    Unlimited compressions, batch uploads, faster processing, and no ads.
+  </p>
+
+  <form className="mt-4 flex flex-col sm:flex-row gap-3">
+    <input
+      type="email"
+      required
+      placeholder="Your email address"
+      className="w-full rounded-xl border border-gray<a href="/compress-pdf-to-500kb">-300 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-200"
+    />
+    <button
+      type="submit"
+      className="rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white hover:bg-blue-700 transition"
+    >
+      Notify me
+    </button>
+  </form>
+
+  <p className="mt-2 text-xs text-gray-500">
+    No spam. You can unsubscribe anytime.
+  </p>
+</section>
  <section className="mt-16 rounded-2xl border border-gray-200 bg-gray-50 p-6">
   <div className="mx-auto max-w-3xl">
     <h2 className="text-xl md:text-2xl font-semibold text-gray-900 text-center">
