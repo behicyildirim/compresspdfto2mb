@@ -250,8 +250,16 @@ export default function Home() {
             <p>1. Upload your PDF file.</p>
             <p>2. Our system compresses it automatically.</p>
             <p>3. Download your optimized file instantly.</p>
+            <p className="mt-4 text-sm text-gray-600 text-center">
+  Want a quick walkthrough? Read our{" "}
+  <a href="/how-to-compress-a-pdf" className="text-blue-700 hover:underline">
+    step-by-step PDF compression guide
+  </a>
+  .
+</p>
           </div>
         </div>
+        
 {/* AD SLOT 2: between how-it-works and seo */}
 <div className="mt-10 mx-auto max-w-3xl">
   <div className="rounded-2xl border border-dashed border-gray-300 bg-white p-6 text-center text-sm text-gray-400">
