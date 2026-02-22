@@ -286,6 +286,23 @@ export default function Home() {
   </div>
 </div>
       </div>
+      <section className="mt-16">
+  <h2 className="text-2xl font-semibold mb-4 text-center">
+    Popular PDF Compression Sizes
+  </h2>
+
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+    <a href="/compress-pdf-to-100kb" className="text-blue-700 hover:underline">100KB</a>
+    <a href="/compress-pdf-to-200kb" className="text-blue-700 hover:underline">200KB</a>
+    <a href="/compress-pdf-to-300kb" className="text-blue-700 hover:underline">300KB</a>
+    <a href="/compress-pdf-to-500kb" className="text-blue-700 hover:underline">500KB</a>
+    <a href="/compress-pdf-to-1mb" className="text-blue-700 hover:underline">1MB</a>
+    <a href="/compress-pdf-to-2mb" className="text-blue-700 hover:underline">2MB</a>
+    <a href="/compress-pdf-to-3mb" className="text-blue-700 hover:underline">3MB</a>
+    <a href="/compress-pdf-to-5mb" className="text-blue-700 hover:underline">5MB</a>
+    <a href="/compress-pdf-to-10mb" className="text-blue-700 hover:underline">10MB</a>
+  </div>
+</section>
     </main>
   );
 }
