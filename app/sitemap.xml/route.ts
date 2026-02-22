@@ -11,10 +11,13 @@ export async function GET() {
     // Size pages
     "/compress-pdf-to-100kb",
     "/compress-pdf-to-200kb",
+    "/compress-pdf-to-300kb",
     "/compress-pdf-to-500kb",
     "/compress-pdf-to-1mb",
     "/compress-pdf-to-2mb",
+    "/compress-pdf-to-3mb",
     "/compress-pdf-to-5mb",
+    "/compress-pdf-to-10mb",
     
     // Use case pages
     "/compress-pdf-for-email",
