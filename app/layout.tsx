@@ -107,6 +107,12 @@ export default function RootLayout({
         </header>
 
         {children}
+        <div className="mt-10 text-center">
+  {/* Ad Placeholder */}
+  <div className="mx-auto max-w-3xl border border-dashed border-gray-300 p-6 text-gray-400 text-sm">
+    Advertisement Area
+  </div>
+</div>
         <footer className="mt-16 border-t bg-gray-50">
   <div className="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-4">
     <div>
