@@ -286,7 +286,7 @@ export default function Home() {
   </div>
 </div>
       </div>
-      <section className="mt-10 rounded-2xl border border-gray-200 bg-white p-6">
+      <section className="mt-10 mx-auto max-w-3xl rounded-2xl border border-gray-200 bg-white p-6 text-center">
   <h2 className="text-lg font-semibold text-gray-900">
     Get notified when Premium launches
   </h2>
@@ -294,7 +294,7 @@ export default function Home() {
     Unlimited compressions, batch uploads, faster processing, and no ads.
   </p>
 
-  <div className="mt-4">
+  <div className="mt-4 flex justify-center">
   <a
     href="https://forms.gle/bRp16FM6pho8hPAB7"
     target="_blank"
