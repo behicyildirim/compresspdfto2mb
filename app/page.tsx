@@ -318,6 +318,19 @@ export default function Home() {
     </div>
   </div>
 </section>
+<section className="mt-16 mx-auto max-w-3xl">
+  <h2 className="text-xl font-semibold text-gray-900">
+    Free Online PDF Compressor
+  </h2>
+
+  <p className="mt-3 text-gray-600 leading-relaxed">
+    Compress PDF files online without losing quality. Our free PDF compression tool helps you reduce file size for email attachments, visa applications, government forms, and job submissions. You can easily compress PDF to 100KB, 200KB, 500KB, 1MB, 2MB, 5MB, or even 10MB depending on your upload requirements.
+  </p>
+
+  <p className="mt-3 text-gray-600 leading-relaxed">
+    No registration required. Your files are processed securely and automatically deleted after compression. Whether you need to reduce PDF size for WhatsApp, immigration portals, or official uploads, our tool makes it fast and simple.
+  </p>
+</section>
     </main>
   );
 }
