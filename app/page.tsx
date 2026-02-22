@@ -294,22 +294,16 @@ export default function Home() {
     Unlimited compressions, batch uploads, faster processing, and no ads.
   </p>
 
-  <div className="mt-4 flex flex-col sm:flex-row gap-3">
-    <input
-      type="email"
-      required
-      placeholder="Your email address"
-      className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-200"
-    />
-    <a
-  href="https://forms.gle/BM1DjKrabQ2FSuiUA"
-  target="_blank"
-  rel="noreferrer"
-  className="rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white hover:bg-blue-700 transition text-center"
->
-  Notify me
-</a>
-  </div>
+  <div className="mt-4">
+  <a
+    href="https://forms.gle/bRp16FM6pho8hPAB7"
+    target="_blank"
+    rel="noreferrer"
+    className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700 transition"
+  >
+    Join the Premium Waitlist
+  </a>
+</div>
 
   <p className="mt-2 text-xs text-gray-500">
     No spam. You can unsubscribe anytime.
