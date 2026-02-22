@@ -39,6 +39,12 @@ export default function InternalLinks() {
 
   return (
     <section className="mt-8">
+        {/* AD SLOT: Above internal links */}
+<div className="mb-10">
+  <div className="rounded-2xl border border-dashed border-gray-300 bg-white p-6 text-center text-sm text-gray-400">
+    Advertisement Area
+  </div>
+</div>
       <div className="grid gap-6">
         <div>
           <h2 className="text-lg font-semibold mb-2">Other Popular PDF Sizes</h2>
@@ -66,6 +72,12 @@ export default function InternalLinks() {
           </ul>
         </div>
       </div>
+{/* AD SLOT: Below internal links */}
+<div className="mt-10">
+  <div className="rounded-2xl border border-dashed border-gray-300 bg-white p-6 text-center text-sm text-gray-400">
+    Advertisement Area
+  </div>
+</div>
     </section>
   );
 }
