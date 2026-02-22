@@ -31,6 +31,7 @@ export async function GET() {
     "/canada-immigration-pdf-size-limit",
     "/uk-visa-pdf-size-limit",
     "/schengen-visa-pdf-size-limit",
+    "/how-to-compress-a-pdf",
 
     // Legal
     "/privacy",
