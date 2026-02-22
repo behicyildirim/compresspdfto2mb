@@ -191,7 +191,7 @@ export default function Home() {
   </div>
 </a>
 
-<a href="/reduce-pdf-to-500kb" className="block rounded-lg border bg-white p-4 hover:shadow transition">
+<a href="/compress-pdf-to-500kb" className="block rounded-lg border bg-white p-4 hover:shadow transition">
   <div className="font-medium text-gray-900">
     Reduce PDF to 500KB
   </div>
@@ -299,7 +299,7 @@ export default function Home() {
       type="email"
       required
       placeholder="Your email address"
-      className="w-full rounded-xl border border-gray<a href="/compress-pdf-to-500kb">-300 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-200"
+      className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-200"
     />
     <button
       type="submit"
