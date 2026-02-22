@@ -331,6 +331,43 @@ export default function Home() {
     No registration required. Your files are processed securely and automatically deleted after compression. Whether you need to reduce PDF size for WhatsApp, immigration portals, or official uploads, our tool makes it fast and simple.
   </p>
 </section>
+<section className="mt-16 rounded-2xl border border-gray-200 bg-white p-6">
+  <div className="mx-auto max-w-3xl">
+    <h2 className="text-xl md:text-2xl font-semibold text-gray-900 text-center">
+      Popular Upload Use Cases
+    </h2>
+
+    <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <a href="/compress-pdf-for-visa" className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition">
+        <h3 className="font-semibold text-blue-700">Visa Applications</h3>
+        <p className="text-sm text-gray-600 mt-1">
+          Meet strict file size limits for embassy and immigration portals.
+        </p>
+      </a>
+
+      <a href="/compress-pdf-for-university-application" className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition">
+        <h3 className="font-semibold text-blue-700">University Applications</h3>
+        <p className="text-sm text-gray-600 mt-1">
+          Compress transcripts and documents for admission systems.
+        </p>
+      </a>
+
+      <a href="/compress-pdf-for-immigration" className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition">
+        <h3 className="font-semibold text-blue-700">Immigration Portals</h3>
+        <p className="text-sm text-gray-600 mt-1">
+          Reduce PDF size for government upload requirements.
+        </p>
+      </a>
+
+      <a href="/compress-pdf-for-online-portal" className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition">
+        <h3 className="font-semibold text-blue-700">Online Portal Uploads</h3>
+        <p className="text-sm text-gray-600 mt-1">
+          Avoid upload errors by meeting portal file size restrictions.
+        </p>
+      </a>
+    </div>
+  </div>
+</section>
     </main>
   );
 }
