@@ -8,10 +8,13 @@ type Item = { href: string; label: string };
 const sizes: Item[] = [
   { href: "/compress-pdf-to-100kb", label: "Compress PDF to 100KB" },
   { href: "/compress-pdf-to-200kb", label: "Compress PDF to 200KB" },
+  { href: "/compress-pdf-to-300kb", label: "Compress PDF to 300KB" },
   { href: "/compress-pdf-to-500kb", label: "Compress PDF to 500KB" },
   { href: "/compress-pdf-to-1mb", label: "Compress PDF to 1MB" },
   { href: "/compress-pdf-to-2mb", label: "Compress PDF to 2MB" },
+  { href: "/compress-pdf-to-3mb", label: "Compress PDF to 3MB" },
   { href: "/compress-pdf-to-5mb", label: "Compress PDF to 5MB" },
+  { href: "/compress-pdf-to-10mb", label: "Compress PDF to 10MB" },
 ];
 
 const useCases: Item[] = [
