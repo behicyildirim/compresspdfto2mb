@@ -234,6 +234,12 @@ export default function Home() {
 </a>
   </div>
 </div>
+{/* AD SLOT 1: below tool */}
+<div className="mt-10 mx-auto max-w-3xl">
+  <div className="rounded-2xl border border-dashed border-gray-300 bg-white p-6 text-center text-sm text-gray-400">
+    Advertisement Area
+  </div>
+</div>
         {/* How it works */}
         <div className="mt-16 text-left">
           <h2 className="text-2xl font-semibold text-gray-900 text-center">
@@ -246,7 +252,12 @@ export default function Home() {
             <p>3. Download your optimized file instantly.</p>
           </div>
         </div>
-
+{/* AD SLOT 2: between how-it-works and seo */}
+<div className="mt-10 mx-auto max-w-3xl">
+  <div className="rounded-2xl border border-dashed border-gray-300 bg-white p-6 text-center text-sm text-gray-400">
+    Advertisement Area
+  </div>
+</div>
         {/* SEO Content */}
         <div className="mt-12 text-left text-gray-600 text-sm leading-relaxed">
           <p>
