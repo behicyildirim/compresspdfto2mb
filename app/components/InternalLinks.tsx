@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type Item = { href: string; label: string };
 
@@ -18,31 +21,43 @@ const useCases: Item[] = [
   { href: "/compress-pdf-for-job-application", label: "Compress PDF for Job Application" },
 ];
 
+function normalize(path: string) {
+  // remove trailing slash (except "/")
+  if (path.length > 1 && path.endsWith("/")) return path.slice(0, -1);
+  return path;
+}
+
 export default function InternalLinks() {
+  const pathnameRaw = usePathname() || "/";
+  const pathname = normalize(pathnameRaw);
+
+  const sizesFiltered = sizes.filter((i) => normalize(i.href) !== pathname);
+  const useCasesFiltered = useCases.filter((i) => normalize(i.href) !== pathname);
+
   return (
-    <section style={{ marginTop: 24 }}>
-      <div style={{ display: "grid", gap: 16 }}>
+    <section className="mt-8">
+      <div className="grid gap-6">
         <div>
-          <h2 style={{ fontSize: 18, fontWeight: 600, marginBottom: 8 }}>
-            Other Popular PDF Sizes
-          </h2>
-          <ul style={{ margin: 0, paddingLeft: 18 }}>
-            {sizes.map((i) => (
-              <li key={i.href} style={{ marginBottom: 6 }}>
-                <Link href={i.href}>{i.label}</Link>
+          <h2 className="text-lg font-semibold mb-2">Other Popular PDF Sizes</h2>
+          <ul className="list-disc pl-5 space-y-1">
+            {sizesFiltered.map((i) => (
+              <li key={i.href}>
+                <Link href={i.href} className="text-blue-700 hover:underline">
+                  {i.label}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
 
         <div>
-          <h2 style={{ fontSize: 18, fontWeight: 600, marginBottom: 8 }}>
-            Popular Use Cases
-          </h2>
-          <ul style={{ margin: 0, paddingLeft: 18 }}>
-            {useCases.map((i) => (
-              <li key={i.href} style={{ marginBottom: 6 }}>
-                <Link href={i.href}>{i.label}</Link>
+          <h2 className="text-lg font-semibold mb-2">Popular Use Cases</h2>
+          <ul className="list-disc pl-5 space-y-1">
+            {useCasesFiltered.map((i) => (
+              <li key={i.href}>
+                <Link href={i.href} className="text-blue-700 hover:underline">
+                  {i.label}
+                </Link>
               </li>
             ))}
           </ul>
