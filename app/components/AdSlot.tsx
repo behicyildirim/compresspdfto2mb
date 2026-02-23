@@ -1,11 +1,27 @@
-type Props = {
-  label?: string;
-};
+"use client";
 
-export default function AdSlot({ label = "Advertisement" }: Props) {
+import { useEffect } from "react";
+
+export default function AdSlot() {
+  useEffect(() => {
+    try {
+      // @ts-ignore
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (err) {
+      console.error(err);
+    }
+  }, []);
+
   return (
-    <div className="rounded-2xl border border-dashed border-gray-300 bg-white p-6 text-center text-sm text-gray-400">
-      {label}
+    <div className="my-6">
+      <ins
+        className="adsbygoogle"
+        style={{ display: "block" }}
+        data-ad-client="ca-pub-4218696370367168"
+        data-ad-slot="1217760896"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
     </div>
   );
 }
