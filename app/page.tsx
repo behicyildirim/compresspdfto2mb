@@ -274,7 +274,15 @@ export default function Home() {
             document for email, school, job applications or government forms,
             our tool helps you compress PDF files under 2MB in seconds.
           </p>
+          <p className="mt-4 text-sm text-gray-600 text-center">
+  Having trouble uploading a PDF?{" "}
+  <a href="/pdf-upload-failed" className="text-blue-700 hover:underline">
+    See common upload errors and fixes
+  </a>
+  .
+</p>
         </div>
+        
 {/* FAQ */}
 <div className="mt-14 text-left">
   <h2 className="text-2xl font-semibold text-gray-900 text-center">
