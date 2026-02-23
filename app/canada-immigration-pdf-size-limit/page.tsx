@@ -20,65 +20,103 @@ export default function CanadaImmigrationPdfLimitPage() {
 
         <div className="mt-10 space-y-6 leading-relaxed">
           <h2 className="text-2xl font-semibold">
-            What is the Canada immigration PDF upload limit?
-          </h2>
-          <p>
-            Many Canada immigration portals (IRCC) apply strict file upload limits.
-            When your document exceeds the allowed size, the upload can fail.
-            Limits can vary depending on the form and portal, but smaller PDFs (often around a few MB)
-            are commonly required—so aiming for under 2MB is a safe target.
-          </p>
+Canada Immigration PDF Size Limit
+</h2>
+<p>
+Canadian immigration portals such as IRCC often require documents to remain
+under specific size limits. Many uploads must stay under 2MB to avoid rejection.
+If your PDF exceeds the allowed size, the system may display an upload error.
+</p>
 
-          <h2 className="text-2xl font-semibold">
-            How to compress a PDF for IRCC upload
-          </h2>
-          <ol className="list-decimal pl-6 space-y-2">
-            <li>Open our free PDF compressor.</li>
-            <li>Upload your PDF document.</li>
-            <li>Download the compressed PDF and upload it to the portal.</li>
-          </ol>
+<h2 className="text-2xl font-semibold mt-8">
+Common Upload Problems in IRCC Portal
+</h2>
+<p>
+Applicants frequently face file upload issues when submitting documents
+for Express Entry, study permits, work permits, or permanent residence.
+Common problems include:
+</p>
 
-          <div className="mt-8 bg-blue-50 p-6 rounded-lg text-center">
-            <h3 className="text-xl font-semibold mb-2">
-              Compress Your PDF Under 2MB
-            </h3>
-            <p className="text-sm text-gray-700">
-              Fast, secure, and no registration required.
-            </p>
+<ul className="list-disc pl-6 space-y-2">
+<li>PDF file exceeding 2MB limit</li>
+<li>Scanned documents saved at high resolution</li>
+<li>Image-heavy documents with large embedded files</li>
+<li>Incorrect file format</li>
+</ul>
 
-            <Link
-              href="/"
-              className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
-            >
-              Compress PDF Now
-            </Link>
-          </div>
+<h2 className="text-2xl font-semibold mt-8">
+How to Reduce PDF Size for Canada Immigration
+</h2>
+<ol className="list-decimal pl-6 space-y-2">
+<li>Upload your PDF to a compression tool.</li>
+<li>Select a safe target size (2MB or below).</li>
+<li>Download the compressed version.</li>
+<li>Re-upload to the IRCC portal.</li>
+</ol>
 
-          <h2 className="text-2xl font-semibold mt-10">
-            Tips to reduce PDF size (without losing readability)
-          </h2>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>If your PDF is scanned, reduce scan resolution (DPI) before uploading.</li>
-            <li>Remove unnecessary images or pages.</li>
-            <li>Export documents as “optimized PDF” if your editor supports it.</li>
-          </ul>
+<p>
+Reducing image resolution and removing unnecessary blank pages
+can significantly decrease file size while preserving readability.
+</p>
 
-          <h2 className="text-2xl font-semibold mt-10">FAQ</h2>
-          <div className="space-y-4">
-            <div>
-              <h3 className="font-semibold">Is my file stored?</h3>
-              <p className="text-gray-700">
-                No. Files are processed for compression and deleted after the request completes.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-semibold">Can you always get under 2MB?</h3>
-              <p className="text-gray-700">
-                Results depend on the PDF. Image-heavy documents compress well, but already-optimized PDFs may not shrink much.
-              </p>
-            </div>
-          </div>
-        </div>
+<h2 className="text-2xl font-semibold mt-8">
+Best Practices Before Submitting to IRCC
+</h2>
+
+<ul className="list-disc pl-6 space-y-2">
+<li>Scan documents in grayscale instead of color</li>
+<li>Use 150–300 DPI for clarity without oversizing</li>
+<li>Combine multiple pages efficiently</li>
+<li>Double-check upload confirmation after submission</li>
+</ul>
+
+<div className="mt-10 bg-blue-50 p-6 rounded-lg text-center">
+  <a
+    href="/compress-pdf-to-2mb"
+    className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+  >
+    Compress PDF to 2MB for IRCC
+  </a>
+</div>
+
+<div className="mt-14">
+  <h2 className="text-2xl font-semibold text-gray-900">
+    Frequently Asked Questions
+  </h2>
+
+  <div className="mt-6 space-y-6 text-gray-700">
+
+    <div>
+      <h3 className="font-semibold text-gray-900">
+        What is the maximum file size for IRCC uploads?
+      </h3>
+      <p className="mt-1">
+        Many IRCC portals require files under 2MB.
+        Always check your specific application instructions.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold text-gray-900">
+        Why does IRCC reject my PDF?
+      </h3>
+      <p className="mt-1">
+        Files exceeding size limits or scanned at very high resolution
+        often fail during upload.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold text-gray-900">
+        Is compressing safe for immigration documents?
+      </h3>
+      <p className="mt-1">
+        Yes, as long as text remains readable and document integrity is preserved.
+      </p>
+    </div>
+
+  </div>
+</div>
       </div>
     </main>
   );
