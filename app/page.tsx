@@ -387,6 +387,13 @@ export default function Home() {
   <p className="text-sm text-gray-600 mt-1">
     Learn USCIS file upload limits and how to compress PDFs correctly.
   </p>
+  <p className="mt-6 text-sm text-gray-600 text-center">
+  Need all visa and immigration limits in one place?{" "}
+  <a href="/immigration-pdf-upload-guide" className="text-blue-700 hover:underline">
+    Read the Immigration PDF Upload Guide
+  </a>
+  .
+</p>
 </a>
       <a
   href="/pdf-size-limit-for-email"
