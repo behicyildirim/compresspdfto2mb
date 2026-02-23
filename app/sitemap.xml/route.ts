@@ -33,6 +33,7 @@ export async function GET() {
     "/schengen-visa-pdf-size-limit",
     "/how-to-compress-a-pdf",
     "/pdf-size-limit-for-email",
+    "/pdf-size-limit-for-uscis",
 
     // Legal
     "/privacy",
