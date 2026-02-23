@@ -2,7 +2,12 @@
 
 import { useEffect } from "react";
 
-export default function AdSlot() {
+type Props = {
+  label?: string;
+  className?: string;
+};
+
+export default function AdSlot({ label, className }: Props) {
   useEffect(() => {
     try {
       // @ts-ignore
@@ -13,7 +18,12 @@ export default function AdSlot() {
   }, []);
 
   return (
-    <div className="my-6">
+    <div className={className ?? "my-6"}>
+      {/* Optional label (only visible if ads don't render yet) */}
+      {label ? (
+        <div className="mb-3 text-center text-xs text-gray-400">{label}</div>
+      ) : null}
+
       <ins
         className="adsbygoogle"
         style={{ display: "block" }}
