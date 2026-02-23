@@ -34,6 +34,7 @@ export async function GET() {
     "/how-to-compress-a-pdf",
     "/pdf-size-limit-for-email",
     "/pdf-size-limit-for-uscis",
+    "/immigration-pdf-upload-guide",
 
     // Legal
     "/privacy",
