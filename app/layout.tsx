@@ -74,11 +74,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-  async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4218696370367168"
-  crossOrigin="anonymous"
-/>
+        {/* AdSense (required for ads + CMP integration) */}
+        <Script
+          id="adsense-script"
+          async
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4218696370367168"
+          crossOrigin="anonymous"
+        />
+
+        {/* GA4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-3N807065XP"
           strategy="afterInteractive"
@@ -112,31 +117,25 @@ export default function RootLayout({
         </header>
 
         {children}
-        <div className="mt-10 text-center">
-  {/* Ad Placeholder */}
-  <div className="mx-auto max-w-3xl border border-dashed border-gray-300 p-6 text-gray-400 text-sm">
-    Advertisement Area
-  </div>
-</div>
-        <footer className="mt-16 border-t bg-gray-50">
-  <div className="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-4">
-    <div>
-      © {new Date().getFullYear()} CP2 - CompressPDFto2MB
-    </div>
 
-    <div className="flex gap-6">
-      <a href="/privacy" className="hover:text-gray-900">
-        Privacy Policy
-      </a>
-      <a href="/terms" className="hover:text-gray-900">
-        Terms of Service
-      </a>
-      <a href="/contact" className="hover:text-gray-900">
-        Contact
-      </a>
-    </div>
-  </div>
-</footer>
+        {/* Footer (no ad placeholder here for now; we'll use AdSlot in pages/components) */}
+        <footer className="mt-16 border-t bg-gray-50">
+          <div className="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>© {new Date().getFullYear()} CP2 - CompressPDFto2MB</div>
+
+            <div className="flex gap-6">
+              <a href="/privacy" className="hover:text-gray-900">
+                Privacy Policy
+              </a>
+              <a href="/terms" className="hover:text-gray-900">
+                Terms of Service
+              </a>
+              <a href="/contact" className="hover:text-gray-900">
+                Contact
+              </a>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );
