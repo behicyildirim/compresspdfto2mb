@@ -378,7 +378,15 @@ export default function Home() {
     <h2 className="text-xl md:text-2xl font-semibold text-gray-900 text-center">
       Popular Upload Use Cases
     </h2>
-
+<a
+  href="/pdf-size-limit-for-email"
+  className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+>
+  <h3 className="font-semibold text-blue-700">PDF Size Limit for Email</h3>
+  <p className="text-sm text-gray-600 mt-1">
+    Learn Gmail and Outlook attachment limits and how to compress PDFs to fit.
+  </p>
+</a>
     <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
       <a href="/compress-pdf-for-visa" className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition">
         <h3 className="font-semibold text-blue-700">Visa Applications</h3>
