@@ -380,6 +380,15 @@ export default function Home() {
     </h2>
     <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
       <a
+  href="/pdf-size-limit-for-uscis"
+  className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+>
+  <h3 className="font-semibold text-blue-700">USCIS PDF Size Limit</h3>
+  <p className="text-sm text-gray-600 mt-1">
+    Learn USCIS file upload limits and how to compress PDFs correctly.
+  </p>
+</a>
+      <a
   href="/pdf-size-limit-for-email"
   className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
 >
