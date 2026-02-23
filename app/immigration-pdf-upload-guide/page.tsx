@@ -42,6 +42,18 @@ export default function ImmigrationPdfUploadGuidePage() {
                 </a>
               ))}
             </div>
+            <div className="mt-6 rounded-2xl border border-gray-200 bg-gray-50 p-5">
+  <h3 className="font-semibold text-gray-900">Having upload errors?</h3>
+  <p className="mt-1 text-sm text-gray-600">
+    If the portal rejects your PDF, see the most common causes and quick fixes.
+  </p>
+  <a
+    href="/pdf-upload-failed"
+    className="inline-block mt-3 text-sm font-semibold text-blue-700 hover:underline"
+  >
+    Fix “PDF upload failed” errors →
+  </a>
+</div>
           </section>
 
           <section>
