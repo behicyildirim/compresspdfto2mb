@@ -1,27 +1,27 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useId } from "react";
 
 type Props = {
   label?: string;
-  className?: string;
 };
 
-export default function AdSlot({ label, className }: Props) {
+export default function AdSlot({ label }: Props) {
+  const rid = useId();
+
   useEffect(() => {
     try {
       // @ts-ignore
       (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (err) {
-      console.error(err);
+    } catch (e) {
+      // ignore
     }
-  }, []);
+  }, [rid]);
 
   return (
-    <div className={className ?? "my-6"}>
-      {/* Optional label (only visible if ads don't render yet) */}
+    <div className="rounded-2xl border border-dashed border-gray-200 bg-gray-50 p-4">
       {label ? (
-        <div className="mb-3 text-center text-xs text-gray-400">{label}</div>
+        <div className="mb-2 text-center text-xs text-gray-400">{label}</div>
       ) : null}
 
       <ins
@@ -32,6 +32,11 @@ export default function AdSlot({ label, className }: Props) {
         data-ad-format="auto"
         data-full-width-responsive="true"
       />
+
+      {/* fallback look while ads are not serving yet */}
+      <div className="mt-3 text-center text-xs text-gray-400">
+        Ad is loading…
+      </div>
     </div>
   );
 }
