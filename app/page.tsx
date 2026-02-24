@@ -110,6 +110,17 @@ export default function Home() {
       className="rounded-xl bg-gray-50 p-4 ring-1 ring-gray-200 hover:bg-blue-50 transition"
     >
       <h3 className="font-semibold text-blue-700">Online application upload tips</h3>
+      <p className="mt-3 text-sm text-gray-600">
+  Having issues? See{" "}
+  <Link href="/pdf-upload-failed" className="font-semibold text-blue-700 hover:underline">
+    PDF upload failed fixes
+  </Link>{" "}
+  or{" "}
+  <Link href="/pdf-too-large-to-upload" className="font-semibold text-blue-700 hover:underline">
+    PDF too large to upload solutions
+  </Link>
+  .
+</p>
       <p className="mt-1 text-sm text-gray-600">
         Target sizes for portals, universities, jobs, and forms.
       </p>

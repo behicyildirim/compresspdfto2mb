@@ -28,11 +28,14 @@ export const USE_CASE_PAGES: Item[] = [
   { href: "/compress-pdf-for-email", label: "Compress PDF for Email" },
   { href: "/compress-pdf-for-whatsapp", label: "Compress PDF for WhatsApp" },
 ];
-
+export const SUPPORT_PAGES = [
+  { href: "/pdf-upload-failed", label: "PDF upload failed: common reasons & fixes" },
+  { href: "/pdf-too-large-to-upload", label: "PDF too large to upload? Fix it fast" },
+];
 // ✅ Support/problem pages (sitemap only, also useful for UX)
 export const SUPPORT_PAGES: Item[] = [
-  { href: "/pdf-upload-failed", label: "PDF upload failed" },
-  { href: "/pdf-too-large-to-upload", label: "PDF too large to upload" },
+  { href: "/pdf-upload-failed", label: "PDF upload failed: common reasons & fixes" },
+  { href: "/pdf-too-large-to-upload", label: "PDF too large to upload? Fix it fast" },
 ];
 
 // ✅ Extra long-tail pages (add future long tails here)
