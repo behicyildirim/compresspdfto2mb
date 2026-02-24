@@ -51,6 +51,9 @@ export default function CompressPdfTo1MbPage() {
             Compressing your file ensures successful uploads.
           </p>
         </div>
+        <p className="mt-10 text-sm text-gray-500">
+Looking for a different file size? Try compressing your PDF to 100KB, 200KB, 500KB or 2MB depending on your needs.
+</p>
         <InternalLinks />
       </div>
     </main>
