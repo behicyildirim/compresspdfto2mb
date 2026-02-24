@@ -13,10 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const uniquePaths = Array.from(
     new Set(
-      SITEMAP_PATHS.map((p) => {
-        if (p.length > 1 && p.endsWith("/")) return p.slice(0, -1);
-        return p;
-      })
+      SITEMAP_PATHS.map((p) => (p.length > 1 && p.endsWith("/") ? p.slice(0, -1) : p))
     )
   );
 
