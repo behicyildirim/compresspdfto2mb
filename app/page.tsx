@@ -58,6 +58,17 @@ export default function Home() {
   <h2 className="text-xl font-semibold text-gray-900">
     Common PDF upload problems (and quick fixes)
   </h2>
+  <p className="mt-3 text-sm text-gray-600">
+  Having issues? See{" "}
+  <Link href="/pdf-upload-failed" className="font-semibold text-blue-700 hover:underline">
+    PDF upload failed fixes
+  </Link>{" "}
+  or{" "}
+  <Link href="/pdf-too-large-to-upload" className="font-semibold text-blue-700 hover:underline">
+    PDF too large to upload solutions
+  </Link>
+  .
+</p>
   <p className="mt-2 text-sm text-gray-600">
     Most rejections happen because of strict file size limits. Start with a safe target (2MB),
     then go smaller (1MB / 500KB) if needed.

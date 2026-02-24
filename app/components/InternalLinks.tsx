@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import AdSlot from "./AdSlot";
-import { SIZE_PAGES, USE_CASE_PAGES } from "@/app/lib/sitePaths";
+import { SIZE_PAGES, USE_CASE_PAGES, SUPPORT_PAGES } from "@/app/lib/sitePaths";
 
 function normalize(path: string) {
   if (path.length > 1 && path.endsWith("/")) return path.slice(0, -1);
