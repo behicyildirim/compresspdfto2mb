@@ -23,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: toAbsoluteUrl(baseUrl, path),
     lastModified: now,
     changeFrequency: "weekly",
-    priority: path === "/" ? 1 : path.includes("immigration") ? 0.9 : 0.8,
+    priority:
+  path === "/" ? 1 :
+  path.includes("immigration") ? 0.9 :
+  path.includes("reduce-pdf-size") ? 0.9 :
+  path.includes("pdf-upload") ? 0.85 :
+  path.includes("pdf-too-large") ? 0.85 :
+  0.8,
   }));
 }
