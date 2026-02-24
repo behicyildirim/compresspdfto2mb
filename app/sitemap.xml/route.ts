@@ -1,70 +1,48 @@
-export const dynamic = "force-dynamic";
+import { SITEMAP_PATHS } from "@/app/lib/sitePaths";
 
-import { NextResponse } from "next/server";
+function toAbsoluteUrl(baseUrl: string, path: string) {
+  if (path === "/") return baseUrl;
+  return `${baseUrl}${path.startsWith("/") ? path : `/${path}`}`;
+}
 
 export async function GET() {
-  const baseUrl = "https://compresspdfto2mb.com";
+  const baseUrl =
+    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
+    "https://compresspdfto2mb.com";
 
-  const paths = [
-    "/",
-
-    // Size pages
-    "/compress-pdf-to-100kb",
-    "/compress-pdf-to-200kb",
-    "/compress-pdf-to-300kb",
-    "/compress-pdf-to-500kb",
-    "/compress-pdf-to-1mb",
-    "/compress-pdf-to-2mb",
-    "/compress-pdf-to-3mb",
-    "/compress-pdf-to-5mb",
-    "/compress-pdf-to-10mb",
-    
-    // Use case pages
-    "/compress-pdf-for-email",
-    "/compress-pdf-for-whatsapp",
-    "/compress-pdf-for-visa",
-    "/compress-pdf-for-job-application",
-
-    // Informational pages
-    "/reduce-pdf-size-without-losing-quality",
-    "/uscis-pdf-size-limit",
-    "/canada-immigration-pdf-size-limit",
-    "/uk-visa-pdf-size-limit",
-    "/schengen-visa-pdf-size-limit",
-    "/how-to-compress-a-pdf",
-    "/pdf-size-limit-for-email",
-    "/pdf-size-limit-for-uscis",
-    "/immigration-pdf-upload-guide",
-    "/pdf-upload-failed",
-    "/pdf-too-large-to-upload",
-    "/reduce-pdf-size-for-online-application",
-
-    // Legal
-    "/privacy",
-    "/terms",
-    "/contact",
-  ];
+  const uniquePaths = Array.from(
+    new Set(
+      SITEMAP_PATHS.map((p) => {
+        if (p.length > 1 && p.endsWith("/")) return p.slice(0, -1);
+        return p;
+      })
+    )
+  );
 
   const now = new Date().toISOString();
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${paths
-  .map(
-    (p) => `  <url>
-    <loc>${baseUrl}${p}</loc>
-    <lastmod>${now}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>${p === "/" ? "1.0" : "0.8"}</priority>
-  </url>`
-  )
+${uniquePaths
+  .map((path) => {
+    const loc = toAbsoluteUrl(baseUrl, path);
+    const priority =
+      path === "/" ? "1.0" : path.includes("immigration") ? "0.9" : "0.8";
+
+    return `<url>
+  <loc>${loc}</loc>
+  <lastmod>${now}</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>${priority}</priority>
+</url>`;
+  })
   .join("\n")}
 </urlset>`;
 
-  return new NextResponse(xml, {
+  return new Response(xml, {
     headers: {
       "Content-Type": "application/xml; charset=utf-8",
-      "Cache-Control": "no-store",
+      "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400",
     },
   });
 }
