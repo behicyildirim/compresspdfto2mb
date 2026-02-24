@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import Link from "next/link";
 
 function formatMB(bytes: number) {
   return (bytes / (1024 * 1024)).toFixed(2);
@@ -53,7 +54,18 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-gray-900">
           Compress PDF to Under 2MB Online
         </h1>
-
+<p className="mt-3 text-sm opacity-80">
+  Need upload rules for visa/immigration portals?{" "}
+  <Link href="/immigration-pdf-upload-guide" className="underline">
+    Read the immigration PDF upload guide
+  </Link>
+  .{" "}
+  Applying online and your file is too big?{" "}
+  <Link href="/reduce-pdf-size-for-online-application" className="underline">
+    Reduce PDF size for online applications
+  </Link>
+  .
+</p>
         <p className="mt-4 text-lg text-gray-600">
           Free, fast and secure PDF compression tool. No registration required.
         </p>

@@ -23,6 +23,8 @@ const useCases: Item[] = [
   { href: "/compress-pdf-for-email", label: "Compress PDF for Email" },
   { href: "/compress-pdf-for-visa", label: "Compress PDF for Visa Application" },
   { href: "/compress-pdf-for-job-application", label: "Compress PDF for Job Application" },
+  { href: "/immigration-pdf-upload-guide", label: "Immigration PDF upload guide (limits, format & size)" },
+{ href: "/reduce-pdf-size-for-online-application", label: "Reduce PDF size for online application (step-by-step)" },
 ];
 
 function normalize(path: string) {
