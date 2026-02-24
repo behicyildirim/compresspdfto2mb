@@ -18,6 +18,21 @@ export default function ImmigrationPdfUploadGuidePage() {
           Upload limits vary across immigration and visa portals. Use this guide
           to choose the right PDF size and avoid upload errors.
         </p>
+        <p className="mt-3 text-sm text-gray-600 text-center">
+  Quick start: try{" "}
+  <Link href="/compress-pdf-to-2mb" className="font-medium text-blue-700 hover:underline">
+    2MB
+  </Link>{" "}
+  first. If the portal is strict, go with{" "}
+  <Link href="/compress-pdf-to-1mb" className="font-medium text-blue-700 hover:underline">
+    1MB
+  </Link>{" "}
+  (or{" "}
+  <Link href="/compress-pdf-to-500kb" className="font-medium text-blue-700 hover:underline">
+    500KB
+  </Link>
+  ).
+</p>
 
         <div className="mt-10 space-y-8 leading-relaxed">
           <section>
@@ -26,6 +41,12 @@ export default function ImmigrationPdfUploadGuidePage() {
               When you are not sure about the exact portal limit, compressing to
               2MB is a safe starting point. For stricter portals, 1MB may be
               required.
+              {" "}
+You can also follow the{" "}
+<Link href="/pdf-upload-failed" className="font-medium text-blue-700 hover:underline">
+  upload failed checklist
+</Link>{" "}
+if you still get errors.
             </p>
 
             <div className="mt-4 flex flex-wrap gap-3">

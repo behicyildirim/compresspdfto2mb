@@ -18,6 +18,21 @@ export default function ReducePdfSizeForOnlineApplicationPage() {
           Online portals often reject large PDFs. Pick a target size below and
           upload without errors.
         </p>
+        <p className="mt-3 text-sm text-gray-600 text-center">
+  Start here:{" "}
+  <Link href="/compress-pdf-to-2mb" className="font-medium text-blue-700 hover:underline">
+    2MB
+  </Link>{" "}
+  works for most portals. If it still fails, try{" "}
+  <Link href="/compress-pdf-to-1mb" className="font-medium text-blue-700 hover:underline">
+    1MB
+  </Link>{" "}
+  or{" "}
+  <Link href="/compress-pdf-to-500kb" className="font-medium text-blue-700 hover:underline">
+    500KB
+  </Link>
+  .
+</p>
 
         <div className="mt-10 space-y-8 leading-relaxed">
           <section>
@@ -25,6 +40,12 @@ export default function ReducePdfSizeForOnlineApplicationPage() {
             <p className="mt-2 text-gray-700">
               Most portals accept 2MB. Some applications require 1MB or even
               500KB.
+              {" "}
+For visa/immigration portals, see the{" "}
+<Link href="/immigration-pdf-upload-guide" className="font-medium text-blue-700 hover:underline">
+  immigration PDF upload guide
+</Link>
+.
             </p>
 
             <div className="mt-4 flex flex-wrap gap-3">
