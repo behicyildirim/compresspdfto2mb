@@ -54,7 +54,78 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-gray-900">
           Compress PDF to Under 2MB Online
         </h1>
+<section className="mx-auto mt-10 max-w-3xl rounded-2xl border border-gray-200 bg-white p-6">
+  <h2 className="text-xl font-semibold text-gray-900">
+    Common PDF upload problems (and quick fixes)
+  </h2>
+  <p className="mt-2 text-sm text-gray-600">
+    Most rejections happen because of strict file size limits. Start with a safe target (2MB),
+    then go smaller (1MB / 500KB) if needed.
+  </p>
 
+  <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <Link
+      href="/pdf-too-large-to-upload"
+      className="rounded-xl bg-gray-50 p-4 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">PDF too large to upload</h3>
+      <p className="mt-1 text-sm text-gray-600">
+        Fix size-limit errors fast and upload successfully.
+      </p>
+    </Link>
+
+    <Link
+      href="/pdf-upload-failed"
+      className="rounded-xl bg-gray-50 p-4 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">PDF upload failed</h3>
+      <p className="mt-1 text-sm text-gray-600">
+        A checklist for the most common portal rejection reasons.
+      </p>
+    </Link>
+
+    <Link
+      href="/immigration-pdf-upload-guide"
+      className="rounded-xl bg-gray-50 p-4 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">Immigration & visa upload guide</h3>
+      <p className="mt-1 text-sm text-gray-600">
+        USCIS / IRCC / UKVI style limits and what size to choose.
+      </p>
+    </Link>
+
+    <Link
+      href="/reduce-pdf-size-for-online-application"
+      className="rounded-xl bg-gray-50 p-4 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">Online application upload tips</h3>
+      <p className="mt-1 text-sm text-gray-600">
+        Target sizes for portals, universities, jobs, and forms.
+      </p>
+    </Link>
+  </div>
+
+  <div className="mt-5 flex flex-wrap gap-3">
+    <Link
+      href="/compress-pdf-to-2mb"
+      className="rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition"
+    >
+      Compress to 2MB
+    </Link>
+    <Link
+      href="/compress-pdf-to-1mb"
+      className="rounded-xl bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-black transition"
+    >
+      Compress to 1MB
+    </Link>
+    <Link
+      href="/compress-pdf-to-500kb"
+      className="rounded-xl bg-gray-900 px-4 py-2 text-sm font-semibold text-white hover:bg-black transition"
+    >
+      Compress to 500KB
+    </Link>
+  </div>
+</section>
         <p className="mt-4 text-lg text-gray-600">
           Free, fast and secure PDF compression tool. No registration required.
         </p>
