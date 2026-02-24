@@ -141,6 +141,40 @@ export default function ImmigrationPdfUploadGuidePage() {
           </section>
         </div>
       </div>
+      <section className="mt-10 rounded-2xl border p-5">
+  <h2 className="text-lg font-semibold">Related PDF size guides</h2>
+  <p className="mt-2 text-sm opacity-80">
+    Common upload problems usually come down to file size limits (often 1MB–2MB) and portal rules.
+  </p>
+
+  <ul className="mt-4 grid gap-2 text-sm">
+    <li>
+      <Link className="underline" href="/reduce-pdf-size-for-online-application">
+        Reduce PDF size for online applications (step-by-step)
+      </Link>
+    </li>
+    <li>
+      <Link className="underline" href="/compress-pdf-to-1mb">
+        Compress PDF to 1MB
+      </Link>
+    </li>
+    <li>
+      <Link className="underline" href="/compress-pdf-to-500kb">
+        Compress PDF to 500KB
+      </Link>
+    </li>
+    <li>
+      <Link className="underline" href="/pdf-too-large-to-upload">
+        PDF too large to upload? Fix it
+      </Link>
+    </li>
+    <li>
+      <Link className="underline" href="/pdf-upload-failed">
+        PDF upload failed: common reasons & solutions
+      </Link>
+    </li>
+  </ul>
+</section>
     </main>
   );
 }
