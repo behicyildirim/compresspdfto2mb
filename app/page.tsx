@@ -54,6 +54,13 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-gray-900">
           Compress PDF to Under 2MB Online
         </h1>
+
+        <p className="mt-4 text-lg text-gray-600">
+          Free, fast and secure PDF compression tool. No registration required.
+        </p>
+       <p className="text-xs text-gray-500 mb-6 tracking-wide">
+  Trusted worldwide for fast, secure PDF compression.
+</p>
 <p className="mt-3 text-sm opacity-80">
   Need upload rules for visa/immigration portals?{" "}
   <Link href="/immigration-pdf-upload-guide" className="underline">
@@ -65,12 +72,6 @@ export default function Home() {
     Reduce PDF size for online applications
   </Link>
   .
-</p>
-        <p className="mt-4 text-lg text-gray-600">
-          Free, fast and secure PDF compression tool. No registration required.
-        </p>
-       <p className="text-xs text-gray-500 mb-6 tracking-wide">
-  Trusted worldwide for fast, secure PDF compression.
 </p>
         {/* Tool Card */}
         <div className="mt-10 bg-gray-50 p-8 rounded-xl shadow-lg">
