@@ -39,10 +39,10 @@ ${uniquePaths
   .join("\n")}
 </urlset>`;
 
-  return new Response(xml, {
-    headers: {
-      "Content-Type": "application/xml; charset=utf-8",
-      "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400",
-    },
-  });
+  rreturn new Response(xml.trim(), {
+  status: 200,
+  headers: {
+    "Content-Type": "text/xml",
+  },
+});
 }
