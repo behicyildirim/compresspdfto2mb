@@ -70,7 +70,23 @@ export default function PdfUploadFailedPage() {
             <p className="mt-2">
               Some systems have strict rules. Use these guides:
             </p>
+<div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+  <a
+    href="/pdf-too-large-to-upload"
+    className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+  >
+    <h3 className="font-semibold text-blue-700">PDF Too Large to Upload</h3>
+    <p className="text-sm text-gray-600 mt-1">Quick fixes for large PDFs.</p>
+  </a>
 
+  <a
+    href="/reduce-pdf-size-for-online-application"
+    className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+  >
+    <h3 className="font-semibold text-blue-700">Online Application PDF Help</h3>
+    <p className="text-sm text-gray-600 mt-1">Meet strict upload limits fast.</p>
+  </a>
+</div>
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <a
                 href="/immigration-pdf-upload-guide"
