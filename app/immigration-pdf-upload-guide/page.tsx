@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 import Breadcrumbs from "@/app/components/Breadcrumbs";
 
 export const metadata = {
@@ -208,6 +209,116 @@ if you still get errors.
           </section>
 
           {/* ✅ FIXED: high-contrast related links block */}
+         <Script
+  id="faq-immigration-jsonld"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What PDF size should I use for immigration or visa portals?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "If you’re unsure, start with 2MB because many portals accept it. If the portal is strict or rejects the upload, compress to 1MB or 500KB.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why does my immigration portal say PDF upload failed?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Upload failures are commonly caused by file size limits, password-protected PDFs, corrupted exports, unsupported file types, or unstable connections. Compressing to a smaller target and re-exporting often fixes it.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is a scanned PDF more likely to be rejected?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Yes. Scanned PDFs can be large and sometimes exceed portal limits. Re-scanning in grayscale and 150–300 DPI, then compressing to 2MB or 1MB, usually works.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I compress to 1MB or 500KB for visa uploads?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Use 1MB for strict portals, and 500KB only if the portal requires it or still rejects your file after compressing to 1MB.",
+          },
+        },
+      ],
+    }),
+  }}
+/>
+
+<section className="mt-10 rounded-2xl border border-gray-200 bg-white p-6">
+  <h2 className="text-xl font-semibold text-gray-900">FAQ</h2>
+
+  <div className="mt-4 space-y-5">
+    <div>
+      <h3 className="font-semibold text-gray-900">
+        What PDF size should I use for immigration or visa portals?
+      </h3>
+      <p className="mt-1 text-sm text-gray-700">
+        If you’re unsure, start with{" "}
+        <Link href="/compress-pdf-to-2mb" className="font-medium text-blue-700 hover:underline">
+          2MB
+        </Link>
+        . If the portal is strict or rejects the upload, try{" "}
+        <Link href="/compress-pdf-to-1mb" className="font-medium text-blue-700 hover:underline">
+          1MB
+        </Link>{" "}
+        or{" "}
+        <Link href="/compress-pdf-to-500kb" className="font-medium text-blue-700 hover:underline">
+          500KB
+        </Link>
+        .
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold text-gray-900">
+        Why does my immigration portal say “PDF upload failed”?
+      </h3>
+      <p className="mt-1 text-sm text-gray-700">
+        The most common causes are size limits, password-protected PDFs,
+        corrupted exports, unsupported formats, or connection issues. If you’re
+        stuck, follow the{" "}
+        <Link href="/pdf-upload-failed" className="font-medium text-blue-700 hover:underline">
+          upload failed checklist
+        </Link>
+        .
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold text-gray-900">
+        Is a scanned PDF more likely to be rejected?
+      </h3>
+      <p className="mt-1 text-sm text-gray-700">
+        Yes. Scanned PDFs can be large. Re-scan in grayscale at 150–300 DPI and
+        then compress to a smaller target (2MB or 1MB).
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold text-gray-900">
+        Should I compress to 1MB or 500KB for visa uploads?
+      </h3>
+      <p className="mt-1 text-sm text-gray-700">
+        Use 1MB for strict portals. Use 500KB only if the portal requires it or
+        still rejects your upload after 1MB.
+      </p>
+    </div>
+  </div>
+</section>
           <section className="mt-10 rounded-2xl border border-gray-200 bg-white p-6">
             <h2 className="text-base font-semibold text-gray-900">
               Related PDF size guides

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 import Breadcrumbs from "@/app/components/Breadcrumbs";
 
 export const metadata = {
@@ -176,6 +177,120 @@ For visa/immigration portals, see the{" "}
           </section>
 
           {/* ✅ FIXED: high-contrast related links block */}
+          <Script
+  id="faq-online-application-jsonld"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What PDF size works best for online application portals?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "2MB works for most portals. If the upload fails, try 1MB. For very strict limits, compress to 500KB.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why is my PDF rejected even after compression?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Common reasons include password protection, invalid PDF exports, unsupported file type, excessive image resolution, or portal-specific requirements. Re-exporting and choosing a smaller target size usually helps.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I reduce the PDF quality to meet a strict limit?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Only if needed. First compress to 2MB or 1MB. If still rejected, reduce to 500KB and keep text readable. Avoid making scans too blurry.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What should I do if the portal says PDF too large to upload?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Compress to a smaller target (1MB or 500KB), remove blank pages, and re-export. If allowed, splitting into multiple PDFs can also work.",
+          },
+        },
+      ],
+    }),
+  }}
+/>
+
+<section className="mt-10 rounded-2xl border border-gray-200 bg-white p-6">
+  <h2 className="text-xl font-semibold text-gray-900">FAQ</h2>
+
+  <div className="mt-4 space-y-5">
+    <div>
+      <h3 className="font-semibold text-gray-900">
+        What PDF size works best for online application portals?
+      </h3>
+      <p className="mt-1 text-sm text-gray-700">
+        Start with{" "}
+        <Link href="/compress-pdf-to-2mb" className="font-medium text-blue-700 hover:underline">
+          2MB
+        </Link>
+        . If it still fails, try{" "}
+        <Link href="/compress-pdf-to-1mb" className="font-medium text-blue-700 hover:underline">
+          1MB
+        </Link>{" "}
+        or{" "}
+        <Link href="/compress-pdf-to-500kb" className="font-medium text-blue-700 hover:underline">
+          500KB
+        </Link>
+        .
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold text-gray-900">
+        Why is my PDF rejected even after compression?
+      </h3>
+      <p className="mt-1 text-sm text-gray-700">
+        It can happen due to password protection, invalid exports, unsupported
+        file type, too-high image resolution, or portal-specific rules. If
+        needed, follow the{" "}
+        <Link href="/pdf-upload-failed" className="font-medium text-blue-700 hover:underline">
+          upload failed checklist
+        </Link>
+        .
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold text-gray-900">
+        Should I reduce PDF quality to meet a strict limit?
+      </h3>
+      <p className="mt-1 text-sm text-gray-700">
+        Only if needed. Try compressing to 2MB or 1MB first. If still rejected,
+        reduce to 500KB and keep text readable.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold text-gray-900">
+        What should I do if the portal says “PDF too large to upload”?
+      </h3>
+      <p className="mt-1 text-sm text-gray-700">
+        Compress to a smaller target, remove blank pages, and re-export. If the
+        portal allows it, splitting the PDF into two files can also work. See{" "}
+        <Link href="/pdf-too-large-to-upload" className="font-medium text-blue-700 hover:underline">
+          PDF too large fixes
+        </Link>
+        .
+      </p>
+    </div>
+  </div>
+</section>
           <section className="mt-10 rounded-2xl border border-gray-200 bg-white p-6">
             <h2 className="text-base font-semibold text-gray-900">
               Related PDF upload fixes
