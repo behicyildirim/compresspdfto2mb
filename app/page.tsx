@@ -114,11 +114,9 @@ export default function Home() {
   <p className="text-sm text-gray-600 mt-1">
   Target sizes for portals, universities, jobs, and forms.
 </p>
-  .
+  
 </p>
-      <p className="mt-1 text-sm text-gray-600">
-        Target sizes for portals, universities, jobs, and forms.
-      </p>
+     
     </Link>
   </div>
 
