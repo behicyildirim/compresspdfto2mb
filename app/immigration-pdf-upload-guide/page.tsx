@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Breadcrumbs from "@/app/components/Breadcrumbs";
 
 export const metadata = {
   title: "Immigration PDF Upload Guide (Visa, USCIS, IRCC Limits)",
@@ -13,7 +14,34 @@ export default function ImmigrationPdfUploadGuidePage() {
         <h1 className="text-4xl font-bold text-center">
           Immigration PDF Upload Guide
         </h1>
+<Breadcrumbs
+  items={[
+    { href: "/", label: "Home" },
+    { href: "/compress-pdf-to-2mb", label: "Compress to 2MB" },
+    { href: "/immigration-pdf-upload-guide", label: "Immigration upload guide" },
+  ]}
+/>
 
+<div className="mt-4 flex flex-wrap justify-center gap-2">
+  <Link
+    href="/reduce-pdf-size-for-online-application"
+    className="rounded-full bg-gray-50 px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+  >
+    Online application tips
+  </Link>
+  <Link
+    href="/pdf-upload-failed"
+    className="rounded-full bg-gray-50 px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+  >
+    Upload failed fixes
+  </Link>
+  <Link
+    href="/pdf-too-large-to-upload"
+    className="rounded-full bg-gray-50 px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+  >
+    PDF too large?
+  </Link>
+</div>
         <p className="mt-4 text-lg text-gray-600 text-center">
           Upload limits vary across immigration and visa portals. Use this guide
           to choose the right PDF size and avoid upload errors.
