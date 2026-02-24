@@ -36,6 +36,8 @@ export async function GET() {
     "/pdf-size-limit-for-uscis",
     "/immigration-pdf-upload-guide",
     "/pdf-upload-failed",
+    "/pdf-too-large-to-upload",
+    "/reduce-pdf-size-for-online-application",
 
     // Legal
     "/privacy",
