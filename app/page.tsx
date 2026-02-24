@@ -56,7 +56,7 @@ export default function Home() {
         </h1>
 <section className="mx-auto mt-10 max-w-3xl rounded-2xl border border-gray-200 bg-white p-6">
   <h2 className="text-xl font-semibold text-gray-900">
-    Common PDF upload problems (and quick fixes)
+    Common PDF Upload Problems (Fast Fixes)
   </h2>
   <p className="mt-3 text-sm text-gray-600">
   Having issues? See{" "}
@@ -147,7 +147,7 @@ export default function Home() {
        <p className="text-xs text-gray-500 mb-6 tracking-wide">
   Trusted worldwide for fast, secure PDF compression.
 </p>
-<p className="mt-3 text-sm opacity-80">
+<p className="mt-3 text-sm text-gray-600">
   Need upload rules for visa/immigration portals?{" "}
   <Link href="/immigration-pdf-upload-guide" className="underline">
     Read the immigration PDF upload guide
