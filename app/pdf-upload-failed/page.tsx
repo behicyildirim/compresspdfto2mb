@@ -248,7 +248,54 @@ export default function PdfUploadFailedPage() {
               }),
             }}
           />
+<section>
+  <h2 className="text-2xl font-semibold">Related guides</h2>
+  <p className="mt-2 text-gray-700">
+    These pages help if your portal has strict size limits or special upload rules.
+  </p>
 
+  <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <a
+      href="/pdf-size-limit-for-uscis"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">USCIS PDF size limit</h3>
+      <p className="text-sm text-gray-600 mt-1">
+        Common USCIS limits and the safest upload sizes.
+      </p>
+    </a>
+
+    <a
+      href="/reduce-pdf-size-for-online-application"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">Online application PDF help</h3>
+      <p className="text-sm text-gray-600 mt-1">
+        Best target sizes for portals, forms, universities, and jobs.
+      </p>
+    </a>
+
+    <a
+      href="/compress-pdf-to-1mb"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">Compress PDF to 1MB</h3>
+      <p className="text-sm text-gray-600 mt-1">
+        For stricter portals that reject 2MB uploads.
+      </p>
+    </a>
+
+    <a
+      href="/compress-pdf-to-500kb"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">Compress PDF to 500KB</h3>
+      <p className="text-sm text-gray-600 mt-1">
+        For very strict upload limits.
+      </p>
+    </a>
+  </div>
+</section>
           <section className="mt-2 rounded-2xl border border-gray-200 bg-white p-6">
             <h2 className="text-xl font-semibold text-gray-900">FAQ</h2>
             <div className="mt-4 space-y-5 text-sm text-gray-700">
