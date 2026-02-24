@@ -39,7 +39,7 @@ ${uniquePaths
   .join("\n")}
 </urlset>`;
 
-  rreturn new Response(xml.trim(), {
+  return new Response(xml.trim(), {
   status: 200,
   headers: {
     "Content-Type": "text/xml",
