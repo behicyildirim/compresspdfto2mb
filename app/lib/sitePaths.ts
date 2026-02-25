@@ -41,13 +41,18 @@ export const SUPPORT_PAGES: Item[] = [
   { href: "/pdf-upload-failed-on-website", label: "PDF upload failed on website? Fix it" },
   { href: "/pdf-too-large-for-website-upload", label: "PDF too large for website upload? Fix it" },
 
-  // Rules + strict portals
+  // Rules & strict portals
   { href: "/pdf-upload-requirements", label: "PDF upload requirements (size, format, page limits)" },
   { href: "/compress-pdf-for-government-application", label: "Compress PDF for government application" },
 
+  // NEW upload problem pages
+  { href: "/pdf-upload-timeout", label: "PDF upload timeout? Fix slow upload errors" },
+  { href: "/pdf-password-protected-cant-upload", label: "Password-protected PDF can't upload? Fix it" },
+  { href: "/pdf-file-too-large-for-email", label: "PDF file too large for email? Reduce size fast" },
+
   // Helpful hubs
   { href: "/reduce-pdf-size-for-online-application", label: "Reduce PDF size for online applications" },
-  { href: "/immigration-pdf-upload-guide", label: "Immigration PDF upload guide" },
+  { href: "/immigration-pdf-upload-guide", label: "Immigration PDF upload guide" }
   { href: "/upload-pdf-under-2mb", label: "Upload PDF under 2MB" },
 ];
 
