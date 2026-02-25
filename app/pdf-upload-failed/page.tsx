@@ -159,90 +159,67 @@ export default function PdfUploadFailedPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold">Portal-specific help</h2>
-            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link
-                href="/pdf-too-large-to-upload"
-                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-              >
-                <h3 className="font-semibold text-blue-700">PDF Too Large to Upload</h3>
-                <p className="text-sm text-gray-600 mt-1">Quick fixes for large PDFs.</p>
-              </Link>
+  <h2 className="text-2xl font-semibold">Portal-Specific Help</h2>
+  <p className="mt-2">Some systems have strict rules. Use these guides:</p>
 
-              <Link
-                href="/reduce-pdf-size-for-online-application"
-                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-              >
-                <h3 className="font-semibold text-blue-700">Online application PDF help</h3>
-                <p className="text-sm text-gray-600 mt-1">Meet strict upload limits fast.</p>
-              </Link>
+  <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <a
+      href="/pdf-too-large-to-upload"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">PDF Too Large to Upload</h3>
+      <p className="text-sm text-gray-600 mt-1">Quick fixes for large PDFs.</p>
+    </a>
 
-              <Link
-                href="/immigration-pdf-upload-guide"
-                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-              >
-                <h3 className="font-semibold text-blue-700">Immigration upload guide</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  Visa, USCIS, IRCC and portal limit tips.
-                </p>
-              </Link>
+    <a
+      href="/reduce-pdf-size-for-online-application"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">Online Application PDF Help</h3>
+      <p className="text-sm text-gray-600 mt-1">Meet strict upload limits fast.</p>
+    </a>
 
-              <Link
-                href="/compress-pdf-for-email"
-                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-              >
-                <h3 className="font-semibold text-blue-700">Compress PDF for email</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  Reduce attachments to common email limits.
-                </p>
-              </Link>
-            </div>
-                      <section>
-            <h2 className="text-2xl font-semibold">Related Guides</h2>
+    <a
+      href="/pdf-too-large-for-website-upload"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">PDF Too Large for Website Upload</h3>
+      <p className="text-sm text-gray-600 mt-1">Fix strict website size limits.</p>
+    </a>
 
-            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <a
-                href="/pdf-upload-requirements"
-                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-              >
-                <h3 className="font-semibold text-blue-700">PDF Upload Requirements</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  Size limits, formats, page limits, and common portal rules.
-                </p>
-              </a>
+    <a
+      href="/compress-pdf-for-government-application"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">Government Application PDF</h3>
+      <p className="text-sm text-gray-600 mt-1">Compress for strict form portals.</p>
+    </a>
 
-              <a
-                href="/pdf-too-large-for-website-upload"
-                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-              >
-                <h3 className="font-semibold text-blue-700">Website Upload Fix</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  Fix website upload limits when your PDF is too large.
-                </p>
-              </a>
+    <a
+      href="/pdf-upload-requirements"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">PDF Upload Requirements</h3>
+      <p className="text-sm text-gray-600 mt-1">Size, format, and page limits checklist.</p>
+    </a>
 
-              <a
-                href="/compress-pdf-for-government-application"
-                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-              >
-                <h3 className="font-semibold text-blue-700">Government Application PDFs</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  Reduce size for strict government portals and forms.
-                </p>
-              </a>
+    <a
+      href="/pdf-size-limit-for-email"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">Email Attachment Limits</h3>
+      <p className="text-sm text-gray-600 mt-1">Gmail and Outlook size limits explained.</p>
+    </a>
 
-              <a
-                href="/reduce-pdf-size-for-online-application"
-                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-              >
-                <h3 className="font-semibold text-blue-700">Online Application Upload Tips</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  Target sizes and quick steps for online submissions.
-                </p>
-              </a>
-            </div>
-          </section>
-          </section>
+    <a
+      href="/immigration-pdf-upload-guide"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">Immigration Upload Guide</h3>
+      <p className="text-sm text-gray-600 mt-1">Visa, USCIS, IRCC portal limit tips.</p>
+    </a>
+  </div>
+</section>
 
           {/* FAQ schema + FAQ section */}
           <Script
