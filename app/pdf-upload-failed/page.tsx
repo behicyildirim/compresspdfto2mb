@@ -197,6 +197,51 @@ export default function PdfUploadFailedPage() {
                 </p>
               </Link>
             </div>
+                      <section>
+            <h2 className="text-2xl font-semibold">Related Guides</h2>
+
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <a
+                href="/pdf-upload-requirements"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">PDF Upload Requirements</h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Size limits, formats, page limits, and common portal rules.
+                </p>
+              </a>
+
+              <a
+                href="/pdf-too-large-for-website-upload"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">Website Upload Fix</h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Fix website upload limits when your PDF is too large.
+                </p>
+              </a>
+
+              <a
+                href="/compress-pdf-for-government-application"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">Government Application PDFs</h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Reduce size for strict government portals and forms.
+                </p>
+              </a>
+
+              <a
+                href="/reduce-pdf-size-for-online-application"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">Online Application Upload Tips</h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Target sizes and quick steps for online submissions.
+                </p>
+              </a>
+            </div>
+          </section>
           </section>
 
           {/* FAQ schema + FAQ section */}
