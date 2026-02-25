@@ -58,6 +58,21 @@ export default function Home() {
   <h2 className="text-xl font-semibold text-gray-900">
     Common PDF Upload Problems (Fast Fixes)
   </h2>
+  <div className="mt-4 flex flex-wrap gap-3">
+  <Link
+    href="/pdf-upload-requirements"
+    className="text-sm font-semibold text-blue-700 underline"
+  >
+    PDF upload requirements (size, format, page limits)
+  </Link>
+
+  <Link
+    href="/pdf-upload-failed-on-website"
+    className="text-sm font-semibold text-blue-700 underline"
+  >
+    PDF upload failed on website? Fix it
+  </Link>
+</div>
   <p className="mt-3 text-sm text-gray-600">
     <p className="mt-2 text-sm text-gray-600">
   Need a strict target? See{" "}
