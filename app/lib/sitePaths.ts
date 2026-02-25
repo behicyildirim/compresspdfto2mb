@@ -26,6 +26,9 @@ export const USE_CASE_PAGES: Item[] = [
   { href: "/pdf-size-limit-for-email", label: "PDF size limit for email" },
 
   // Secondary use cases
+  { href: "/pdf-size-limit-for-university-application", label: "PDF size limit for university application" },
+{ href: "/pdf-size-limit-for-job-application", label: "PDF size limit for job application" },
+{ href: "/pdf-size-limit-for-online-forms", label: "PDF size limit for online forms" },
   { href: "/compress-pdf-for-job-application", label: "Compress PDF for Job Application" },
   { href: "/compress-pdf-for-government-forms", label: "Compress PDF for Government Forms" },
   { href: "/compress-pdf-for-email", label: "Compress PDF for Email" },
