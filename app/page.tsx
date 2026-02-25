@@ -66,6 +66,13 @@ export default function Home() {
   </Link>{" "}
   for fast upload-friendly results.
 </p>
+<p className="mt-2 text-sm text-gray-600">
+  If the portal specifically says “under 2MB”, use{" "}
+  <Link href="/compress-pdf-under-2mb" className="font-semibold text-blue-700 hover:underline">
+    compress PDF under 2MB
+  </Link>{" "}
+  to meet the limit quickly.
+</p>
   Having issues? See{" "}
   <Link href="/pdf-upload-failed" className="font-semibold text-blue-700 hover:underline">
     PDF upload failed fixes
