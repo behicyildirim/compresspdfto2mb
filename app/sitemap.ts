@@ -36,10 +36,44 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const now = new Date();
 
-  return uniquePaths.map((path) => ({
+  return uniquePaths.map((path) => {
+  const p = path.toLowerCase();
+
+  const isHome = p === "/";
+  const isSizePage = p.includes("/compress-pdf-to-");
+  const isUseCase =
+    p.includes("/compress-pdf-for-") ||
+    p.includes("/reduce-pdf-size") ||
+    p.includes("/immigration") ||
+    p.includes("/visa") ||
+    p.includes("/whatsapp") ||
+    p.includes("/email");
+
+  const isSupport =
+    p.includes("/pdf-upload") ||
+    p.includes("/pdf-too-large") ||
+    p.includes("/pdf-file-too-large") ||
+    p.includes("/pdf-password") ||
+    p.includes("/timeout") ||
+    p.includes("/requirements");
+
+  const priority = isHome
+    ? 1
+    : isSupport
+      ? 0.9
+      : isUseCase
+        ? 0.85
+        : isSizePage
+          ? 0.8
+          : 0.7;
+
+  const changeFrequency = isHome ? "weekly" : "monthly";
+
+  return {
     url: toAbsoluteUrl(baseUrl, path),
     lastModified: now,
-    changeFrequency: "weekly",
-    priority: getPriority(path),
-  }));
+    changeFrequency,
+    priority,
+  };
+});
 }
