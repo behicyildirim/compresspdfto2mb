@@ -43,6 +43,7 @@ export const SUPPORT_PAGES: Item[] = [
   { href: "/pdf-upload-requirements", label: "PDF upload requirements (size, format, page limits)" },
   { href: "/pdf-too-large-for-website-upload", label: "PDF too large for website upload? Fix it" },
   { href: "/compress-pdf-for-government-application", label: "Compress PDF for government application" },
+  { href: "/pdf-upload-failed-on-website", label: "PDF upload failed on website? Fix it" },
 
   { href: "/reduce-pdf-size-for-online-application", label: "Reduce PDF size for online applications" },
   { href: "/immigration-pdf-upload-guide", label: "Immigration PDF upload guide" },
