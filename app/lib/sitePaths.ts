@@ -21,6 +21,7 @@ export const USE_CASE_PAGES: Item[] = [
 
   // Core cluster pages
   { href: "/compress-pdf-for-visa", label: "Compress PDF for Visa Application" },
+  { href: "/gmail-attachment-size-limit", label: "Gmail attachment size limit" },
 
   // Secondary use cases
   { href: "/compress-pdf-for-job-application", label: "Compress PDF for Job Application" },
