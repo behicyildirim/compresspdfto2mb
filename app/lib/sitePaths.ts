@@ -27,6 +27,7 @@ export const USE_CASE_PAGES: Item[] = [
   { href: "/compress-pdf-for-government-forms", label: "Compress PDF for Government Forms" },
   { href: "/compress-pdf-for-email", label: "Compress PDF for Email" },
   { href: "/compress-pdf-for-whatsapp", label: "Compress PDF for WhatsApp" },
+  { href: "/reduce-pdf-under-2mb", label: "Reduce PDF under 2MB" },
 ];
 
 // ✅ Support/problem pages (sitemap only, also useful for UX)
@@ -35,7 +36,7 @@ export const SUPPORT_PAGES: Item[] = [
   { href: "/pdf-too-large-to-upload", label: "PDF too large to upload? Fix it fast" },
   { href: "/upload-pdf-under-2mb", label: "Upload PDF under 2MB" },
   { href: "/reduce-pdf-under-2mb", label: "Reduce PDF under 2MB" },
-  
+
   { href: "/pdf-upload-requirements", label: "PDF upload requirements (size, format, page limits)" },
   { href: "/pdf-too-large-for-website-upload", label: "PDF too large for website upload? Fix it" },
   { href: "/compress-pdf-for-government-application", label: "Compress PDF for government application" },
