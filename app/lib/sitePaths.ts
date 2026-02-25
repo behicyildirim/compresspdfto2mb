@@ -43,12 +43,6 @@ export const SUPPORT_PAGES: Item[] = [
   { href: "/immigration-pdf-upload-guide", label: "Immigration PDF upload guide" },
 ];
 
-  // NEW (no guesses)
-  { href: "/pdf-upload-requirements", label: "PDF upload requirements (size, format, page limits)" },
-  { href: "/pdf-too-large-for-website-upload", label: "PDF too large for website upload? Fix it" },
-  { href: "/compress-pdf-for-government-application", label: "Compress PDF for government application" },
-];
-
 // ✅ Extra long-tail pages (add future long tails here)
 export const LONG_TAIL_PAGES: Item[] = [
   // keep your new long-tails here
