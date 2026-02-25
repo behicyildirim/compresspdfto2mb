@@ -630,6 +630,34 @@ USCIS website
     </div>
   </div>
 </section>
+<section className="mt-12 max-w-3xl mx-auto px-4">
+  <div className="rounded-2xl border border-gray-200 bg-gray-50 p-6">
+    <h2 className="text-xl font-semibold text-gray-900">
+      PDF too large for email?
+    </h2>
+    <p className="mt-2 text-sm text-gray-700">
+      If Gmail or Outlook rejects your PDF attachment, reduce the file size to a safer target and send again.
+    </p>
+
+    <div className="mt-4 flex flex-wrap gap-3">
+      <Link href="/pdf-size-limit-for-email" className="text-sm font-semibold text-blue-700 hover:underline">
+        PDF size limit for email →
+      </Link>
+      <Link href="/gmail-attachment-size-limit" className="text-sm font-semibold text-blue-700 hover:underline">
+        Gmail attachment limit →
+      </Link>
+      <Link href="/outlook-attachment-size-limit" className="text-sm font-semibold text-blue-700 hover:underline">
+        Outlook attachment limit →
+      </Link>
+      <Link href="/compress-pdf-to-10mb" className="text-sm font-semibold text-blue-700 hover:underline">
+        Compress to 10MB →
+      </Link>
+      <Link href="/compress-pdf-to-5mb" className="text-sm font-semibold text-blue-700 hover:underline">
+        Compress to 5MB →
+      </Link>
+    </div>
+  </div>
+</section>
     </main>
   );
 }
