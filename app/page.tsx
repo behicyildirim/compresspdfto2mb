@@ -59,6 +59,13 @@ export default function Home() {
     Common PDF Upload Problems (Fast Fixes)
   </h2>
   <p className="mt-3 text-sm text-gray-600">
+    <p className="mt-2 text-sm text-gray-600">
+  Need a strict target? See{" "}
+  <Link href="/reduce-pdf-under-2mb" className="font-semibold text-blue-700 hover:underline">
+    reduce PDF under 2MB
+  </Link>{" "}
+  for fast upload-friendly results.
+</p>
   Having issues? See{" "}
   <Link href="/pdf-upload-failed" className="font-semibold text-blue-700 hover:underline">
     PDF upload failed fixes
