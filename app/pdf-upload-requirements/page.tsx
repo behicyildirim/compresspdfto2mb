@@ -182,6 +182,27 @@ export default function PdfUploadRequirementsPage() {
           </section>
         </div>
       </div>
+      <section className="mt-10 rounded-2xl border p-5">
+  <h2 className="text-lg font-semibold">Related upload fixes</h2>
+
+  <ul className="mt-4 grid gap-2 text-sm">
+    <li>
+      <Link className="underline" href="/pdf-upload-failed-on-website">
+        PDF upload failed on website? Fix it
+      </Link>
+    </li>
+    <li>
+      <Link className="underline" href="/pdf-too-large-for-website-upload">
+        PDF too large for website upload? Fix it
+      </Link>
+    </li>
+    <li>
+      <Link className="underline" href="/compress-pdf-under-2mb">
+        Upload PDF under 2MB
+      </Link>
+    </li>
+  </ul>
+</section>
     </main>
   );
 }

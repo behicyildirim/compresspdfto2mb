@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "PDF Too Large for Website Upload? Reduce Size Fast",
+  title: "PDF Too Large for Website Upload? Fix Size Limits Fast",
   description:
-    "PDF too large for website upload? Fix file size limits quickly by compressing scanned PDFs and meeting strict portal requirements.",
+    "PDF too large for website upload? Reduce file size quickly using safe targets (2MB, 1MB, 500KB) and scan optimization tips.",
 };
 
 export default function PdfTooLargeForWebsiteUploadPage() {
@@ -15,8 +15,8 @@ export default function PdfTooLargeForWebsiteUploadPage() {
         </h1>
 
         <p className="mt-4 text-lg text-gray-600 text-center">
-          Many websites reject PDFs because of strict file size limits (often 1–2MB).
-          Use the quick fixes below to reduce size and upload successfully.
+          Many website forms reject PDFs because of strict upload limits.
+          Use the targets and fixes below to reduce size and upload successfully.
         </p>
 
         <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -35,39 +35,39 @@ export default function PdfTooLargeForWebsiteUploadPage() {
           ))}
         </div>
 
-        <div className="mt-10 space-y-8 leading-relaxed">
+        <div className="mt-10 space-y-10 leading-relaxed">
           <section>
-            <h2 className="text-2xl font-semibold">Why PDFs become too large</h2>
+            <h2 className="text-2xl font-semibold">Why your PDF becomes too large</h2>
             <ul className="mt-3 list-disc pl-6 space-y-2">
-              <li>Scanned documents saved as high-resolution images</li>
+              <li>Scanned pages saved as high-resolution images</li>
               <li>Color scans instead of grayscale</li>
               <li>Extra blank pages included</li>
-              <li>Large embedded photos/screenshots</li>
+              <li>Large screenshots or embedded photos</li>
+              <li>Long multi-document bundles in one PDF</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold">Fastest fix</h2>
-            <p className="mt-2">
-              If you don’t know the exact website limit, start with <b>2MB</b>. If it still fails,
-              try <b>1MB</b> or <b>500KB</b>.
-            </p>
-            <div className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-4">
+            <h2 className="text-2xl font-semibold">Step-by-step: fastest way to fix it</h2>
+            <div className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-5">
               <ol className="list-decimal pl-6 space-y-2">
-                <li>Compress your PDF to a safe target (2MB → 1MB → 500KB).</li>
-                <li>Re-upload to the website.</li>
-                <li>If it fails again, check portal rules (page limit, password, format).</li>
+                <li>Compress to <b>2MB</b> and try uploading.</li>
+                <li>If rejected, compress to <b>1MB</b>.</li>
+                <li>If still rejected, compress to <b>500KB</b>.</li>
+                <li>If it fails even then, check format/page rules.</li>
               </ol>
             </div>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold">Best practices for scanned PDFs</h2>
+            <h2 className="text-2xl font-semibold">If your PDF is scanned (best settings)</h2>
+            <p className="mt-2 text-gray-700">
+              Scans can explode in size. If you can re-scan, these settings help:
+            </p>
             <ul className="mt-3 list-disc pl-6 space-y-2">
-              <li>Use grayscale scans when possible</li>
-              <li>Scan at 150–300 DPI</li>
-              <li>Remove blank pages</li>
-              <li>Re-export as a standard PDF (avoid weird converters)</li>
+              <li>Grayscale (instead of color)</li>
+              <li>150–300 DPI</li>
+              <li>Crop edges and remove blank pages</li>
             </ul>
           </section>
 
@@ -78,30 +78,45 @@ export default function PdfTooLargeForWebsiteUploadPage() {
                 href="/pdf-upload-failed-on-website"
                 className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
               >
-                <h3 className="font-semibold text-blue-700">PDF Upload Failed on Website</h3>
+                <h3 className="font-semibold text-blue-700">PDF upload failed on website</h3>
                 <p className="text-sm text-gray-600 mt-1">
-                  Common causes and quick fixes.
+                  Fix timeouts and strict portal rules.
                 </p>
               </a>
-
               <a
                 href="/pdf-upload-requirements"
                 className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
               >
-                <h3 className="font-semibold text-blue-700">PDF Upload Requirements</h3>
+                <h3 className="font-semibold text-blue-700">PDF upload requirements</h3>
                 <p className="text-sm text-gray-600 mt-1">
-                  Size, format, and page limit checklist.
+                  Size, format, and page limits checklist.
+                </p>
+              </a>
+              <a
+                href="/pdf-too-large-to-upload"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">PDF too large to upload</h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Quick fixes for strict portals.
+                </p>
+              </a>
+              <a
+                href="/reduce-pdf-size-for-online-application"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">Reduce PDF size for online application</h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Best targets for forms and portals.
                 </p>
               </a>
             </div>
           </section>
 
           <section className="bg-blue-50 p-6 rounded-lg text-center">
-            <h2 className="text-xl font-semibold text-gray-900">
-              Compress now and upload again
-            </h2>
+            <h2 className="text-xl font-semibold text-gray-900">Compress now</h2>
             <p className="mt-2 text-gray-700">
-              Start with 2MB. If the portal is strict, go smaller.
+              Start with 2MB. If the website is strict, go to 1MB or 500KB.
             </p>
             <Link
               href="/"
@@ -110,8 +125,47 @@ export default function PdfTooLargeForWebsiteUploadPage() {
               Go to PDF Compressor
             </Link>
           </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold">FAQ</h2>
+            <div className="mt-4 space-y-6">
+              <div>
+                <h3 className="font-semibold">What size should I target first?</h3>
+                <p className="mt-1 text-gray-700">
+                  2MB is a common safe target. If it fails, try 1MB or 500KB.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold">What if the website still rejects it?</h3>
+                <p className="mt-1 text-gray-700">
+                  Check portal rules like page limits, password protection, and acceptable file formats.
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
+      <section className="mt-10 rounded-2xl border p-5">
+  <h2 className="text-lg font-semibold">Related guides</h2>
+
+  <ul className="mt-4 grid gap-2 text-sm">
+    <li>
+      <Link className="underline" href="/pdf-upload-requirements">
+        PDF upload requirements
+      </Link>
+    </li>
+    <li>
+      <Link className="underline" href="/compress-pdf-under-2mb">
+        Upload PDF under 2MB
+      </Link>
+    </li>
+    <li>
+      <Link className="underline" href="/pdf-upload-failed-on-website">
+        PDF upload failed on website
+      </Link>
+    </li>
+  </ul>
+</section>
     </main>
   );
 }

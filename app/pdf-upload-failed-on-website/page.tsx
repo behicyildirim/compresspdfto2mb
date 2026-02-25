@@ -183,6 +183,27 @@ export default function PdfUploadFailedOnWebsitePage() {
           </section>
         </div>
       </div>
+      <section className="mt-10 rounded-2xl border p-5">
+  <h2 className="text-lg font-semibold">Related fixes</h2>
+
+  <ul className="mt-4 grid gap-2 text-sm">
+    <li>
+      <Link className="underline" href="/pdf-upload-requirements">
+        PDF upload requirements (checklist)
+      </Link>
+    </li>
+    <li>
+      <Link className="underline" href="/pdf-upload-timeout">
+        PDF upload timeout? Fix it
+      </Link>
+    </li>
+    <li>
+      <Link className="underline" href="/pdf-too-large-for-website-upload">
+        PDF too large for website upload
+      </Link>
+    </li>
+  </ul>
+</section>
     </main>
   );
 }
