@@ -36,17 +36,19 @@ export const USE_CASE_PAGES: Item[] = [
 export const SUPPORT_PAGES: Item[] = [
   { href: "/pdf-upload-failed", label: "PDF upload failed: common reasons & fixes" },
   { href: "/pdf-too-large-to-upload", label: "PDF too large to upload? Fix it fast" },
-  { href: "/upload-pdf-under-2mb", label: "Upload PDF under 2MB" },
-  { href: "/reduce-pdf-under-2mb", label: "Reduce PDF under 2MB" },
-  { href: "/compress-pdf-under-2mb", label: "Compress PDF under 2MB" },
 
-  { href: "/pdf-upload-requirements", label: "PDF upload requirements (size, format, page limits)" },
-  { href: "/pdf-too-large-for-website-upload", label: "PDF too large for website upload? Fix it" },
-  { href: "/compress-pdf-for-government-application", label: "Compress PDF for government application" },
+  // Website-specific (high intent)
   { href: "/pdf-upload-failed-on-website", label: "PDF upload failed on website? Fix it" },
+  { href: "/pdf-too-large-for-website-upload", label: "PDF too large for website upload? Fix it" },
 
+  // Rules + strict portals
+  { href: "/pdf-upload-requirements", label: "PDF upload requirements (size, format, page limits)" },
+  { href: "/compress-pdf-for-government-application", label: "Compress PDF for government application" },
+
+  // Helpful hubs
   { href: "/reduce-pdf-size-for-online-application", label: "Reduce PDF size for online applications" },
   { href: "/immigration-pdf-upload-guide", label: "Immigration PDF upload guide" },
+  { href: "/upload-pdf-under-2mb", label: "Upload PDF under 2MB" },
 ];
 
 // ✅ Extra long-tail pages (add future long tails here)
