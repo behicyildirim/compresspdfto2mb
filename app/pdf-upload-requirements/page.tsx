@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "PDF Upload Requirements (Size, Format, Page Limits & Rules)",
+  title: "PDF Upload Requirements: Size, Format & Page Limits",
   description:
-    "PDF upload requirements: file size limits (2MB/1MB/500KB), accepted formats, page limits, and portal rules. Fix common upload errors fast.",
+    "PDF upload requirements checklist: file size limits, formats, page limits, and scan settings. Learn how to prepare and compress PDFs for strict portals.",
 };
 
 export default function PdfUploadRequirementsPage() {
@@ -13,84 +13,82 @@ export default function PdfUploadRequirementsPage() {
         <h1 className="text-4xl font-bold text-center">PDF Upload Requirements</h1>
 
         <p className="mt-4 text-lg text-gray-600 text-center">
-          Most upload failures happen due to size limits, scan settings, or portal rules.
-          Use this checklist to upload your PDF successfully.
+          Many portals reject PDFs due to size limits, format rules, or page restrictions.
+          Use this checklist to prepare your file before uploading.
         </p>
 
-        <div className="mt-10 space-y-10 leading-relaxed">
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          {[
+            { href: "/compress-pdf-to-2mb", label: "Compress to 2MB" },
+            { href: "/compress-pdf-to-1mb", label: "Compress to 1MB" },
+            { href: "/compress-pdf-to-500kb", label: "Compress to 500KB" },
+          ].map((i) => (
+            <a
+              key={i.href}
+              href={i.href}
+              className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+            >
+              {i.label}
+            </a>
+          ))}
+        </div>
+
+        <div className="mt-10 space-y-8 leading-relaxed">
           <section>
-            <h2 className="text-2xl font-semibold">Most common requirements</h2>
+            <h2 className="text-2xl font-semibold">1) File size limits</h2>
+            <p className="mt-2">
+              Many websites cap uploads at 2MB or lower. If you’re unsure, compress to 2MB first.
+              If it fails, try 1MB or 500KB.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold">2) Accepted format & PDF rules</h2>
             <ul className="mt-3 list-disc pl-6 space-y-2">
-              <li><b>File size limit:</b> often 2MB (sometimes 1MB or 500KB).</li>
-              <li><b>Format:</b> standard PDF (avoid password-protected/encrypted files).</li>
-              <li><b>Page limits:</b> some portals cap total pages or number of uploads.</li>
-              <li><b>Scan quality:</b> high DPI scans create oversized PDFs.</li>
-              <li><b>Compatibility:</b> corrupted or non-standard exports may be rejected.</li>
+              <li>Use a standard PDF (avoid unusual converters)</li>
+              <li>Avoid password-protected / encrypted PDFs unless the portal allows it</li>
+              <li>Keep text selectable when possible (scans are image-heavy)</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold">Typical size limits (safe targets)</h2>
+            <h2 className="text-2xl font-semibold">3) Page limits</h2>
             <p className="mt-2">
-              If you don’t know the exact limit, start with <b>2MB</b>. If it still fails,
-              try <b>1MB</b> or <b>500KB</b>.
+              Some systems limit page count. If allowed, split into multiple PDFs or remove unnecessary pages.
             </p>
+          </section>
 
-            <div className="mt-4 flex flex-wrap gap-3">
-              {[
-                { href: "/compress-pdf-to-2mb", label: "Compress to 2MB" },
-                { href: "/compress-pdf-to-1mb", label: "Compress to 1MB" },
-                { href: "/compress-pdf-to-500kb", label: "Compress to 500KB" },
-              ].map((i) => (
-                <a
-                  key={i.href}
-                  href={i.href}
-                  className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
-                >
-                  {i.label}
-                </a>
-              ))}
+          <section>
+            <h2 className="text-2xl font-semibold">4) Scan settings (if your PDF is a scan)</h2>
+            <ul className="mt-3 list-disc pl-6 space-y-2">
+              <li>Prefer grayscale over color</li>
+              <li>Use 150–300 DPI</li>
+              <li>Remove blank pages before exporting</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold">Quick checklist before upload</h2>
+            <div className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-4">
+              <ul className="list-disc pl-6 space-y-2">
+                <li>File size meets the portal’s limit</li>
+                <li>PDF is not password-protected (unless allowed)</li>
+                <li>Pages are within limits and in the correct order</li>
+                <li>Scans are optimized (grayscale, reasonable DPI)</li>
+              </ul>
             </div>
-
-            <p className="mt-4 text-sm text-gray-600">
-              Tip: For scanned documents, grayscale + 150–300 DPI usually keeps files readable and small.
-            </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold">Scan settings that help</h2>
-            <ul className="mt-3 list-disc pl-6 space-y-2">
-              <li>Use <b>grayscale</b> instead of color when possible.</li>
-              <li>Use <b>150–300 DPI</b> (higher DPI makes files huge).</li>
-              <li>Remove blank pages before exporting.</li>
-              <li>If allowed, split one large PDF into smaller parts.</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold">If your upload still fails</h2>
-            <p className="mt-2">
-              Use these problem-specific guides (these cover the most common portal errors):
-            </p>
-
+            <h2 className="text-2xl font-semibold">Related help</h2>
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <a
-                href="/pdf-upload-failed"
+                href="/pdf-upload-failed-on-website"
                 className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
               >
-                <h3 className="font-semibold text-blue-700">PDF Upload Failed</h3>
+                <h3 className="font-semibold text-blue-700">PDF Upload Failed on Website</h3>
                 <p className="text-sm text-gray-600 mt-1">
-                  Reasons and quick fixes for rejected uploads.
-                </p>
-              </a>
-
-              <a
-                href="/pdf-too-large-to-upload"
-                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-              >
-                <h3 className="font-semibold text-blue-700">PDF Too Large to Upload</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  Reduce file size fast and retry.
+                  Common reasons and fixes.
                 </p>
               </a>
 
@@ -98,64 +96,20 @@ export default function PdfUploadRequirementsPage() {
                 href="/pdf-too-large-for-website-upload"
                 className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
               >
-                <h3 className="font-semibold text-blue-700">Website Upload Fix</h3>
+                <h3 className="font-semibold text-blue-700">PDF Too Large for Website Upload</h3>
                 <p className="text-sm text-gray-600 mt-1">
-                  File too big for a website form? Fix it.
-                </p>
-              </a>
-
-              <a
-                href="/upload-pdf-under-2mb"
-                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-              >
-                <h3 className="font-semibold text-blue-700">Upload PDF Under 2MB</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  Meet strict 2MB upload limits.
-                </p>
-              </a>
-            </div>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold">Application-specific help</h2>
-
-            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <a
-                href="/compress-pdf-for-government-application"
-                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-              >
-                <h3 className="font-semibold text-blue-700">Government applications</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  Reduce size for official portals and forms.
-                </p>
-              </a>
-
-              <a
-                href="/reduce-pdf-size-for-online-application"
-                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-              >
-                <h3 className="font-semibold text-blue-700">Online applications</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  Step-by-step targets for strict portals.
-                </p>
-              </a>
-
-              <a
-                href="/immigration-pdf-upload-guide"
-                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-              >
-                <h3 className="font-semibold text-blue-700">Immigration uploads</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  Visa, USCIS, IRCC upload limit guidance.
+                  Reduce size fast for strict portals.
                 </p>
               </a>
             </div>
           </section>
 
           <section className="bg-blue-50 p-6 rounded-lg text-center">
-            <h2 className="text-xl font-semibold text-gray-900">Compress now</h2>
+            <h2 className="text-xl font-semibold text-gray-900">
+              Need to compress right now?
+            </h2>
             <p className="mt-2 text-gray-700">
-              Use the main tool and choose a safe upload size.
+              Start with a safe target like 2MB, then go smaller if required.
             </p>
             <Link
               href="/"
@@ -163,6 +117,24 @@ export default function PdfUploadRequirementsPage() {
             >
               Go to PDF Compressor
             </Link>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold">Frequently Asked Questions</h2>
+            <div className="mt-4 space-y-6">
+              <div>
+                <h3 className="font-semibold">What’s the safest target size?</h3>
+                <p className="mt-1 text-gray-700">
+                  2MB is a common safe target. If a portal is strict, 1MB or 500KB is safer.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold">Why does a portal reject my PDF even after compression?</h3>
+                <p className="mt-1 text-gray-700">
+                  It may be due to page limits, encryption, or an incompatible PDF export. Re-export as a standard PDF and try again.
+                </p>
+              </div>
+            </div>
           </section>
         </div>
       </div>
