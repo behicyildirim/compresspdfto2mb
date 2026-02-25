@@ -41,7 +41,34 @@ export default function PdfSizeLimitForEmailPage() {
             <li>Select your target size (1MB, 2MB, 5MB, etc.).</li>
             <li>Download and attach the optimized file.</li>
           </ol>
+<section>
+  <h2 className="text-2xl font-semibold">Email provider limits</h2>
+  <p className="mt-2 text-gray-700">
+    If you’re sending a PDF, these guides help you choose a safe attachment size.
+  </p>
 
+  <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <a
+      href="/gmail-attachment-size-limit"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">Gmail attachment size limit</h3>
+      <p className="text-sm text-gray-600 mt-1">
+        Recommended PDF sizes and what to do if attachments fail.
+      </p>
+    </a>
+
+    <a
+      href="/outlook-attachment-size-limit"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">Outlook attachment size limit</h3>
+      <p className="text-sm text-gray-600 mt-1">
+        Safe targets for PDFs and common attachment issues.
+      </p>
+    </a>
+  </div>
+</section>
           <div className="mt-10 bg-blue-50 p-6 rounded-lg text-center">
             <Link
               href="/"
