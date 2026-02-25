@@ -603,6 +603,33 @@ USCIS website
     </div>
   </div>
 </section>
+<section className="mt-16 max-w-3xl mx-auto px-4">
+  <div className="rounded-2xl border border-gray-200 bg-gray-50 p-6">
+    <h2 className="text-xl font-semibold text-gray-900">
+      PDF upload rejected?
+    </h2>
+    <p className="mt-2 text-gray-700 text-sm">
+      If your PDF upload fails, it may not only be the file size.
+      Check format rules, page limits, and password protection requirements.
+    </p>
+
+    <div className="mt-4 flex flex-wrap gap-4">
+      <Link
+        href="/pdf-upload-requirements"
+        className="text-blue-700 font-semibold hover:underline text-sm"
+      >
+        PDF upload requirements →
+      </Link>
+
+      <Link
+        href="/pdf-upload-failed-on-website"
+        className="text-blue-700 font-semibold hover:underline text-sm"
+      >
+        PDF upload failed on website →
+      </Link>
+    </div>
+  </div>
+</section>
     </main>
   );
 }
