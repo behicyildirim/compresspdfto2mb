@@ -36,6 +36,7 @@ export const SUPPORT_PAGES: Item[] = [
   { href: "/pdf-too-large-to-upload", label: "PDF too large to upload? Fix it fast" },
   { href: "/upload-pdf-under-2mb", label: "Upload PDF under 2MB" },
   { href: "/reduce-pdf-under-2mb", label: "Reduce PDF under 2MB" },
+  { href: "/compress-pdf-under-2mb", label: "Compress PDF under 2MB" },
 
   { href: "/pdf-upload-requirements", label: "PDF upload requirements (size, format, page limits)" },
   { href: "/pdf-too-large-for-website-upload", label: "PDF too large for website upload? Fix it" },
