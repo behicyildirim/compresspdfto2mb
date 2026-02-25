@@ -294,6 +294,75 @@ export default function PdfTooLargeToUploadPage() {
               Go to PDF Compressor
             </Link>
           </section>
+          <section className="mt-12">
+  <h2 className="text-2xl font-semibold text-gray-900">
+    Related PDF Upload Guides
+  </h2>
+
+  <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+    <a
+      href="/pdf-upload-failed"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">
+        PDF Upload Failed
+      </h3>
+      <p className="text-sm text-gray-600 mt-1">
+        Fix upload errors and rejected files.
+      </p>
+    </a>
+
+    <a
+      href="/pdf-upload-requirements"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">
+        PDF Upload Requirements
+      </h3>
+      <p className="text-sm text-gray-600 mt-1">
+        File size limits, formats and portal rules.
+      </p>
+    </a>
+
+    <a
+      href="/pdf-too-large-for-website-upload"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">
+        Website Upload Fix
+      </h3>
+      <p className="text-sm text-gray-600 mt-1">
+        Fix website upload size limits.
+      </p>
+    </a>
+
+    <a
+      href="/compress-pdf-for-government-application"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">
+        Government Application PDFs
+      </h3>
+      <p className="text-sm text-gray-600 mt-1">
+        Reduce file size for government portals.
+      </p>
+    </a>
+
+    <a
+      href="/reduce-pdf-size-for-online-application"
+      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      <h3 className="font-semibold text-blue-700">
+        Online Application PDF Guide
+      </h3>
+      <p className="text-sm text-gray-600 mt-1">
+        Meet strict upload limits easily.
+      </p>
+    </a>
+
+  </div>
+</section>
         </div>
       </div>
     </main>
