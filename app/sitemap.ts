@@ -41,13 +41,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const isHome = p === "/";
   const isSizePage = p.includes("/compress-pdf-to-");
+
   const isUseCase =
     p.includes("/compress-pdf-for-") ||
     p.includes("/reduce-pdf-size") ||
     p.includes("/immigration") ||
     p.includes("/visa") ||
     p.includes("/whatsapp") ||
-    p.includes("/email");
+    p.includes("/email") ||
+    p.includes("/university") ||
+    p.includes("/portal-upload");
 
   const isSupport =
     p.includes("/pdf-upload") ||

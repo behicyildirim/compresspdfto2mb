@@ -52,7 +52,7 @@ export const SUPPORT_PAGES: Item[] = [
 
   // Helpful hubs
   { href: "/reduce-pdf-size-for-online-application", label: "Reduce PDF size for online applications" },
-  { href: "/immigration-pdf-upload-guide", label: "Immigration PDF upload guide" }
+  { href: "/immigration-pdf-upload-guide", label: "Immigration PDF upload guide" },
   { href: "/upload-pdf-under-2mb", label: "Upload PDF under 2MB" },
 ];
 
