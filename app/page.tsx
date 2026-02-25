@@ -69,10 +69,30 @@ export default function Home() {
   </Link>
   .
 </p>
+<p className="mt-2 text-sm text-gray-600">
+  Not sure what the portal expects? Read{" "}
+  <Link
+    href="/pdf-upload-requirements"
+    className="font-semibold text-blue-700 hover:underline"
+  >
+    PDF upload requirements
+  </Link>
+  .
+</p>
   <p className="mt-2 text-sm text-gray-600">
     Most rejections happen because of strict file size limits. Start with a safe target (2MB),
     then go smaller (1MB / 500KB) if needed.
   </p>
+  <p className="mt-2 text-sm text-gray-600">
+File too big for a website form? See{" "}
+<Link
+href="/pdf-too-large-to-upload"
+className="font-semibold text-blue-700 hover:underline"
+>
+PDF too large upload fixes
+</Link>
+.
+</p>
 
   <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
     <Link
@@ -144,6 +164,19 @@ export default function Home() {
         <p className="mt-4 text-lg text-gray-600">
           Free, fast and secure PDF compression tool. No registration required.
         </p>
+        <p className="mt-3 text-xs text-gray-500 text-center">
+Some government portals have strict upload limits. Check official USCIS
+guidelines on the{" "}
+<a
+href="https://www.uscis.gov/forms/filing-guidance/tips-for-filing-forms-online"
+target="_blank"
+rel="noopener noreferrer"
+className="text-blue-600 hover:underline"
+>
+USCIS website
+</a>
+.
+</p>
        <p className="text-xs text-gray-500 mb-6 tracking-wide">
   Trusted worldwide for fast, secure PDF compression.
 </p>
