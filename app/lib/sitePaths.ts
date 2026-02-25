@@ -23,6 +23,7 @@ export const USE_CASE_PAGES: Item[] = [
   { href: "/compress-pdf-for-visa", label: "Compress PDF for Visa Application" },
   { href: "/gmail-attachment-size-limit", label: "Gmail attachment size limit" },
   { href: "/outlook-attachment-size-limit", label: "Outlook attachment size limit" },
+  { href: "/pdf-size-limit-for-email", label: "PDF size limit for email" },
 
   // Secondary use cases
   { href: "/compress-pdf-for-job-application", label: "Compress PDF for Job Application" },

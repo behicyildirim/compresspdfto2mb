@@ -1,103 +1,93 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "PDF Size Limit for Email (Gmail & Outlook Guide)",
+  title: "PDF Size Limit for Email (Attachment Guide + Fixes)",
   description:
-    "Learn the PDF size limits for Gmail and Outlook attachments and how to reduce PDF file size quickly.",
+    "PDF size limit for email: why attachments fail and how to fix it. Use safe compression targets and send PDFs successfully.",
 };
 
 export default function PdfSizeLimitForEmailPage() {
   return (
     <main className="min-h-screen bg-white px-4 py-14">
       <div className="mx-auto max-w-3xl text-gray-800">
-
-        <h1 className="text-4xl font-bold text-center">
-          PDF Size Limit for Email
-        </h1>
+        <h1 className="text-4xl font-bold text-center">PDF Size Limit for Email</h1>
 
         <p className="mt-4 text-lg text-gray-600 text-center">
-          Understand Gmail and Outlook attachment limits and how to compress PDFs to fit.
+          Email attachment failures usually come down to size limits and scan-heavy PDFs.
+          Use these safe targets and provider-specific guides.
         </p>
 
-        <div className="mt-10 space-y-6 leading-relaxed">
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          {[
+            { href: "/compress-pdf-to-10mb", label: "Compress to 10MB" },
+            { href: "/compress-pdf-to-5mb", label: "Compress to 5MB" },
+            { href: "/compress-pdf-to-2mb", label: "Compress to 2MB" },
+          ].map((i) => (
+            <a
+              key={i.href}
+              href={i.href}
+              className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+            >
+              {i.label}
+            </a>
+          ))}
+        </div>
 
-          <h2 className="text-2xl font-semibold">Gmail PDF Size Limit</h2>
-          <p>
-            Gmail allows attachments up to 25MB. If your PDF exceeds this limit,
-            you must compress it or use Google Drive.
-          </p>
+        <div className="mt-10 space-y-10 leading-relaxed">
+          <section>
+            <h2 className="text-2xl font-semibold">Recommended targets</h2>
+            <p className="mt-2 text-gray-700">
+              Start with <b>10MB</b>. If sending fails, try <b>5MB</b>. For strict situations, use <b>2MB</b>.
+            </p>
+          </section>
 
-          <h2 className="text-2xl font-semibold mt-8">Outlook Attachment Limit</h2>
-          <p>
-            Outlook typically allows attachments up to 20MB. Larger files will
-            fail to send unless compressed.
-          </p>
+          <section>
+            <h2 className="text-2xl font-semibold">Provider guides</h2>
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <a
+                href="/gmail-attachment-size-limit"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">Gmail attachment size limit</h3>
+                <p className="text-sm text-gray-600 mt-1">What to do when Gmail rejects PDFs.</p>
+              </a>
 
-          <h2 className="text-2xl font-semibold mt-8">
-            How to Reduce PDF Size for Email
-          </h2>
-          <ol className="list-decimal pl-6 space-y-2">
-            <li>Upload your PDF to our free online compressor.</li>
-            <li>Select your target size (1MB, 2MB, 5MB, etc.).</li>
-            <li>Download and attach the optimized file.</li>
-          </ol>
-<section>
-  <h2 className="text-2xl font-semibold">Email provider limits</h2>
-  <p className="mt-2 text-gray-700">
-    If you’re sending a PDF, these guides help you choose a safe attachment size.
-  </p>
+              <a
+                href="/outlook-attachment-size-limit"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">Outlook attachment size limit</h3>
+                <p className="text-sm text-gray-600 mt-1">Fix Outlook send failures.</p>
+              </a>
 
-  <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-    <a
-      href="/gmail-attachment-size-limit"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">Gmail attachment size limit</h3>
-      <p className="text-sm text-gray-600 mt-1">
-        Recommended PDF sizes and what to do if attachments fail.
-      </p>
-    </a>
+              <a
+                href="/pdf-file-too-large-for-email"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">PDF file too large for email</h3>
+                <p className="text-sm text-gray-600 mt-1">Quick compression targets.</p>
+              </a>
 
-    <a
-      href="/outlook-attachment-size-limit"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">Outlook attachment size limit</h3>
-      <p className="text-sm text-gray-600 mt-1">
-        Safe targets for PDFs and common attachment issues.
-      </p>
-    </a>
-  </div>
-</section>
-          <div className="mt-10 bg-blue-50 p-6 rounded-lg text-center">
+              <a
+                href="/pdf-upload-requirements"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">PDF upload requirements</h3>
+                <p className="text-sm text-gray-600 mt-1">Format + size checklist.</p>
+              </a>
+            </div>
+          </section>
+
+          <section className="bg-blue-50 p-6 rounded-lg text-center">
+            <h2 className="text-xl font-semibold text-gray-900">Compress and send</h2>
+            <p className="mt-2 text-gray-700">Choose a safe target and retry your email attachment.</p>
             <Link
               href="/"
-              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+              className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
             >
-              Compress PDF for Email Now
+              Go to PDF Compressor
             </Link>
-          </div>
-<div className="mt-12">
-  <h2 className="text-xl font-semibold text-gray-900">
-    Popular Compression Targets
-  </h2>
-
-  <div className="mt-4 flex flex-wrap gap-3">
-    {[
-      { href: "/compress-pdf-to-1mb", label: "1MB" },
-      { href: "/compress-pdf-to-2mb", label: "2MB" },
-      { href: "/compress-pdf-to-5mb", label: "5MB" },
-    ].map((i) => (
-      <a
-        key={i.href}
-        href={i.href}
-        className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
-      >
-        {i.label}
-      </a>
-    ))}
-  </div>
-</div>
+          </section>
         </div>
       </div>
     </main>
