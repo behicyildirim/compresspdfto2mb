@@ -117,7 +117,15 @@ export default function GmailAttachmentSizeLimitPage() {
               </a>
 
             </div>
-
+<a
+  href="/outlook-attachment-size-limit"
+  className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+>
+  <h3 className="font-semibold text-blue-700">Outlook attachment limit</h3>
+  <p className="text-sm text-gray-600 mt-1">
+    Outlook sending tips and safe PDF sizes.
+  </p>
+</a>
           </section>
 
           <section className="bg-blue-50 p-6 rounded-lg text-center">

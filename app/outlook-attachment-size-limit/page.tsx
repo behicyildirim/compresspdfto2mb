@@ -100,6 +100,15 @@ export default function OutlookAttachmentSizeLimitPage() {
                 </p>
               </a>
             </div>
+            <a
+  href="/compress-pdf-for-email"
+  className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+>
+  <h3 className="font-semibold text-blue-700">Compress PDF for email</h3>
+  <p className="text-sm text-gray-600 mt-1">
+    Reduce file size before attaching.
+  </p>
+</a>
           </section>
 
           <section className="bg-blue-50 p-6 rounded-lg text-center">
