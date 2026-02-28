@@ -121,6 +121,44 @@ className="font-semibold text-blue-700 hover:underline"
 PDF too large upload fixes
 </Link>
 .
+<section className="mx-auto mt-8 max-w-3xl rounded-2xl border border-gray-200 bg-white p-6">
+  <h2 className="text-xl font-semibold text-gray-900">
+    Popular upload size limits
+  </h2>
+  <p className="mt-2 text-sm text-gray-600">
+    Start with a safe target. If the portal is strict, go smaller.
+  </p>
+
+  <div className="mt-4 flex flex-wrap gap-3">
+    <Link
+      href="/compress-pdf-to-2mb"
+      className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Compress to 2MB
+    </Link>
+
+    <Link
+      href="/compress-pdf-to-1mb"
+      className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Compress to 1MB
+    </Link>
+
+    <Link
+      href="/compress-pdf-to-500kb"
+      className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Compress to 500KB
+    </Link>
+  </div>
+
+  <p className="mt-3 text-sm text-gray-600">
+    Not sure what the portal expects?{" "}
+    <Link href="/pdf-upload-requirements" className="font-semibold text-blue-700 hover:underline">
+      PDF upload requirements
+    </Link>
+  </p>
+</section>
 </p>
 
   <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">

@@ -9,8 +9,50 @@ export const metadata = {
 };
 
 export default function CompressPdfTo1MbPage() {
+  const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does “compress to 2MB” mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It means reducing the PDF file size to 2MB or smaller so it meets strict upload limits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will compressing to 2MB reduce quality?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Image-heavy PDFs may lose some visual detail. Text documents usually stay readable after compression."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "If 1MB still fails, what should I do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some portals require smaller files. Try compressing to 500KB or split the PDF if multiple uploads are allowed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my scanned PDF so large?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "High DPI, color scanning, and photos in the document can dramatically increase PDF size."
+      }
+    }
+  ]
+};
   return (
     <main className="min-h-screen bg-white px-4 py-14">
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+/>
       <div className="mx-auto max-w-3xl text-gray-800">
 
         <h1 className="text-4xl font-bold text-center">
