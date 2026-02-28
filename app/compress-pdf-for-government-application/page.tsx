@@ -1,4 +1,5 @@
 import Link from "next/link";
+import InternalLinks from "@/app/components/InternalLinks";
 
 export const metadata = {
   title: "Compress PDF for Government Application (Meet Upload Limits)",
@@ -10,7 +11,9 @@ export default function CompressPdfForGovernmentApplicationPage() {
   return (
     <main className="min-h-screen bg-white px-4 py-14">
       <div className="mx-auto max-w-3xl text-gray-800">
-        <h1 className="text-4xl font-bold text-center">Compress PDF for Government Application</h1>
+        <h1 className="text-4xl font-bold text-center">
+          Compress PDF for Government Application
+        </h1>
 
         <p className="mt-4 text-lg text-gray-600 text-center">
           Government portals often have strict size limits. Compress your PDF to a safe target and upload smoothly.
@@ -24,24 +27,24 @@ export default function CompressPdfForGovernmentApplicationPage() {
             </p>
 
             <div className="mt-4 flex flex-wrap gap-3">
-              <a
+              <Link
                 href="/compress-pdf-to-2mb"
                 className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
               >
                 Compress to 2MB
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/compress-pdf-to-1mb"
                 className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
               >
                 Compress to 1MB
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/compress-pdf-to-500kb"
                 className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
               >
                 Compress to 500KB
-              </a>
+              </Link>
             </div>
           </section>
 
@@ -86,17 +89,19 @@ export default function CompressPdfForGovernmentApplicationPage() {
                 { href: "/pdf-upload-failed", label: "PDF upload failed fixes" },
                 { href: "/pdf-too-large-to-upload", label: "PDF too large to upload" },
               ].map((i) => (
-                <a
+                <Link
                   key={i.href}
                   href={i.href}
                   className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
                 >
                   {i.label}
-                </a>
+                </Link>
               ))}
             </div>
           </section>
         </div>
+
+        <InternalLinks />
       </div>
     </main>
   );
