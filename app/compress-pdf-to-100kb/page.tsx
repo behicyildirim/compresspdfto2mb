@@ -16,7 +16,6 @@ export default function CompressPdfTo1MbPage() {
         <h1 className="text-4xl font-bold text-center">
           Compress PDF to 100kb Online Free
         </h1>
-<AdSlot label="Ad Area (Bottom)" />
         <p className="mt-4 text-lg text-gray-600 text-center">
           Reduce your PDF file size to 100kb or smaller in seconds.
         </p>
@@ -33,7 +32,6 @@ export default function CompressPdfTo1MbPage() {
             Go to PDF Compressor
           </Link>
         </div>
-<AdSlot label="Ad Area (Bottom)" />
         <div className="mt-10 space-y-6 leading-relaxed">
           <h2 className="text-2xl font-semibold">
             How to compress a PDF to 100kb
@@ -57,7 +55,6 @@ Looking for a different file size? Try compressing your PDF to 100KB, 200KB, 500
 </p>
         <InternalLinks />
       </div>
-      <AdSlot label="Ad Area (Bottom)" />
     </main>
   );
 }
