@@ -1,4 +1,5 @@
 import Link from "next/link";
+import InternalLinks from "@/app/components/InternalLinks";
 
 export const metadata = {
   title: "PDF Upload Requirements (Size, Format, Page Limits)",
@@ -46,24 +47,24 @@ export default function PdfUploadRequirementsPage() {
             </p>
 
             <div className="mt-4 flex flex-wrap gap-3">
-              <a
+              <Link
                 href="/compress-pdf-to-2mb"
                 className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
               >
                 Compress to 2MB
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/compress-pdf-to-1mb"
                 className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
               >
                 Compress to 1MB
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/compress-pdf-to-500kb"
                 className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
               >
                 Compress to 500KB
-              </a>
+              </Link>
             </div>
           </section>
 
@@ -84,21 +85,21 @@ export default function PdfUploadRequirementsPage() {
             </p>
 
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
-              <a
+              <Link
                 href="/pdf-upload-failed"
                 className="rounded-xl bg-white px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
               >
                 <div className="font-semibold text-blue-700">PDF Upload Failed</div>
                 <div className="text-sm text-gray-600 mt-1">Reasons + quick fixes.</div>
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="/pdf-too-large-to-upload"
                 className="rounded-xl bg-white px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
               >
                 <div className="font-semibold text-blue-700">PDF Too Large to Upload</div>
                 <div className="text-sm text-gray-600 mt-1">Shrink it fast.</div>
-              </a>
+              </Link>
             </div>
 
             <Link
@@ -118,17 +119,19 @@ export default function PdfUploadRequirementsPage() {
                 { href: "/immigration-pdf-upload-guide", label: "Immigration upload guide" },
                 { href: "/pdf-size-limit-for-email", label: "Email attachment limits" },
               ].map((i) => (
-                <a
+                <Link
                   key={i.href}
                   href={i.href}
                   className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
                 >
                   {i.label}
-                </a>
+                </Link>
               ))}
             </div>
           </section>
         </div>
+
+        <InternalLinks />
       </div>
     </main>
   );
