@@ -16,6 +16,7 @@ export default function InternalLinks() {
 
   const sizesFiltered = SIZE_PAGES.filter((i) => normalize(i.href) !== pathname);
   const useCasesFiltered = USE_CASE_PAGES.filter((i) => normalize(i.href) !== pathname);
+  const supportFiltered = SUPPORT_PAGES.filter((i) => normalize(i.href) !== pathname);
 
   return (
     <section className="mt-8">
@@ -50,6 +51,18 @@ export default function InternalLinks() {
             ))}
           </ul>
         </div>
+        <div>
+  <h2 className="text-lg font-semibold mb-2">Upload Fixes</h2>
+  <ul className="list-disc pl-5 space-y-1">
+    {supportFiltered.map((i) => (
+      <li key={i.href}>
+        <Link href={i.href} className="text-blue-700 hover:underline">
+          {i.label}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
       </div>
 
       {/* AD SLOT: Below internal links */}

@@ -15,6 +15,20 @@ export default function CompressPdfTo1MbPage() {
         <h1 className="text-4xl font-bold text-center">
           Compress PDF to 500KB Online Free
         </h1>
+        <div className="mt-4 text-center">
+  <p className="text-gray-600 text-sm">
+    Need to upload a PDF under strict limits? Start here and compress your file to the exact size required.
+  </p>
+
+  <div className="mt-4 flex flex-wrap justify-center gap-3">
+    <Link href="/pdf-upload-requirements" className="text-blue-700 font-semibold hover:underline text-sm">
+      Upload requirements →
+    </Link>
+    <Link href="/pdf-upload-failed-on-website" className="text-blue-700 font-semibold hover:underline text-sm">
+      Upload failed fix →
+    </Link>
+  </div>
+</div>
 
         <p className="mt-4 text-lg text-gray-600 text-center">
           Reduce your PDF file size to 500KB or smaller in seconds.

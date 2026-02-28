@@ -15,6 +15,21 @@ export default function CompressPdfTo1MbPage() {
         <h1 className="text-4xl font-bold text-center">
           Compress PDF to 1MB Online Free
         </h1>
+        <div className="mt-4 text-center">
+  <p className="text-gray-600 text-sm">
+    Need to upload a PDF under strict limits? Start here and compress your file to the exact size required.
+  </p>
+
+  <div className="mt-4 flex flex-wrap justify-center gap-3">
+    <Link href="/pdf-upload-requirements" className="text-blue-700 font-semibold hover:underline text-sm">
+      Upload requirements →
+    </Link>
+    <Link href="/pdf-upload-failed-on-website" className="text-blue-700 font-semibold hover:underline text-sm">
+      Upload failed fix →
+    </Link>
+    <AdSlot label="Ad Area (Top)" />
+  </div>
+</div>
 
         <p className="mt-4 text-lg text-gray-600 text-center">
           Reduce your PDF file size to 1MB or smaller in seconds.
@@ -32,7 +47,7 @@ export default function CompressPdfTo1MbPage() {
             Go to PDF Compressor
           </Link>
         </div>
-
+<AdSlot label="Ad Area (Middle)" />
         <div className="mt-10 space-y-6 leading-relaxed">
           <h2 className="text-2xl font-semibold">
             How to compress a PDF to 1MB
@@ -56,6 +71,27 @@ Looking for a different file size? Try compressing your PDF to 100KB, 200KB, 500
 </p>
         <InternalLinks />
       </div>
+      <section className="mt-10 rounded-2xl border p-5 text-center">
+  <h2 className="text-lg font-semibold">
+    Why do you need this?
+  </h2>
+
+  <div className="mt-4 flex flex-wrap justify-center gap-3 text-sm">
+    <Link href="/compress-pdf-for-visa" className="text-blue-700 hover:underline">
+      Visa application
+    </Link>
+    <Link href="/pdf-size-limit-for-job-application" className="text-blue-700 hover:underline">
+      Job application
+    </Link>
+    <Link href="/pdf-size-limit-for-university-application" className="text-blue-700 hover:underline">
+      University application
+    </Link>
+    <Link href="/pdf-size-limit-for-email" className="text-blue-700 hover:underline">
+      Email attachment
+    </Link>
+  </div>
+</section>
+<AdSlot label="Ad Area (Bottom)" />
     </main>
   );
 }
