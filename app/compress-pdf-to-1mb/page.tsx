@@ -1,5 +1,6 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
+import AdSlot from "@/app/components/AdSlot";
 
 export const metadata = {
   title: "Compress PDF to 1MB Online Free | CP2",
