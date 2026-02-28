@@ -28,10 +28,9 @@ export default function CompressPdfTo1MbPage() {
     <Link href="/pdf-upload-failed-on-website" className="text-blue-700 font-semibold hover:underline text-sm">
       Upload failed fix →
     </Link>
-    <AdSlot label="Ad Area (Top)" />
   </div>
 </div>
-
+    <AdSlot label="Ad Area (Top)" />
         <p className="mt-4 text-lg text-gray-600 text-center">
           Reduce your PDF file size to 1MB or smaller in seconds.
         </p>
