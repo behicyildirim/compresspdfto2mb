@@ -1,4 +1,5 @@
 import Link from "next/link";
+import InternalLinks from "@/app/components/InternalLinks";
 
 export const metadata = {
   title: "Upload PDF Under 2MB (Quick Steps + Fixes)",
@@ -27,18 +28,18 @@ export default function UploadPdfUnder2MbPage() {
             </ol>
 
             <div className="mt-4 flex flex-wrap gap-3">
-              <a
+              <Link
                 href="/compress-pdf-to-2mb"
                 className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
               >
                 Compress to 2MB
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/compress-pdf-to-1mb"
                 className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
               >
                 Try 1MB
-              </a>
+              </Link>
             </div>
           </section>
 
@@ -56,7 +57,9 @@ export default function UploadPdfUnder2MbPage() {
 
           <section className="bg-blue-50 p-6 rounded-lg text-center">
             <h2 className="text-xl font-semibold text-gray-900">Upload still failing?</h2>
-            <p className="mt-2 text-gray-700">Use the troubleshooting guide and portal rules checklist.</p>
+            <p className="mt-2 text-gray-700">
+              Use the troubleshooting guide and portal rules checklist.
+            </p>
             <div className="mt-4 flex flex-wrap justify-center gap-3">
               <Link
                 href="/pdf-upload-failed"
@@ -81,17 +84,19 @@ export default function UploadPdfUnder2MbPage() {
                 { href: "/immigration-pdf-upload-guide", label: "Immigration upload guide" },
                 { href: "/pdf-size-limit-for-email", label: "Email attachment limits" },
               ].map((i) => (
-                <a
+                <Link
                   key={i.href}
                   href={i.href}
                   className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
                 >
                   {i.label}
-                </a>
+                </Link>
               ))}
             </div>
           </section>
         </div>
+
+        <InternalLinks />
       </div>
     </main>
   );
