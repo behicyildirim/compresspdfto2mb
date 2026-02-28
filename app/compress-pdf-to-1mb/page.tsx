@@ -30,7 +30,6 @@ export default function CompressPdfTo1MbPage() {
     </Link>
   </div>
 </div>
-    <AdSlot label="Ad Area (Top)" />
         <p className="mt-4 text-lg text-gray-600 text-center">
           Reduce your PDF file size to 1MB or smaller in seconds.
         </p>
@@ -47,7 +46,7 @@ export default function CompressPdfTo1MbPage() {
             Go to PDF Compressor
           </Link>
         </div>
-<AdSlot label="Ad Area (Middle)" />
+
         <div className="mt-10 space-y-6 leading-relaxed">
           <h2 className="text-2xl font-semibold">
             How to compress a PDF to 1MB
@@ -91,7 +90,6 @@ Looking for a different file size? Try compressing your PDF to 100KB, 200KB, 500
     </Link>
   </div>
 </section>
-<AdSlot label="Ad Area (Bottom)" />
     </main>
   );
 }
