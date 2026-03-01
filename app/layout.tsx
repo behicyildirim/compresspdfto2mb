@@ -70,7 +70,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <head>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {/* AdSense (required for ads + CMP integration) */}
         <Script
           id="adsense-script"
@@ -99,9 +99,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
-      </head>
 
-      <body>
         <header className="w-full border-b bg-white">
           <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
             <a href="/" className="flex items-center gap-2">
@@ -115,7 +113,6 @@ export default function RootLayout({
 
         {children}
 
-        {/* Footer (no ad placeholder here for now; we'll use AdSlot in pages/components) */}
         <footer className="mt-16 border-t bg-gray-50">
           <div className="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between gap-4">
             <div>© {new Date().getFullYear()} CP2 - CompressPDFto2MB</div>
