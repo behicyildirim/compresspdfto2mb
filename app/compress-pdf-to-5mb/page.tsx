@@ -1,10 +1,14 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Compress PDF to 5MB Online (Free) | CP2",
+export const metadata: Metadata = {
+  title: "Compress PDF to 5MB Online Free | CP2",
   description:
-    "Compress PDF to 5MB online quickly. Useful for portals and emails with higher limits while keeping quality readable.",
+    "Compress PDF to 5MB instantly online. Free, secure and no registration required.",
+  alternates: {
+    canonical: "/compress-pdf-to-5mb",
+  },
 };
 
 export default function CompressPdfTo5MbPage() {
