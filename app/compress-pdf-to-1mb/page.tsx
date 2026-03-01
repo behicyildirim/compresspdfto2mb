@@ -1,10 +1,13 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Compress PDF to 1MB Online Free | CompressPDFto2MB",
-  description:
-    "Compress PDF to 1MB online in seconds. Free, secure, and ideal for portal and email upload limits.",
+export const metadata: Metadata = {
+  title: "Compress PDF to 1MB Online Free | CP2",
+  description: "Compress PDF to 1MB instantly online. Free, secure and no registration required.",
+  alternates: {
+    canonical: "/compress-pdf-to-1mb",
+  },
 };
 
 export default function CompressPdfTo1MbPage() {
