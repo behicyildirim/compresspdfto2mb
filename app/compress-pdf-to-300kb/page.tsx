@@ -1,10 +1,13 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Compress PDF to 300KB Online Free | CompressPDFto2MB",
-  description:
-    "Compress PDF to 300KB online in seconds. Free, secure, and no registration. Perfect for strict upload limits.",
+export const metadata: Metadata = {
+  title: "Compress PDF to 300kb Online Free | CP2",
+  description: "Compress PDF to 300kb instantly online. Free, secure and no registration required.",
+  alternates: {
+    canonical: "/compress-pdf-to-300kb",
+  },
 };
 
 export default function CompressPdfTo300KbPage() {
