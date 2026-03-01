@@ -565,6 +565,15 @@ USCIS website
         </a>
       ))}
     </div>
+    <p className="mt-6 text-sm text-gray-600 text-center">
+  Popular limits: 
+  <Link href="/compress-pdf-to-100kb" className="text-blue-700 underline ml-1">100KB</Link>,
+  <Link href="/compress-pdf-to-200kb" className="text-blue-700 underline ml-1">200KB</Link>,
+  <Link href="/compress-pdf-to-300kb" className="text-blue-700 underline ml-1">300KB</Link>,
+  <Link href="/compress-pdf-to-500kb" className="text-blue-700 underline ml-1">500KB</Link>,
+  <Link href="/compress-pdf-to-1mb" className="text-blue-700 underline ml-1">1MB</Link>,
+  <Link href="/compress-pdf-to-2mb" className="text-blue-700 underline ml-1">2MB</Link>.
+</p>
   </div>
 </section>
 <section className="mt-16 mx-auto max-w-3xl">
