@@ -30,36 +30,33 @@ export function createCompressSizeMetadata(size: SizeKey): Metadata {
   const path = `/compress-pdf-to-${size}`;
   const absoluteUrl = `${SITE_URL}${path}`;
 
-  const title = `Compress PDF to ${label} Online Free | CP2`;
-  const description = `Compress PDF to ${label} instantly online. Free, secure and no registration required.`;
-
   return {
     metadataBase: new URL(SITE_URL),
-    title,
-    description,
+    title: `Compress PDF to ${label} Online Free | CP2`,
+    description: `Compress PDF to ${label} instantly online. Free, secure and no registration required.`,
     alternates: {
-      canonical: path, // metadataBase ile birleşip absolute olur
+      canonical: path,
     },
     openGraph: {
-      title,
-      description,
-      url: absoluteUrl,
+      title: `Compress PDF to ${label} Online Free | CP2`,
+      description: `Compress PDF to ${label} instantly online. Free, secure and no registration required.`,
+      url: absoluteUrl, // ✅ sayfaya özel
       siteName: "CP2 - CompressPDFto2MB",
       images: [
         {
-          url: `${SITE_URL}/og.png`, // absolute verelim (en temiz)
+          url: "/og.png",
           width: 1200,
           height: 630,
-          alt: `Compress PDF to ${label}`,
+          alt: "CP2 - Compress PDF to Under 2MB",
         },
       ],
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title,
-      description,
-      images: [`${SITE_URL}/og.png`], // absolute verelim
+      title: `Compress PDF to ${label} Online Free | CP2`,
+      description: `Compress PDF to ${label} instantly online. Free, secure and no registration required.`,
+      images: ["/og.png"],
     },
   };
 }
