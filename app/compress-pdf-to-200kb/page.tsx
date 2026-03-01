@@ -3,9 +3,9 @@ import InternalLinks from "@/app/components/InternalLinks";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Compress PDF to 200KB Online Free | CP2",
+  title: "Compress PDF to 200KB Online (Free) | CP2",
   description:
-    "Compress PDF to 200KB instantly online. Free, secure and no registration required.",
+    "Compress PDF to 200KB online for strict upload limits. Fast steps, scan tips, and quality-safe targets.",
   alternates: {
     canonical: "/compress-pdf-to-200kb",
   },
