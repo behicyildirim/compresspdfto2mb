@@ -18,9 +18,6 @@ export const metadata: Metadata = {
   title: "Compress PDF to Under 2MB Online Free | CP2 Tool",
   description:
     "Compress PDF files to under 2MB instantly. Free online PDF compressor. Fast, secure and no registration required.",
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title: "Compress PDF to Under 2MB Online",
     description: "Free online tool to compress PDF files under 2MB instantly.",
