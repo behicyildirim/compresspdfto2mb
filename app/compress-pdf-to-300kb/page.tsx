@@ -1,10 +1,13 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
-import type { Metadata } from "next";
+import { createCompressSizeMetadata } from "@/app/lib/seo";
+
+export const metadata = createCompressSizeMetadata("500kb");
 
 export const metadata: Metadata = {
-  title: "Compress PDF to 300kb Online Free | CP2",
-  description: "Compress PDF to 300kb instantly online. Free, secure and no registration required.",
+  title: "Compress PDF to 300KB Online (Free) | CP2",
+  description:
+    "Compress PDF to 300KB online for strict upload limits. Fast steps, scan tips, and quality-safe targets.",
   alternates: {
     canonical: "/compress-pdf-to-300kb",
   },
@@ -19,7 +22,8 @@ export default function CompressPdfTo300KbPage() {
         </h1>
 
         <p className="mt-4 text-lg text-gray-600 text-center">
-          Need a strict upload limit? Reduce your PDF to 300KB (or smaller) while keeping it readable.
+          Need a strict upload limit? Reduce your PDF to 300KB (or smaller) while
+          keeping it readable.
         </p>
 
         <div className="mt-8 bg-blue-50 p-6 rounded-lg text-center">
@@ -34,7 +38,9 @@ export default function CompressPdfTo300KbPage() {
 
         <div className="mt-10 space-y-8 leading-relaxed">
           <section>
-            <h2 className="text-2xl font-semibold">How to compress a PDF to 300KB</h2>
+            <h2 className="text-2xl font-semibold">
+              How to compress a PDF to 300KB
+            </h2>
             <ol className="mt-3 list-decimal pl-6 space-y-2">
               <li>Upload your PDF.</li>
               <li>Wait for automatic compression.</li>
@@ -42,7 +48,7 @@ export default function CompressPdfTo300KbPage() {
             </ol>
 
             <p className="mt-3">
-              If 300KB is too strict, you can try a slightly larger target like{" "}
+              If 300KB is too strict, try{" "}
               <Link
                 href="/compress-pdf-to-500kb"
                 className="font-semibold text-blue-700 hover:underline"
@@ -70,12 +76,15 @@ export default function CompressPdfTo300KbPage() {
           </section>
 
           <section className="bg-gray-50 p-6 rounded-lg">
-            <h2 className="text-xl font-semibold">Common reasons 300KB uploads fail</h2>
+            <h2 className="text-xl font-semibold">
+              Common reasons 300KB uploads fail
+            </h2>
             <ul className="mt-3 list-disc pl-6 space-y-2">
               <li>Scans saved in color with high DPI (too large).</li>
               <li>Too many pages in a single file.</li>
               <li>Blank pages not removed.</li>
             </ul>
+
             <div className="mt-4 flex flex-wrap gap-3">
               <Link
                 href="/pdf-upload-failed"
@@ -91,6 +100,26 @@ export default function CompressPdfTo300KbPage() {
               </Link>
             </div>
           </section>
+
+          <p className="text-sm text-gray-500">
+            Looking for a different size? Try{" "}
+            <Link href="/compress-pdf-to-100kb" className="underline">
+              100KB
+            </Link>
+            ,{" "}
+            <Link href="/compress-pdf-to-200kb" className="underline">
+              200KB
+            </Link>
+            ,{" "}
+            <Link href="/compress-pdf-to-500kb" className="underline">
+              500KB
+            </Link>{" "}
+            or{" "}
+            <Link href="/compress-pdf-to-2mb" className="underline">
+              2MB
+            </Link>
+            .
+          </p>
         </div>
 
         <InternalLinks />
