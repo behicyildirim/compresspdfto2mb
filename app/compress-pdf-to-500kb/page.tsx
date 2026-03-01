@@ -1,11 +1,8 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
+import { createCompressSizeMetadata } from "@/app/lib/seo";
 
-export const metadata = {
-  title: "Compress PDF to 500KB Online Free | CompressPDFto2MB",
-  description:
-    "Compress PDF to 500KB online in seconds. Free, secure, and perfect for portal upload limits.",
-};
+export const metadata = createCompressSizeMetadata("500kb");
 
 export default function CompressPdfTo500KbPage() {
   return (
