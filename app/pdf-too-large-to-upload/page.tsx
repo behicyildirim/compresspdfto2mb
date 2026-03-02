@@ -1,11 +1,36 @@
 import Link from "next/link";
 import Script from "next/script";
 import Breadcrumbs from "@/app/components/Breadcrumbs";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "PDF Too Large to Upload? Fix File Size in Minutes",
+const SITE_URL = "https://compresspdfto2mb.com";
+const PATH = "/pdf-too-large-to-upload";
+const ABSOLUTE = `${SITE_URL}${PATH}`;
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: "PDF Too Large to Upload? Fix It Fast | CP2",
   description:
-    "PDF too large to upload? Learn the quickest ways to reduce PDF size for portals, forms, email, and visa applications.",
+    "PDF too large to upload? Compress to 2MB first, then 1MB or 500KB if needed. Fast, readable results.",
+  alternates: { canonical: PATH },
+
+  openGraph: {
+    title: "PDF Too Large to Upload? Fix It Fast | CP2",
+    description:
+      "PDF too large to upload? Compress to 2MB first, then 1MB or 500KB if needed. Fast, readable results.",
+    url: ABSOLUTE, // ✅ MUTLAK URL
+    siteName: "CP2 - CompressPDFto2MB",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "CP2" }],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "PDF Too Large to Upload? Fix It Fast | CP2",
+    description:
+      "PDF too large to upload? Compress to 2MB first, then 1MB or 500KB if needed. Fast, readable results.",
+    images: ["/og.png"],
+  },
 };
 
 export default function PdfTooLargeToUploadPage() {
@@ -239,15 +264,24 @@ export default function PdfTooLargeToUploadPage() {
                 </h3>
                 <p className="mt-1">
                   Start with{" "}
-                  <Link href="/compress-pdf-to-2mb" className="font-semibold text-blue-700 hover:underline">
+                  <Link
+                    href="/compress-pdf-to-2mb"
+                    className="font-semibold text-blue-700 hover:underline"
+                  >
                     2MB
                   </Link>
                   . If rejected, try{" "}
-                  <Link href="/compress-pdf-to-1mb" className="font-semibold text-blue-700 hover:underline">
+                  <Link
+                    href="/compress-pdf-to-1mb"
+                    className="font-semibold text-blue-700 hover:underline"
+                  >
                     1MB
                   </Link>{" "}
                   or{" "}
-                  <Link href="/compress-pdf-to-500kb" className="font-semibold text-blue-700 hover:underline">
+                  <Link
+                    href="/compress-pdf-to-500kb"
+                    className="font-semibold text-blue-700 hover:underline"
+                  >
                     500KB
                   </Link>
                   .
@@ -256,7 +290,8 @@ export default function PdfTooLargeToUploadPage() {
               <div>
                 <h3 className="font-semibold text-gray-900">Why are scanned PDFs so large?</h3>
                 <p className="mt-1">
-                  Scans are image-heavy. Use grayscale and 150–300 DPI, remove blank pages, then compress.
+                  Scans are image-heavy. Use grayscale and 150–300 DPI, remove blank pages, then
+                  compress.
                 </p>
               </div>
               <div>
@@ -265,7 +300,10 @@ export default function PdfTooLargeToUploadPage() {
                 </h3>
                 <p className="mt-1">
                   Compress (2MB → 1MB) and follow the{" "}
-                  <Link href="/immigration-pdf-upload-guide" className="font-semibold text-blue-700 hover:underline">
+                  <Link
+                    href="/immigration-pdf-upload-guide"
+                    className="font-semibold text-blue-700 hover:underline"
+                  >
                     immigration upload guide
                   </Link>
                   .
@@ -294,75 +332,62 @@ export default function PdfTooLargeToUploadPage() {
               Go to PDF Compressor
             </Link>
           </section>
+
           <section className="mt-12">
-  <h2 className="text-2xl font-semibold text-gray-900">
-    Related PDF Upload Guides
-  </h2>
+            <h2 className="text-2xl font-semibold text-gray-900">Related PDF Upload Guides</h2>
 
-  <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <a
+                href="/pdf-upload-failed"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">PDF Upload Failed</h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Fix upload errors and rejected files.
+                </p>
+              </a>
 
-    <a
-      href="/pdf-upload-failed"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">
-        PDF Upload Failed
-      </h3>
-      <p className="text-sm text-gray-600 mt-1">
-        Fix upload errors and rejected files.
-      </p>
-    </a>
+              <a
+                href="/pdf-upload-requirements"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">PDF Upload Requirements</h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  File size limits, formats and portal rules.
+                </p>
+              </a>
 
-    <a
-      href="/pdf-upload-requirements"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">
-        PDF Upload Requirements
-      </h3>
-      <p className="text-sm text-gray-600 mt-1">
-        File size limits, formats and portal rules.
-      </p>
-    </a>
+              <a
+                href="/pdf-too-large-for-website-upload"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">Website Upload Fix</h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Fix website upload size limits.
+                </p>
+              </a>
 
-    <a
-      href="/pdf-too-large-for-website-upload"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">
-        Website Upload Fix
-      </h3>
-      <p className="text-sm text-gray-600 mt-1">
-        Fix website upload size limits.
-      </p>
-    </a>
+              <a
+                href="/compress-pdf-for-government-application"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">Government Application PDFs</h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Reduce file size for government portals.
+                </p>
+              </a>
 
-    <a
-      href="/compress-pdf-for-government-application"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">
-        Government Application PDFs
-      </h3>
-      <p className="text-sm text-gray-600 mt-1">
-        Reduce file size for government portals.
-      </p>
-    </a>
-
-    <a
-      href="/reduce-pdf-size-for-online-application"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">
-        Online Application PDF Guide
-      </h3>
-      <p className="text-sm text-gray-600 mt-1">
-        Meet strict upload limits easily.
-      </p>
-    </a>
-
-  </div>
-</section>
+              <a
+                href="/reduce-pdf-size-for-online-application"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">Online Application PDF Guide</h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Meet strict upload limits easily.
+                </p>
+              </a>
+            </div>
+          </section>
         </div>
       </div>
     </main>
