@@ -77,7 +77,7 @@ export default function CompressPdfTo1MbPage() {
 
         <InternalLinks />
       </div>
-      <SizeClusterLinks current="1MB" />
+      <SizeClusterLinks current="1mb" />
     </main>
   );
 }

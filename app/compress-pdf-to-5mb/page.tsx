@@ -1,15 +1,9 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
-import type { Metadata } from "next";
+import SizeClusterLinks from "@/app/components/SizeClusterLinks";
+import { createCompressSizeMetadata } from "@/app/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Compress PDF to 5MB Online Free | CP2",
-  description:
-    "Compress PDF to 5MB instantly online. Free, secure and no registration required.",
-  alternates: {
-    canonical: "/compress-pdf-to-5mb",
-  },
-};
+export const metadata = createCompressSizeMetadata("5mb");
 
 export default function CompressPdfTo5MbPage() {
   return (
@@ -101,6 +95,7 @@ export default function CompressPdfTo5MbPage() {
 
         <InternalLinks />
       </div>
+      <SizeClusterLinks current="5mb" />
     </main>
   );
 }

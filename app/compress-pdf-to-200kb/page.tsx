@@ -1,15 +1,9 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
-import type { Metadata } from "next";
+import { createCompressSizeMetadata } from "@/app/lib/seo";
+import SizeClusterLinks from "@/app/components/SizeClusterLinks";
 
-export const metadata: Metadata = {
-  title: "Compress PDF to 200KB Online (Free) | CP2",
-  description:
-    "Compress PDF to 200KB online for strict upload limits. Fast steps, scan tips, and quality-safe targets.",
-  alternates: {
-    canonical: "/compress-pdf-to-200kb",
-  },
-};
+export const metadata = createCompressSizeMetadata("200kb");
 
 export default function CompressPdfTo200KbPage() {
   return (
@@ -67,6 +61,7 @@ export default function CompressPdfTo200KbPage() {
 
         <InternalLinks />
       </div>
+       <SizeClusterLinks current="200kb" />
     </main>
   );
 }

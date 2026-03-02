@@ -91,7 +91,7 @@ export default function CompressPdfTo10MbPage() {
         </div>
         <InternalLinks />
       </div>
-      <SizeClusterLinks current="10MB" />
+      <SizeClusterLinks current="10mb" />
     </main>
   );
 }
