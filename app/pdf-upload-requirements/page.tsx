@@ -3,10 +3,36 @@ import InternalLinks from "@/app/components/InternalLinks";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://compresspdfto2mb.com"),
   title: "PDF Upload Requirements (Size, Format, Page Limits) | CP2",
   description:
     "PDF upload requirements: common size limits, supported formats, page limits, and quick fixes to avoid upload errors.",
   alternates: { canonical: "/pdf-upload-requirements" },
+
+  openGraph: {
+    title: "PDF Upload Requirements (Size, Format, Page Limits) | CP2",
+    description:
+      "PDF upload requirements: common size limits, supported formats, page limits, and quick fixes to avoid upload errors.",
+    url: "https://compresspdfto2mb.com/pdf-upload-requirements",
+    siteName: "CP2 - CompressPDFto2MB",
+    images: [
+      {
+        url: "https://compresspdfto2mb.com/og.png",
+        width: 1200,
+        height: 630,
+        alt: "CP2",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "PDF Upload Requirements (Size, Format, Page Limits) | CP2",
+    description:
+      "PDF upload requirements: common size limits, supported formats, page limits, and quick fixes to avoid upload errors.",
+    images: ["https://compresspdfto2mb.com/og.png"],
+  },
 };
 
 export default function PdfUploadRequirementsPage() {
@@ -45,7 +71,8 @@ export default function PdfUploadRequirementsPage() {
           <section>
             <h2 className="text-2xl font-semibold">Fastest fix: compress to a safe target</h2>
             <p className="mt-2">
-              If you don’t know the exact portal limit, start with 2MB. If it still fails, try 1MB or 500KB.
+              If you don’t know the exact portal limit, start with 2MB. If it still fails, try 1MB
+              or 500KB.
             </p>
 
             <div className="mt-4 flex flex-wrap gap-3">
@@ -117,7 +144,10 @@ export default function PdfUploadRequirementsPage() {
             <div className="mt-4 flex flex-wrap gap-3">
               {[
                 { href: "/upload-pdf-under-2mb", label: "Upload PDF under 2MB" },
-                { href: "/reduce-pdf-size-for-online-application", label: "Online application upload tips" },
+                {
+                  href: "/reduce-pdf-size-for-online-application",
+                  label: "Online application upload tips",
+                },
                 { href: "/immigration-pdf-upload-guide", label: "Immigration upload guide" },
                 { href: "/pdf-size-limit-for-email", label: "Email attachment limits" },
               ].map((i) => (
@@ -132,6 +162,7 @@ export default function PdfUploadRequirementsPage() {
             </div>
           </section>
         </div>
+
         <InternalLinks />
       </div>
     </main>
