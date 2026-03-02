@@ -3,7 +3,7 @@ import InternalLinks from "@/app/components/InternalLinks";
 import { createCompressSizeMetadata } from "@/app/lib/seo";
 import SizeClusterLinks from "@/app/components/SizeClusterLinks";
 
-export const metadata = createCompressSizeMetadata("1MB");
+export const metadata = createCompressSizeMetadata("1mb");
 
 export default function CompressPdfTo1MbPage() {
   return (

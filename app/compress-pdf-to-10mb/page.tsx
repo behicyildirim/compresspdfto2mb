@@ -1,10 +1,9 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
-import type { Metadata } from "next";
+import { createCompressSizeMetadata } from "@/app/lib/seo";
+import SizeClusterLinks from "@/app/components/SizeClusterLinks";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "/compress-pdf-to-10mb" },
-};
+export const metadata = createCompressSizeMetadata("10mb");
 
 export default function CompressPdfTo10MbPage() {
   return (
@@ -90,9 +89,9 @@ export default function CompressPdfTo10MbPage() {
             </div>
           </section>
         </div>
-
         <InternalLinks />
       </div>
+      <SizeClusterLinks current="10MB" />
     </main>
   );
 }
