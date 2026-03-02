@@ -1,15 +1,9 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
-import type { Metadata } from "next";
+import { createCompressSizeMetadata } from "@/app/lib/seo";
+import SizeClusterLinks from "@/app/components/SizeClusterLinks";
 
-export const metadata: Metadata = {
-  title: "Compress PDF to 1MB Online (Free) | CP2",
-  description:
-    "Compress PDF to 1MB online for strict upload limits. Fast steps, scan tips, and quality-safe targets.",
-  alternates: {
-    canonical: "/compress-pdf-to-1mb",
-  },
-};
+export const metadata = createCompressSizeMetadata("1MB");
 
 export default function CompressPdfTo1MbPage() {
   return (
@@ -83,6 +77,7 @@ export default function CompressPdfTo1MbPage() {
 
         <InternalLinks />
       </div>
+      <SizeClusterLinks current="1MB" />
     </main>
   );
 }
