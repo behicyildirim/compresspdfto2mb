@@ -28,37 +28,27 @@ const labelMap: Record<SizeKey, string> = {
 export function createCompressSizeMetadata(size: SizeKey): Metadata {
   const label = labelMap[size];
   const path = `/compress-pdf-to-${size}`;
-  const absolute = new URL(path, SITE_URL).toString();
-
-  const title = `Compress PDF to ${label} Online Free | CP2`;
-  const description = `Compress PDF to ${label} instantly online. Free, secure and no registration required.`;
+  const absolute = `${SITE_URL}${path}`;
 
   return {
     metadataBase: new URL(SITE_URL),
-    title,
-    description,
-    alternates: {
-      canonical: path, // metadataBase ile birleşip absolute olur
-    },
+    title: `Compress PDF to ${label} Online Free | CP2`,
+    description: `Compress PDF to ${label} instantly online. Free, secure and no registration required.`,
+    alternates: { canonical: path },
+
     openGraph: {
-      title,
-      description,
-      url: absolute, // ✅ FIX: artık sayfanın kendisi
+      title: `Compress PDF to ${label} Online Free | CP2`,
+      description: `Compress PDF to ${label} instantly online. Free, secure and no registration required.`,
+      url: absolute, // ✅ HER SAYFAYA ÖZEL
       siteName: "CP2 - CompressPDFto2MB",
-      images: [
-        {
-          url: "/og.png",
-          width: 1200,
-          height: 630,
-          alt: "CP2 - Compress PDF to Under 2MB",
-        },
-      ],
+      images: [{ url: "/og.png", width: 1200, height: 630, alt: "CP2 - Compress PDF to Under 2MB" }],
       type: "website",
     },
+
     twitter: {
       card: "summary_large_image",
-      title,
-      description,
+      title: `Compress PDF to ${label} Online Free | CP2`,
+      description: `Compress PDF to ${label} instantly online. Free, secure and no registration required.`,
       images: ["/og.png"],
     },
   };
