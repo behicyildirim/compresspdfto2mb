@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "PDF Upload Failed? Common Reasons & Fixes | CP2",
     description:
       "Fix 'PDF upload failed' errors: size limits, corrupted files, password protection, and scan settings. Quick solutions.",
-    url: "/pdf-upload-failed",
+    url: "https://compresspdfto2mb.com/pdf-upload-failed",
     siteName: "CP2 - CompressPDFto2MB",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "CP2" }],
     type: "website",
@@ -109,8 +109,8 @@ export default function PdfUploadFailedPage() {
               >
                 immigration upload guide
               </Link>{" "}
-              (limits, common rules, what size to choose). For forms/universities/jobs,
-              use the{" "}
+              (limits, common rules, what size to choose). For
+              forms/universities/jobs, use the{" "}
               <Link
                 href="/reduce-pdf-size-for-online-application"
                 className="font-semibold text-blue-700 hover:underline"
@@ -124,8 +124,12 @@ export default function PdfUploadFailedPage() {
           <section>
             <h2 className="text-2xl font-semibold">Most Common Reasons</h2>
             <ul className="mt-3 list-disc pl-6 space-y-2">
-              <li>Your PDF is larger than the portal’s allowed limit (often 1–2MB).</li>
-              <li>The file is image-heavy (scanned documents at high resolution).</li>
+              <li>
+                Your PDF is larger than the portal’s allowed limit (often 1–2MB).
+              </li>
+              <li>
+                The file is image-heavy (scanned documents at high resolution).
+              </li>
               <li>The PDF is corrupted or incorrectly exported.</li>
               <li>The portal only accepts specific formats or page limits.</li>
               <li>Your upload timed out due to slow connection.</li>
@@ -133,7 +137,9 @@ export default function PdfUploadFailedPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold">Quick Fix: Compress to a Safe Size</h2>
+            <h2 className="text-2xl font-semibold">
+              Quick Fix: Compress to a Safe Size
+            </h2>
             <p className="mt-2">
               If you don’t know the exact limit, start by compressing to 2MB.
               For stricter portals, try 1MB. If it still fails, try 500KB.
@@ -174,73 +180,101 @@ export default function PdfUploadFailedPage() {
             <p className="mt-2">
               Scanned PDFs often fail because they’re image-heavy. Re-scan in{" "}
               <span className="font-semibold">grayscale</span> and{" "}
-              <span className="font-semibold">150–300 DPI</span>. Remove blank pages,
-              then compress again (2MB → 1MB → 500KB).
+              <span className="font-semibold">150–300 DPI</span>. Remove blank
+              pages, then compress again (2MB → 1MB → 500KB).
             </p>
           </section>
 
           <section>
-  <h2 className="text-2xl font-semibold">Portal-Specific Help</h2>
-  <p className="mt-2">Some systems have strict rules. Use these guides:</p>
+            <h2 className="text-2xl font-semibold">Portal-Specific Help</h2>
+            <p className="mt-2">Some systems have strict rules. Use these guides:</p>
 
-  <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-    <a
-      href="/pdf-too-large-to-upload"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">PDF Too Large to Upload</h3>
-      <p className="text-sm text-gray-600 mt-1">Quick fixes for large PDFs.</p>
-    </a>
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <a
+                href="/pdf-too-large-to-upload"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">
+                  PDF Too Large to Upload
+                </h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Quick fixes for large PDFs.
+                </p>
+              </a>
 
-    <a
-      href="/reduce-pdf-size-for-online-application"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">Online Application PDF Help</h3>
-      <p className="text-sm text-gray-600 mt-1">Meet strict upload limits fast.</p>
-    </a>
+              <a
+                href="/reduce-pdf-size-for-online-application"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">
+                  Online Application PDF Help
+                </h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Meet strict upload limits fast.
+                </p>
+              </a>
 
-    <a
-      href="/pdf-too-large-for-website-upload"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">PDF Too Large for Website Upload</h3>
-      <p className="text-sm text-gray-600 mt-1">Fix strict website size limits.</p>
-    </a>
+              <a
+                href="/pdf-too-large-for-website-upload"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">
+                  PDF Too Large for Website Upload
+                </h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Fix strict website size limits.
+                </p>
+              </a>
 
-    <a
-      href="/compress-pdf-for-government-application"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">Government Application PDF</h3>
-      <p className="text-sm text-gray-600 mt-1">Compress for strict form portals.</p>
-    </a>
+              <a
+                href="/compress-pdf-for-government-application"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">
+                  Government Application PDF
+                </h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Compress for strict form portals.
+                </p>
+              </a>
 
-    <a
-      href="/pdf-upload-requirements"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">PDF Upload Requirements</h3>
-      <p className="text-sm text-gray-600 mt-1">Size, format, and page limits checklist.</p>
-    </a>
+              <a
+                href="/pdf-upload-requirements"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">
+                  PDF Upload Requirements
+                </h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Size, format, and page limits checklist.
+                </p>
+              </a>
 
-    <a
-      href="/pdf-size-limit-for-email"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">Email Attachment Limits</h3>
-      <p className="text-sm text-gray-600 mt-1">Gmail and Outlook size limits explained.</p>
-    </a>
+              <a
+                href="/pdf-size-limit-for-email"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">
+                  Email Attachment Limits
+                </h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Gmail and Outlook size limits explained.
+                </p>
+              </a>
 
-    <a
-      href="/immigration-pdf-upload-guide"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">Immigration Upload Guide</h3>
-      <p className="text-sm text-gray-600 mt-1">Visa, USCIS, IRCC portal limit tips.</p>
-    </a>
-  </div>
-</section>
+              <a
+                href="/immigration-pdf-upload-guide"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">
+                  Immigration Upload Guide
+                </h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Visa, USCIS, IRCC portal limit tips.
+                </p>
+              </a>
+            </div>
+          </section>
 
           {/* FAQ schema + FAQ section */}
           <Script
@@ -256,8 +290,7 @@ export default function PdfUploadFailedPage() {
                     name: "Why does my portal say PDF upload failed?",
                     acceptedAnswer: {
                       "@type": "Answer",
-                      text:
-                        "Common reasons include file size limits, password-protected PDFs, corrupted exports, unsupported formats, or connection timeouts. Compressing to 2MB or 1MB and re-exporting often fixes the issue.",
+                      text: "Common reasons include file size limits, password-protected PDFs, corrupted exports, unsupported formats, or connection timeouts. Compressing to 2MB or 1MB and re-exporting often fixes the issue.",
                     },
                   },
                   {
@@ -265,8 +298,7 @@ export default function PdfUploadFailedPage() {
                     name: "What PDF size should I use if I’m not sure about the limit?",
                     acceptedAnswer: {
                       "@type": "Answer",
-                      text:
-                        "Start with 2MB because many portals accept it. If the upload still fails, try 1MB. For very strict portals, use 500KB.",
+                      text: "Start with 2MB because many portals accept it. If the upload still fails, try 1MB. For very strict portals, use 500KB.",
                     },
                   },
                   {
@@ -274,8 +306,7 @@ export default function PdfUploadFailedPage() {
                     name: "Why are scanned PDFs more likely to fail uploads?",
                     acceptedAnswer: {
                       "@type": "Answer",
-                      text:
-                        "Scanned PDFs are image-heavy and can exceed size limits. Re-scan in grayscale at 150–300 DPI, remove blank pages, then compress to a smaller target size.",
+                      text: "Scanned PDFs are image-heavy and can exceed size limits. Re-scan in grayscale at 150–300 DPI, remove blank pages, then compress to a smaller target size.",
                     },
                   },
                   {
@@ -283,62 +314,72 @@ export default function PdfUploadFailedPage() {
                     name: "What should I do if the error says PDF too large to upload?",
                     acceptedAnswer: {
                       "@type": "Answer",
-                      text:
-                        "Compress to a smaller target (1MB or 500KB), remove blank pages, and re-export. If allowed, splitting into multiple PDFs can also work.",
+                      text: "Compress to a smaller target (1MB or 500KB), remove blank pages, and re-export. If allowed, splitting into multiple PDFs can also work.",
                     },
                   },
                 ],
               }),
             }}
           />
-<section>
-  <h2 className="text-2xl font-semibold">Related guides</h2>
-  <p className="mt-2 text-gray-700">
-    These pages help if your portal has strict size limits or special upload rules.
-  </p>
 
-  <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-    <a
-      href="/pdf-size-limit-for-uscis"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">USCIS PDF size limit</h3>
-      <p className="text-sm text-gray-600 mt-1">
-        Common USCIS limits and the safest upload sizes.
-      </p>
-    </a>
+          <section>
+            <h2 className="text-2xl font-semibold">Related guides</h2>
+            <p className="mt-2 text-gray-700">
+              These pages help if your portal has strict size limits or special
+              upload rules.
+            </p>
 
-    <a
-      href="/reduce-pdf-size-for-online-application"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">Online application PDF help</h3>
-      <p className="text-sm text-gray-600 mt-1">
-        Best target sizes for portals, forms, universities, and jobs.
-      </p>
-    </a>
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <a
+                href="/pdf-size-limit-for-uscis"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">
+                  USCIS PDF size limit
+                </h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Common USCIS limits and the safest upload sizes.
+                </p>
+              </a>
 
-    <a
-      href="/compress-pdf-to-1mb"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">Compress PDF to 1MB</h3>
-      <p className="text-sm text-gray-600 mt-1">
-        For stricter portals that reject 2MB uploads.
-      </p>
-    </a>
+              <a
+                href="/reduce-pdf-size-for-online-application"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">
+                  Online application PDF help
+                </h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Best target sizes for portals, forms, universities, and jobs.
+                </p>
+              </a>
 
-    <a
-      href="/compress-pdf-to-500kb"
-      className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
-    >
-      <h3 className="font-semibold text-blue-700">Compress PDF to 500KB</h3>
-      <p className="text-sm text-gray-600 mt-1">
-        For very strict upload limits.
-      </p>
-    </a>
-  </div>
-</section>
+              <a
+                href="/compress-pdf-to-1mb"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">
+                  Compress PDF to 1MB
+                </h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  For stricter portals that reject 2MB uploads.
+                </p>
+              </a>
+
+              <a
+                href="/compress-pdf-to-500kb"
+                className="rounded-xl bg-gray-50 px-4 py-4 shadow-sm ring-1 ring-gray-200 hover:bg-blue-50 transition"
+              >
+                <h3 className="font-semibold text-blue-700">
+                  Compress PDF to 500KB
+                </h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  For very strict upload limits.
+                </p>
+              </a>
+            </div>
+          </section>
+
           <section className="mt-2 rounded-2xl border border-gray-200 bg-white p-6">
             <h2 className="text-xl font-semibold text-gray-900">FAQ</h2>
             <div className="mt-4 space-y-5 text-sm text-gray-700">
@@ -347,9 +388,9 @@ export default function PdfUploadFailedPage() {
                   Why does my portal say “PDF upload failed”?
                 </h3>
                 <p className="mt-1">
-                  Size limits, password protection, corrupted exports, unsupported formats,
-                  or timeouts are common causes. Try compressing (2MB → 1MB → 500KB) and
-                  re-exporting.
+                  Size limits, password protection, corrupted exports,
+                  unsupported formats, or timeouts are common causes. Try
+                  compressing (2MB → 1MB → 500KB) and re-exporting.
                 </p>
               </div>
               <div>
@@ -358,15 +399,24 @@ export default function PdfUploadFailedPage() {
                 </h3>
                 <p className="mt-1">
                   Start with{" "}
-                  <Link href="/compress-pdf-to-2mb" className="font-semibold text-blue-700 hover:underline">
+                  <Link
+                    href="/compress-pdf-to-2mb"
+                    className="font-semibold text-blue-700 hover:underline"
+                  >
                     2MB
                   </Link>
                   . If it still fails, try{" "}
-                  <Link href="/compress-pdf-to-1mb" className="font-semibold text-blue-700 hover:underline">
+                  <Link
+                    href="/compress-pdf-to-1mb"
+                    className="font-semibold text-blue-700 hover:underline"
+                  >
                     1MB
                   </Link>{" "}
                   or{" "}
-                  <Link href="/compress-pdf-to-500kb" className="font-semibold text-blue-700 hover:underline">
+                  <Link
+                    href="/compress-pdf-to-500kb"
+                    className="font-semibold text-blue-700 hover:underline"
+                  >
                     500KB
                   </Link>
                   .
@@ -377,8 +427,8 @@ export default function PdfUploadFailedPage() {
                   Why are scanned PDFs more likely to fail uploads?
                 </h3>
                 <p className="mt-1">
-                  They’re image-heavy. Re-scan in grayscale at 150–300 DPI, remove blank pages,
-                  then compress.
+                  They’re image-heavy. Re-scan in grayscale at 150–300 DPI,
+                  remove blank pages, then compress.
                 </p>
               </div>
               <div>
@@ -387,7 +437,10 @@ export default function PdfUploadFailedPage() {
                 </h3>
                 <p className="mt-1">
                   Use{" "}
-                  <Link href="/pdf-too-large-to-upload" className="font-semibold text-blue-700 hover:underline">
+                  <Link
+                    href="/pdf-too-large-to-upload"
+                    className="font-semibold text-blue-700 hover:underline"
+                  >
                     the “PDF too large” fixes
                   </Link>{" "}
                   and compress to 1MB or 500KB.
