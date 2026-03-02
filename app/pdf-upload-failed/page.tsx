@@ -2,10 +2,40 @@ import Link from "next/link";
 import Script from "next/script";
 import Breadcrumbs from "@/app/components/Breadcrumbs";
 
-export const metadata = {
-  title: "PDF Upload Failed? Fix File Size & Upload Errors",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "PDF Upload Failed? Common Reasons & Fixes | CP2",
   description:
-    "PDF upload failed? Learn why uploads fail and how to fix file size limits by compressing your PDF for portals, visa and immigration systems.",
+    "Fix 'PDF upload failed' errors: size limits, corrupted files, password protection, and scan settings. Quick solutions.",
+  alternates: { canonical: "/pdf-upload-failed" },
+
+  // ✅ FIX: layout'tan gelen og:url yerine sayfa url’sini bas
+  openGraph: {
+    title: "PDF Upload Failed? Common Reasons & Fixes | CP2",
+    description:
+      "Fix 'PDF upload failed' errors: size limits, corrupted files, password protection, and scan settings. Quick solutions.",
+    url: "/pdf-upload-failed",
+    siteName: "CP2 - CompressPDFto2MB",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "CP2 - Compress PDF to Under 2MB",
+      },
+    ],
+    type: "article",
+  },
+
+  // opsiyonel ama iyi: twitter’ı da sayfaya özel yap
+  twitter: {
+    card: "summary_large_image",
+    title: "PDF Upload Failed? Common Reasons & Fixes | CP2",
+    description:
+      "Fix 'PDF upload failed' errors: size limits, corrupted files, password protection, and scan settings. Quick solutions.",
+    images: ["/og.png"],
+  },
 };
 
 export default function PdfUploadFailedPage() {
