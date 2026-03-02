@@ -1,10 +1,12 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "PDF Upload Requirements (Size, Format, Page Limits)",
+export const metadata: Metadata = {
+  title: "PDF Upload Requirements (Size, Format, Page Limits) | CP2",
   description:
-    "PDF upload requirements: file size limits, supported formats, page limits, and quick fixes to avoid upload errors.",
+    "PDF upload requirements: common size limits, supported formats, page limits, and quick fixes to avoid upload errors.",
+  alternates: { canonical: "/pdf-upload-requirements" },
 };
 
 export default function PdfUploadRequirementsPage() {
@@ -130,7 +132,6 @@ export default function PdfUploadRequirementsPage() {
             </div>
           </section>
         </div>
-
         <InternalLinks />
       </div>
     </main>
