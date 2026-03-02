@@ -1,6 +1,7 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
 import { createCompressSizeMetadata } from "@/app/lib/seo";
+import SizeClusterLinks from "@/app/components/SizeClusterLinks";
 
 export const metadata = createCompressSizeMetadata("500kb");
 
@@ -84,9 +85,9 @@ export default function CompressPdfTo500KbPage() {
             </div>
           </section>
         </div>
-
         <InternalLinks />
       </div>
+      <SizeClusterLinks current="500kb" />
     </main>
   );
 }
