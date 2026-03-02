@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
 import Breadcrumbs from "@/app/components/Breadcrumbs";
-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,24 +13,12 @@ export const metadata: Metadata = {
     title: "PDF Upload Failed? Common Reasons & Fixes | CP2",
     description:
       "Fix 'PDF upload failed' errors: size limits, corrupted files, password protection, and scan settings. Quick solutions.",
-    url: "/pdf-upload-failed", // ✅ og:url buradan üretilecek
+    url: "/pdf-upload-failed",
     siteName: "CP2 - CompressPDFto2MB",
-    images: [
-      { url: "/og.png", width: 1200, height: 630, alt: "CP2 - Compress PDF to Under 2MB" },
-    ],
-    type: "article",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "CP2" }],
+    type: "website",
   },
 
-  twitter: {
-    card: "summary_large_image",
-    title: "PDF Upload Failed? Common Reasons & Fixes | CP2",
-    description:
-      "Fix 'PDF upload failed' errors: size limits, corrupted files, password protection, and scan settings. Quick solutions.",
-    images: ["/og.png"],
-  },
-};
-
-  // opsiyonel ama iyi: twitter’ı da sayfaya özel yap
   twitter: {
     card: "summary_large_image",
     title: "PDF Upload Failed? Common Reasons & Fixes | CP2",
@@ -56,6 +43,7 @@ export default function PdfUploadFailedPage() {
             { href: "/pdf-upload-failed", label: "PDF upload failed" },
           ]}
         />
+
         <div className="mt-4 flex flex-wrap justify-center gap-2">
           <Link
             href="/pdf-too-large-to-upload"
