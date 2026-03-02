@@ -10,23 +10,26 @@ export const metadata: Metadata = {
     "Fix 'PDF upload failed' errors: size limits, corrupted files, password protection, and scan settings. Quick solutions.",
   alternates: { canonical: "/pdf-upload-failed" },
 
-  // ✅ FIX: layout'tan gelen og:url yerine sayfa url’sini bas
   openGraph: {
     title: "PDF Upload Failed? Common Reasons & Fixes | CP2",
     description:
       "Fix 'PDF upload failed' errors: size limits, corrupted files, password protection, and scan settings. Quick solutions.",
-    url: "/pdf-upload-failed",
+    url: "/pdf-upload-failed", // ✅ og:url buradan üretilecek
     siteName: "CP2 - CompressPDFto2MB",
     images: [
-      {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: "CP2 - Compress PDF to Under 2MB",
-      },
+      { url: "/og.png", width: 1200, height: 630, alt: "CP2 - Compress PDF to Under 2MB" },
     ],
     type: "article",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "PDF Upload Failed? Common Reasons & Fixes | CP2",
+    description:
+      "Fix 'PDF upload failed' errors: size limits, corrupted files, password protection, and scan settings. Quick solutions.",
+    images: ["/og.png"],
+  },
+};
 
   // opsiyonel ama iyi: twitter’ı da sayfaya özel yap
   twitter: {
