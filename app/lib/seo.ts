@@ -39,7 +39,7 @@ export function createCompressSizeMetadata(size: SizeKey): Metadata {
     openGraph: {
       title: `Compress PDF to ${label} Online Free | CP2`,
       description: `Compress PDF to ${label} instantly online. Free, secure and no registration required.`,
-      url: absolute, // ✅ HER SAYFAYA ÖZEL
+      url: absolute, // ✅ MUTLAK URL
       siteName: "CP2 - CompressPDFto2MB",
       images: [{ url: "/og.png", width: 1200, height: 630, alt: "CP2 - Compress PDF to Under 2MB" }],
       type: "website",
