@@ -1,9 +1,29 @@
 import Link from "next/link";
+import Script from "next/script";
+import Breadcrumbs from "@/app/components/Breadcrumbs";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "USCIS PDF Size Limit (File Upload Guide)",
+export const metadata: Metadata = {
+  title: "PDF Size Limit for USCIS (Upload Rules + Fixes) | CP2",
   description:
-    "Learn the USCIS PDF size limit and how to reduce PDF file size to meet immigration portal upload requirements.",
+    "USCIS uploads may fail due to strict file size limits. Learn typical rules and compress your PDF to pass.",
+  alternates: { canonical: "/pdf-size-limit-for-uscis" },
+  openGraph: {
+    title: "PDF Size Limit for USCIS (Upload Rules + Fixes) | CP2",
+    description:
+      "USCIS uploads may fail due to strict file size limits. Learn typical rules and compress your PDF to pass.",
+    url: "/pdf-size-limit-for-uscis",
+    siteName: "CP2 - CompressPDFto2MB",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "CP2" }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PDF Size Limit for USCIS (Upload Rules + Fixes) | CP2",
+    description:
+      "USCIS uploads may fail due to strict file size limits. Learn typical rules and compress your PDF to pass.",
+    images: ["/og.png"],
+  },
 };
 
 export default function UscisPdfSizeLimitPage() {
@@ -12,71 +32,133 @@ export default function UscisPdfSizeLimitPage() {
       <div className="mx-auto max-w-3xl text-gray-800">
         <h1 className="text-4xl font-bold text-center">USCIS PDF Size Limit</h1>
 
+        <Breadcrumbs
+          items={[
+            { href: "/", label: "Home" },
+            { href: "/immigration-pdf-upload-guide", label: "Immigration upload guide" },
+            { href: "/pdf-size-limit-for-uscis", label: "USCIS PDF size limit" },
+          ]}
+        />
+
+        <div className="mt-4 flex flex-wrap justify-center gap-2">
+          <Link
+            href="/immigration-pdf-upload-guide"
+            className="rounded-full bg-gray-50 px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+          >
+            Immigration guide
+          </Link>
+          <Link
+            href="/pdf-upload-failed"
+            className="rounded-full bg-gray-50 px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+          >
+            Upload failed fixes
+          </Link>
+          <Link
+            href="/pdf-too-large-to-upload"
+            className="rounded-full bg-gray-50 px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+          >
+            PDF too large?
+          </Link>
+        </div>
+
         <p className="mt-4 text-lg text-gray-600 text-center">
-          Understand USCIS file upload limits and how to compress PDFs for
-          immigration forms.
+          USCIS portals can reject uploads due to strict file size limits, scan settings, or PDF export issues.
+          Use the checklist below to avoid delays.
+        </p>
+
+        <p className="mt-3 text-sm text-gray-600 text-center">
+          Quick start: compress to{" "}
+          <Link href="/compress-pdf-to-2mb" className="font-medium text-blue-700 hover:underline">
+            2MB
+          </Link>{" "}
+          first. If it’s still rejected, try{" "}
+          <Link href="/compress-pdf-to-1mb" className="font-medium text-blue-700 hover:underline">
+            1MB
+          </Link>{" "}
+          (or{" "}
+          <Link href="/compress-pdf-to-500kb" className="font-medium text-blue-700 hover:underline">
+            500KB
+          </Link>
+          ).
         </p>
 
         <div className="mt-10 space-y-8 leading-relaxed">
-          <section>
-            <h2 className="text-2xl font-semibold">
-              What Is the USCIS PDF Size Limit?
-            </h2>
-            <p className="mt-2">
-              USCIS online portals often require uploaded documents to stay under
-              specific size limits. While the exact limit depends on the form and
-              system used, many uploads must remain under 2MB. If your PDF exceeds
-              the allowed limit, the portal may reject it without a clear
-              explanation.
+          <section className="rounded-2xl border border-gray-200 bg-gray-50 p-5">
+            <h2 className="text-xl font-semibold text-gray-900">Pick a safe USCIS target size</h2>
+            <p className="mt-2 text-sm text-gray-700">
+              USCIS upload limits can vary by portal and document type. If you don’t see a clear limit,
+              staying under <span className="font-semibold">2MB</span> is usually the safest baseline.
+              For stricter uploads, <span className="font-semibold">1MB</span> (or <span className="font-semibold">500KB</span>) can help.
             </p>
+
+            <div className="mt-4 flex flex-wrap gap-3">
+              {[
+                { href: "/compress-pdf-to-2mb", label: "Compress to 2MB" },
+                { href: "/compress-pdf-to-1mb", label: "Compress to 1MB" },
+                { href: "/compress-pdf-to-500kb", label: "Compress to 500KB" },
+              ].map((i) => (
+                <Link
+                  key={i.href}
+                  href={i.href}
+                  className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+                >
+                  {i.label}
+                </Link>
+              ))}
+            </div>
+
+            <div className="mt-4 rounded-2xl border border-gray-200 bg-white p-4">
+              <p className="text-sm text-gray-700">
+                If you see a generic error, follow{" "}
+                <Link href="/pdf-upload-failed" className="font-semibold text-blue-700 hover:underline">
+                  PDF upload failed fixes
+                </Link>{" "}
+                to check corruption, password protection, timeouts, and portal rules.
+              </p>
+            </div>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold">Common USCIS Upload Errors</h2>
-            <p className="mt-2">
-              Applicants frequently encounter upload errors when submitting
-              scanned documents, supporting evidence, or immigration forms. The
-              most common issues include:
-            </p>
+            <h2 className="text-2xl font-semibold">Why USCIS uploads get rejected</h2>
             <ul className="mt-3 list-disc pl-6 space-y-2">
-              <li>File size exceeding the allowed limit</li>
-              <li>Scanned PDFs containing high-resolution images</li>
-              <li>Multiple pages saved as large image-based PDFs</li>
-              <li>Corrupted or improperly exported PDF files</li>
+              <li>File size exceeds the portal limit.</li>
+              <li>Scanned PDFs are image-heavy (high DPI / color scans).</li>
+              <li>Multiple pages saved as large photo-based PDFs.</li>
+              <li>Corrupted or incorrectly exported PDF files.</li>
+              <li>Password-protected / encrypted PDFs (often rejected).</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold">
-              How to Reduce PDF Size for USCIS Upload
-            </h2>
+            <h2 className="text-2xl font-semibold">How to reduce PDF size for USCIS upload</h2>
             <ol className="mt-3 list-decimal pl-6 space-y-2">
-              <li>Upload your document to a PDF compression tool.</li>
-              <li>Select a target size (2MB or lower is generally safe).</li>
-              <li>Compress the file while keeping text readable.</li>
-              <li>Download and re-upload to the USCIS portal.</li>
+              <li>
+                Start with{" "}
+                <Link href="/compress-pdf-to-2mb" className="font-semibold text-blue-700 hover:underline">
+                  2MB compression
+                </Link>
+                .
+              </li>
+              <li>If the upload still fails, compress to 1MB.</li>
+              <li>If the portal is very strict, compress to 500KB.</li>
+              <li>Re-upload. If it still fails, re-export the PDF and try again.</li>
             </ol>
+
             <p className="mt-3">
-              Image-heavy scans usually compress well. If your file is already
-              optimized, try lowering the scan resolution or splitting the
-              document into smaller sections.
+              Image-heavy scans usually compress well. If your PDF is already optimized, lower scan resolution
+              and remove blank pages before re-compressing.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold">
-              Best Practices Before Uploading to USCIS
-            </h2>
+            <h2 className="text-2xl font-semibold">Best scan settings that usually work</h2>
             <ul className="mt-3 list-disc pl-6 space-y-2">
-              <li>Scan documents in black and white when possible</li>
-              <li>Avoid unnecessarily high DPI settings</li>
-              <li>Remove blank pages before uploading</li>
-              <li>Ensure the file is saved in standard PDF format</li>
+              <li>Grayscale (or black &amp; white) instead of color</li>
+              <li>150–300 DPI (higher can explode size)</li>
+              <li>Remove blank pages</li>
+              <li>Export as standard PDF (avoid “images inside a PDF wrapper”)</li>
+              <li>Avoid password protection unless the portal explicitly allows it</li>
             </ul>
-            <p className="mt-3">
-              Preparing your document properly reduces the chance of upload
-              errors and prevents delays in your immigration process.
-            </p>
           </section>
 
           <section className="mt-2 rounded-lg bg-blue-50 p-6 text-center">
@@ -88,59 +170,55 @@ export default function UscisPdfSizeLimitPage() {
             </Link>
           </section>
 
-          <section className="mt-6">
-            <h2 className="text-2xl font-semibold text-gray-900">
-              Frequently Asked Questions
-            </h2>
-
-            <div className="mt-6 space-y-6 text-gray-700">
-              <div>
-                <h3 className="font-semibold text-gray-900">
-                  What is the safest file size for USCIS uploads?
-                </h3>
-                <p className="mt-1">
-                  Many applicants compress files to under 2MB to avoid upload
-                  failures. Always verify the limit for your specific USCIS form.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-semibold text-gray-900">
-                  Why does USCIS reject my PDF file?
-                </h3>
-                <p className="mt-1">
-                  Rejections typically happen when files exceed size limits,
-                  contain unsupported formats, or were scanned at very high
-                  resolution.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-semibold text-gray-900">
-                  Can I upload multiple smaller PDFs instead?
-                </h3>
-                <p className="mt-1">
-                  Depending on the portal, splitting large documents into smaller
-                  files may solve the issue if compression alone is not
-                  sufficient.
-                </p>
-              </div>
-            </div>
-          </section>
+          <Script
+            id="faq-uscis-jsonld"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "What is the safest file size for USCIS uploads?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text:
+                        "If you don’t see a clear limit, compressing to under 2MB is a common safe target. If the portal is strict, try 1MB or 500KB.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Why does USCIS reject my PDF file?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text:
+                        "Rejections usually happen due to size limits, image-heavy scans, corrupted exports, password protection, or portal rules. Compressing to a smaller target and re-exporting often fixes it.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Can I upload multiple smaller PDFs instead?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text:
+                        "Some portals allow splitting documents into smaller files. If compression isn’t enough, splitting can help if the system supports multiple uploads.",
+                    },
+                  },
+                ],
+              }),
+            }}
+          />
 
           <section className="mt-8">
-            <h2 className="text-xl font-semibold text-gray-900">
-              Related Immigration Guides
-            </h2>
+            <h2 className="text-xl font-semibold text-gray-900">Related immigration guides</h2>
 
             <div className="mt-4 flex flex-wrap gap-3">
               {[
-                { href: "/compress-pdf-for-visa", label: "Visa Applications" },
-                {
-                  href: "/compress-pdf-for-immigration",
-                  label: "Immigration Portals",
-                },
+                { href: "/immigration-pdf-upload-guide", label: "Immigration upload guide" },
+                { href: "/compress-pdf-for-visa", label: "Compress PDF for visa" },
                 { href: "/compress-pdf-to-2mb", label: "Compress to 2MB" },
+                { href: "/pdf-too-large-to-upload", label: "PDF too large to upload" },
               ].map((i) => (
                 <Link
                   key={i.href}

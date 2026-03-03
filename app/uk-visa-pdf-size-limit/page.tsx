@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   description:
     "UK visa uploads can fail due to strict size limits. Learn common UKVI limits and compress your PDF to a safe target.",
   alternates: { canonical: "/uk-visa-pdf-size-limit" },
-
   openGraph: {
     title: "UK Visa PDF Size Limit (2025 Guide) | CP2",
     description:
@@ -19,7 +18,6 @@ export const metadata: Metadata = {
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "CP2" }],
     type: "website",
   },
-
   twitter: {
     card: "summary_large_image",
     title: "UK Visa PDF Size Limit (2025 Guide) | CP2",
@@ -33,7 +31,6 @@ export default function UkVisaPdfLimitPage() {
   return (
     <main className="min-h-screen bg-white px-4 py-14">
       <div className="mx-auto max-w-3xl text-gray-800">
-
         <h1 className="text-4xl font-bold text-center">
           UK Visa PDF Size Limit (2025 Guide)
         </h1>
@@ -73,31 +70,21 @@ export default function UkVisaPdfLimitPage() {
 
         <p className="mt-3 text-sm text-gray-600 text-center">
           Quick start: compress to{" "}
-          <Link
-            href="/compress-pdf-to-2mb"
-            className="font-medium text-blue-700 hover:underline"
-          >
+          <Link href="/compress-pdf-to-2mb" className="font-medium text-blue-700 hover:underline">
             2MB
           </Link>{" "}
           first. If the portal is strict, try{" "}
-          <Link
-            href="/compress-pdf-to-1mb"
-            className="font-medium text-blue-700 hover:underline"
-          >
+          <Link href="/compress-pdf-to-1mb" className="font-medium text-blue-700 hover:underline">
             1MB
           </Link>{" "}
           or{" "}
-          <Link
-            href="/compress-pdf-to-500kb"
-            className="font-medium text-blue-700 hover:underline"
-          >
+          <Link href="/compress-pdf-to-500kb" className="font-medium text-blue-700 hover:underline">
             500KB
           </Link>
           .
         </p>
 
         <div className="mt-10 space-y-8 leading-relaxed">
-
           <section className="rounded-2xl border border-gray-200 bg-gray-50 p-5">
             <h2 className="text-xl font-semibold text-gray-900">
               What is the UK visa document upload limit?
@@ -160,17 +147,6 @@ export default function UkVisaPdfLimitPage() {
             </Link>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-semibold">
-              Why compressing helps
-            </h2>
-            <p className="mt-2">
-              Upload errors can delay visa processing. Compressing your PDF ensures smoother submission,
-              faster processing, and fewer technical issues during application.
-            </p>
-          </section>
-
-          {/* FAQ JSON-LD */}
           <Script
             id="faq-ukvisa-jsonld"
             type="application/ld+json"
@@ -201,46 +177,10 @@ export default function UkVisaPdfLimitPage() {
               }),
             }}
           />
-
-          <section className="mt-8">
-            <h2 className="text-2xl font-semibold text-gray-900">
-              Frequently Asked Questions
-            </h2>
-
-            <div className="mt-6 space-y-6 text-gray-700">
-              <div>
-                <h3 className="font-semibold text-gray-900">
-                  What is the safest file size for UK visa uploads?
-                </h3>
-                <p className="mt-1">
-                  Most applicants compress to{" "}
-                  <Link
-                    href="/compress-pdf-to-2mb"
-                    className="font-semibold text-blue-700 hover:underline"
-                  >
-                    under 2MB
-                  </Link>
-                  . If rejected, try 1MB or 500KB.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-semibold text-gray-900">
-                  Why does the UK visa portal reject my PDF?
-                </h3>
-                <p className="mt-1">
-                  Rejections often happen due to file size limits, image-heavy scans,
-                  password protection, or corrupted exports.
-                </p>
-              </div>
-            </div>
-          </section>
-
         </div>
 
         <p className="mt-10 text-sm text-gray-500 text-center">
-          Looking for a different file size? Try compressing to 100KB, 200KB,
-          500KB or 2MB depending on your needs.
+          Looking for a different file size? Try compressing to 100KB, 200KB, 500KB or 2MB depending on your needs.
         </p>
 
         <InternalLinks />
