@@ -1,10 +1,30 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Compress PDF for Visa Application Online Free | CP2",
   description:
     "Compress PDF files for visa applications. Reduce size to meet upload limits. Free and secure.",
+  alternates: { canonical: "/compress-pdf-for-visa" },
+
+  openGraph: {
+    title: "Compress PDF for Visa Application Online Free | CP2",
+    description:
+      "Compress PDF files for visa applications. Reduce size to meet upload limits. Free and secure.",
+    url: "/compress-pdf-for-visa",
+    siteName: "CP2 - CompressPDFto2MB",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "CP2" }],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Compress PDF for Visa Application Online Free | CP2",
+    description:
+      "Compress PDF files for visa applications. Reduce size to meet upload limits. Free and secure.",
+    images: ["/og.png"],
+  },
 };
 
 export default function CompressPdfTo1MbPage() {

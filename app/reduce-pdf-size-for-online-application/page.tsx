@@ -1,11 +1,32 @@
 import Link from "next/link";
 import Script from "next/script";
 import Breadcrumbs from "@/app/components/Breadcrumbs";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Reduce PDF Size for Online Application (Fast & Simple)",
+
+export const metadata: Metadata = {
+  title: "Reduce PDF Size for Online Application (Fast & Simple) | CP2",
   description:
     "Reduce PDF size for online applications. Meet upload limits for forms, portals, universities, jobs, and visas with quick compression targets.",
+  alternates: { canonical: "/reduce-pdf-size-for-online-application" },
+
+  openGraph: {
+    title: "Reduce PDF Size for Online Application (Fast & Simple) | CP2",
+    description:
+      "Reduce PDF size for online applications. Meet upload limits for forms, portals, universities, jobs, and visas with quick compression targets.",
+    url: "/reduce-pdf-size-for-online-application",
+    siteName: "CP2 - CompressPDFto2MB",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "CP2" }],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Reduce PDF Size for Online Application (Fast & Simple) | CP2",
+    description:
+      "Reduce PDF size for online applications. Meet upload limits for forms, portals, universities, jobs, and visas with quick compression targets.",
+    images: ["/og.png"],
+  },
 };
 
 export default function ReducePdfSizeForOnlineApplicationPage() {
