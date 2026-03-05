@@ -188,7 +188,55 @@ export default function HomeClient() {
           <h2 className="text-xl font-semibold text-gray-900">
             Popular upload size limits
           </h2>
+<section className="mt-12 text-left">
+<h2 className="text-2xl font-semibold text-gray-900 mb-4">
+How to Compress a PDF to Under 2MB
+</h2>
 
+<p className="text-gray-600 mb-4">
+Many websites and online portals restrict PDF uploads to small file sizes.
+If your file is too large, you may see errors during upload. Our free tool
+helps reduce PDF file size quickly while keeping documents readable.
+</p>
+
+<ol className="list-decimal ml-6 text-gray-600 space-y-2">
+<li>Select your PDF file</li>
+<li>Click the compress button</li>
+<li>Download the optimized file instantly</li>
+</ol>
+</section>
+<section className="mt-12 text-left">
+<h2 className="text-2xl font-semibold text-gray-900 mb-4">
+Why PDF Uploads Fail
+</h2>
+
+<p className="text-gray-600">
+Many websites reject files that exceed upload limits.
+Common reasons include large scanned documents, high resolution images,
+or multiple pages combined in one file. Compressing the PDF usually solves
+the problem instantly.
+</p>
+</section>
+<section className="mt-12 text-left">
+<h2 className="text-2xl font-semibold text-gray-900 mb-4">
+Frequently Asked Questions
+</h2>
+
+<p className="text-gray-600 mb-2">
+<strong>Can I compress a PDF without losing quality?</strong><br/>
+Yes. Most PDFs can be optimized by reducing image size while keeping text readable.
+</p>
+
+<p className="text-gray-600 mb-2">
+<strong>Is this PDF compressor free?</strong><br/>
+Yes. You can compress PDF files online without registration.
+</p>
+
+<p className="text-gray-600">
+<strong>What is the best size for document uploads?</strong><br/>
+Many portals accept files between 1MB and 2MB.
+</p>
+</section>
           <p className="mt-2 text-sm text-gray-600">
             Start with a safe target. If the portal is strict, go smaller.
           </p>
