@@ -1,9 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "PDF Size Limit for Email (Attachment Guide + Fixes)",
+export const metadata: Metadata = {
+  title: "PDF Size Limit for Email Attachments (Gmail & Outlook) | CP2",
   description:
-    "PDF size limit for email: why attachments fail and how to fix it. Use safe compression targets and send PDFs successfully.",
+    "Email attachment limits can block large PDFs. Learn common size limits and compress your PDF to send successfully.",
+  alternates: { canonical: "/pdf-size-limit-for-email" },
 };
 
 export default function PdfSizeLimitForEmailPage() {

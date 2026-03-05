@@ -1,10 +1,12 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "PDF Too Large for Website Upload? Fix It Fast",
+export const metadata: Metadata = {
+  title: "PDF Too Large for Website Upload? Fix It Fast | CP2",
   description:
-    "PDF too large for website upload? Reduce file size, fix scan settings, and upload successfully in minutes.",
+    "Website upload limits can reject large PDFs. Compress your file and follow quick fixes to upload successfully.",
+  alternates: { canonical: "/pdf-too-large-for-website-upload" },
 };
 
 export default function PdfTooLargeForWebsiteUploadPage() {

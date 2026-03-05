@@ -17,14 +17,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
     "https://compresspdfto2mb.com";
 
-  const CRITICAL_PATHS = [
-    "/compress-pdf-for-visa",
-    "/pdf-size-limit-for-uscis",
-    "/canada-immigration-pdf-size-limit",
-    "/uk-visa-pdf-size-limit",
-    "/schengen-visa-pdf-size-limit",
-    "/immigration-pdf-upload-guide",
-  ];
+ const CRITICAL_PATHS = [
+  "/compress-pdf-for-visa",
+  "/pdf-size-limit-for-uscis",
+  "/canada-immigration-pdf-size-limit",
+  "/uk-visa-pdf-size-limit",
+  "/schengen-visa-pdf-size-limit",
+  "/immigration-pdf-upload-guide",
+  "/visa-document-upload-size-limit",   // yeni hub
+];
 
   const uniquePaths = Array.from(
     new Set(

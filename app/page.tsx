@@ -1,7 +1,13 @@
-"use client";
-
 import { useRef, useState } from "react";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Compress PDF to Under 2MB Online Free | CP2 Tool",
+  description:
+    "Compress PDF files to under 2MB instantly. Free online PDF compressor. Fast, secure and no registration required.",
+  alternates: { canonical: "/" },
+};
 
 function formatMB(bytes: number) {
   return (bytes / (1024 * 1024)).toFixed(2);

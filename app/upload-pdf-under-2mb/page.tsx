@@ -1,10 +1,12 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Upload PDF Under 2MB (Quick Steps + Fixes)",
+export const metadata: Metadata = {
+  title: "Upload PDF Under 2MB (Quick Steps + Fixes) | CP2",
   description:
     "Need to upload a PDF under 2MB? Compress to a safe size and follow quick steps to avoid portal upload errors.",
+  alternates: { canonical: "/upload-pdf-under-2mb" },
 };
 
 export default function UploadPdfUnder2MbPage() {

@@ -1,9 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Compress PDF Under 2MB (Quick & Upload-Friendly)",
+export const metadata: Metadata = {
+  title: "Compress PDF Under 2MB Online Free | CP2 Tool",
   description:
-    "Compress PDF under 2MB to meet upload limits. Try 2MB first, then 1MB or 500KB for stricter portals and websites.",
+    "Compress a PDF under 2MB instantly. Free, fast, secure, and no registration required.",
+  alternates: { canonical: "/compress-pdf-under-2mb" },
 };
 
 export default function CompressPdfUnder2mbPage() {

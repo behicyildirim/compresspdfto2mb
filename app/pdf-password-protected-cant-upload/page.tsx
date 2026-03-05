@@ -1,9 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Password-Protected PDF Can't Upload? Fix It",
+export const metadata: Metadata = {
+  title: "Password-Protected PDF Can't Upload? Fix It | CP2",
   description:
-    "Password-protected PDF can't upload? Many portals reject encrypted PDFs. Remove protection, re-export, and compress to a safe size.",
+    "Some portals reject encrypted PDFs. Learn why password-protected PDFs fail and how to upload successfully.",
+  alternates: { canonical: "/pdf-password-protected-cant-upload" },
 };
 
 export default function PdfPasswordProtectedCantUploadPage() {

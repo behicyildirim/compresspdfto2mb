@@ -1,9 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "PDF File Too Large for Email? Reduce Size Fast",
+export const metadata: Metadata = {
+  title: "PDF File Too Large for Email? Quick Fixes | CP2",
   description:
-    "PDF file too large for email? Compress your PDF to safe targets and avoid attachment failures in Gmail, Outlook, and other providers.",
+    "If your PDF is too large to email, compress it to a safe target and send successfully. Fast, secure, free.",
+  alternates: { canonical: "/pdf-file-too-large-for-email" },
 };
 
 export default function PdfFileTooLargeForEmailPage() {

@@ -1,9 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Outlook Attachment Size Limit (PDF Too Large? Fix It)",
+export const metadata: Metadata = {
+  title: "Outlook Attachment Size Limit (Send PDFs Successfully) | CP2",
   description:
-    "Outlook attachment size limit help: what to do when your PDF is too large. Use safe compression targets and avoid send failures.",
+    "Outlook attachment limits can block large PDFs. Learn common limits and compress your PDF to send without issues.",
+  alternates: { canonical: "/outlook-attachment-size-limit" },
 };
 
 export default function OutlookAttachmentSizeLimitPage() {

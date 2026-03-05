@@ -1,10 +1,12 @@
 import InternalLinks from "@/app/components/InternalLinks";
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Compress PDF for WhatsApp Online Free | CP2",
+export const metadata: Metadata = {
+  title: "Compress PDF for WhatsApp (Send Smaller Files) | CP2",
   description:
-    "Compress a PDF for WhatsApp instantly. Reduce file size for fast sharing. Free and secure.",
+    "Compress a PDF for WhatsApp to send faster. Reduce file size while keeping text readable.",
+  alternates: { canonical: "/compress-pdf-for-whatsapp" },
 };
 
 export default function CompressPdfForWhatsappPage() {

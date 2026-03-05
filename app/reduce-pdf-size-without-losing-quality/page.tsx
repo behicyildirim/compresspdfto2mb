@@ -1,10 +1,12 @@
 import Link from "next/link";
 import InternalLinks from "@/app/components/InternalLinks";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Reduce PDF Size Without Losing Quality | CP2",
+export const metadata: Metadata = {
+  title: "Reduce PDF Size Without Losing Quality (Best Methods) | CP2",
   description:
-    "Compress PDF files without losing quality. Reduce file size while keeping text and images clear.",
+    "Reduce PDF file size while keeping text readable. Practical methods for scanned PDFs and exported documents.",
+  alternates: { canonical: "/reduce-pdf-size-without-losing-quality" },
 };
 
 export default function ReducePdfWithoutQualityLossPage() {

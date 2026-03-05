@@ -1,9 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Gmail Attachment Size Limit (PDF Too Large? Fix It)",
+export const metadata: Metadata = {
+  title: "Gmail Attachment Size Limit (How to Send Large PDFs) | CP2",
   description:
-    "Gmail attachment size limit help: what to do when your PDF is too large. Use safe compression targets and send successfully.",
+    "Learn Gmail’s attachment size limit and how to compress PDFs to send successfully without upload errors.",
+  alternates: { canonical: "/gmail-attachment-size-limit" },
 };
 
 export default function GmailAttachmentSizeLimitPage() {
