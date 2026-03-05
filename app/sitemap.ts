@@ -1,4 +1,3 @@
-"use client";
 import type { MetadataRoute } from "next";
 import { SITEMAP_PATHS } from "@/app/lib/sitePaths";
 
