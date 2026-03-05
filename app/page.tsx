@@ -9,52 +9,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-function formatMB(bytes: number) {
-  return (bytes / (1024 * 1024)).toFixed(2);
-}
-
 export default function Home() {
-  const inputRef = useRef<HTMLInputElement | null>(null);
-  const [file, setFile] = useState<File | null>(null);
-  const [loading, setLoading] = useState(false);
-
-  const pickFile = () => inputRef.current?.click();
-
-  const handleUpload = async () => {
-    if (!file) return alert("Select a PDF file");
-
-    const formData = new FormData();
-    formData.append("file", file);
-
-    setLoading(true);
-
-    try {
-      const res = await fetch("/api/compress", {
-        method: "POST",
-        body: formData,
-      });
-
-      if (!res.ok) throw new Error();
-
-      const blob = await res.blob();
-      const url = window.URL.createObjectURL(blob);
-
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = `compressed_${file.name || "file"}.pdf`;
-      a.click();
-
-      window.URL.revokeObjectURL(url);
-    } catch {
-      alert("Compression failed. Please try again.");
-    }
-
-    setLoading(false);
-  };
-
   return (
     <main className="min-h-screen bg-white px-4 py-16">
+
+      {/* Upload Tool */}
       <HomeClient />
+
       <div className="mx-auto max-w-3xl text-center">
 
         {/* Hero */}
