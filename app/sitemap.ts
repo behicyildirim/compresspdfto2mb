@@ -17,25 +17,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
     "https://compresspdfto2mb.com";
 
- const CRITICAL_PATHS = [
-  "/compress-pdf-for-visa",
-  "/pdf-size-limit-for-uscis",
-  "/canada-immigration-pdf-size-limit",
-  "/uk-visa-pdf-size-limit",
-  "/schengen-visa-pdf-size-limit",
-  "/immigration-pdf-upload-guide",
-  "/visa-document-upload-size-limit",   // yeni hub
-];
+  const CRITICAL_PATHS = [
+    "/compress-pdf-for-visa",
+    "/pdf-size-limit-for-uscis",
+    "/canada-immigration-pdf-size-limit",
+    "/uk-visa-pdf-size-limit",
+    "/schengen-visa-pdf-size-limit",
+    "/immigration-pdf-upload-guide",
+  ];
 
   const uniquePaths = Array.from(
-    new Set(
-      [
-        ...(SITEMAP_PATHS ?? []),
-        ...CRITICAL_PATHS,
-      ]
-        .map(normalizePath)
-        .filter(Boolean)
-    )
+    new Set([...(SITEMAP_PATHS ?? []), ...CRITICAL_PATHS].map(normalizePath).filter(Boolean))
   );
 
   const now = new Date();
@@ -54,7 +46,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       p.includes("/whatsapp") ||
       p.includes("/email") ||
       p.includes("/university") ||
-      p.includes("/portal-upload");
+      p.includes("/portal-upload") ||
+      p.includes("/portal");
 
     const isSupport =
       p.includes("/pdf-upload") ||
@@ -64,16 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       p.includes("/timeout") ||
       p.includes("/requirements");
 
-    const priority = isHome
-      ? 1
-      : isSupport
-        ? 0.9
-        : isUseCase
-          ? 0.9   // immigration cluster boost
-          : isSizePage
-            ? 0.8
-            : 0.7;
-
+    const priority = isHome ? 1 : isSupport ? 0.9 : isUseCase ? 0.9 : isSizePage ? 0.8 : 0.7;
     const changeFrequency = isHome ? "weekly" : "monthly";
 
     return {
