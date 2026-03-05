@@ -22,6 +22,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-gray-900">
           Compress PDF to Under 2MB Online
         </h1>
+
 <section className="mx-auto mt-10 max-w-3xl rounded-2xl border border-gray-200 bg-white p-6">
   <h2 className="text-xl font-semibold text-gray-900">
     Common PDF Upload Problems (Fast Fixes)
@@ -227,51 +228,7 @@ USCIS website
   </Link>
   .
 </p>
-        {/* Tool Card */}
-        <div className="mt-10 bg-gray-50 p-8 rounded-xl shadow-lg">
-
-          <input
-            ref={inputRef}
-            type="file"
-            accept="application/pdf"
-            className="hidden"
-            onChange={(e) => setFile(e.target.files?.[0] || null)}
-          />
-
-          <button
-            type="button"
-            onClick={pickFile}
-            className="w-full border-2 border-dashed border-gray-300 hover:border-gray-400 bg-white rounded-lg py-6 px-4 text-gray-700 transition"
-          >
-            <div className="font-medium text-lg">Select PDF</div>
-            <div className="text-sm text-gray-500 mt-1">
-              {file ? "Change file" : "Only .pdf files supported"}
-            </div>
-          </button>
-
-          <div className="mt-4 text-sm text-gray-700 min-h-[20px]">
-            {file ? (
-              <span>
-                <b>{file.name}</b> • {formatMB(file.size)} MB
-              </span>
-            ) : (
-              <span className="text-gray-500">No file selected</span>
-            )}
-          </div>
-
-          <button
-            onClick={handleUpload}
-            disabled={loading || !file}
-            className="w-full mt-6 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-300 text-white py-4 rounded-lg text-lg font-medium transition"
-          >
-            {loading ? "Compressing..." : "Compress Now"}
-          </button>
-
-          <p className="mt-4 text-xs text-gray-500">
-            Your file is processed securely and deleted after compression.
-          </p>
-        </div>
-
+        
         {/* Trust Section */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-700">
           <div>
