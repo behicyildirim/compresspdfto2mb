@@ -15,6 +15,12 @@ export default function Page() {
         <h1 className="text-4xl font-bold text-gray-900">
           PDF Upload Failed? Fix It (Fast Checklist)
         </h1>
+        <p className="mt-4 text-gray-600">
+If your PDF upload fails, it is usually caused by file size limits, password protection,
+or portal restrictions. Use the quick fixes below and try compressing your PDF to a safe size
+like <Link href="/compress-pdf-to-2mb" className="text-blue-700 underline">2MB</Link> or
+<Link href="/compress-pdf-to-1mb" className="text-blue-700 underline ml-1">1MB</Link>.
+</p>
         <p className="mt-4 text-lg text-gray-600">
           If a portal says “upload failed”, it’s usually one of these: file size
           limit, password protection, unsupported format, or a scanned PDF that’s

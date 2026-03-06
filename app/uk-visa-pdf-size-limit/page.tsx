@@ -185,6 +185,9 @@ export default function UkVisaPdfLimitPage() {
 
         <InternalLinks />
       </div>
+      <Link href="/compress-pdf-to-2mb" className="text-blue-700 underline ml-1">
+compress your PDF online
+</Link>
     </main>
   );
 }

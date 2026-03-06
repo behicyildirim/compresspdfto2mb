@@ -11,7 +11,12 @@ export default function PdfUploadTimeoutPage() {
     <main className="min-h-screen bg-white px-4 py-14">
       <div className="mx-auto max-w-3xl text-gray-800">
         <h1 className="text-4xl font-bold text-center">PDF Upload Timeout?</h1>
-
+<p className="mt-4 text-gray-600">
+If your PDF upload fails, it is usually caused by file size limits, password protection,
+or portal restrictions. Use the quick fixes below and try compressing your PDF to a safe size
+like <Link href="/compress-pdf-to-2mb" className="text-blue-700 underline">2MB</Link> or
+<Link href="/compress-pdf-to-1mb" className="text-blue-700 underline ml-1">1MB</Link>.
+</p>
         <p className="mt-4 text-lg text-gray-600 text-center">
           Uploads fail when files are too large or connections are slow. Reduce PDF size and retry.
         </p>
