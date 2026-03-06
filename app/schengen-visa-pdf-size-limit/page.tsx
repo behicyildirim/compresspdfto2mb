@@ -231,18 +231,17 @@ export default function SchengenVisaPdfLimitPage() {
                 </p>
               </div>
             </div>
+                  <Link href="/compress-pdf-to-2mb" className="text-blue-700 underline ml-1">
+compress your PDF online
+</Link>
           </section>
         </div>
 
         <p className="mt-10 text-sm text-gray-500 text-center">
           Looking for a different file size? Try compressing to 100KB, 200KB, 500KB or 2MB depending on your needs.
         </p>
-
         <InternalLinks />
       </div>
-      <Link href="/compress-pdf-to-2mb" className="text-blue-700 underline ml-1">
-compress your PDF online
-</Link>
     </main>
   );
 }
