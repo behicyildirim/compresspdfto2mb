@@ -202,6 +202,36 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <section className="mt-10 rounded-2xl border border-gray-200 bg-gray-50 p-6">
+  <h2 className="text-xl font-semibold text-gray-900">
+    Related upload fixes
+  </h2>
+
+  <div className="mt-4 flex flex-wrap gap-3">
+
+    <Link
+      href="/pdf-too-large-to-upload"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      PDF too large to upload
+    </Link>
+
+    <Link
+      href="/pdf-upload-requirements"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      PDF upload requirements
+    </Link>
+
+    <Link
+      href="/immigration-pdf-upload-guide"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Immigration upload guide
+    </Link>
+
+  </div>
+</section>
     </main>
   );
 }
