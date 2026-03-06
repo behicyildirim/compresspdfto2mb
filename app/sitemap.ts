@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/uk-visa-pdf-size-limit",
     "/schengen-visa-pdf-size-limit",
     "/immigration-pdf-upload-guide",
+    "/pdf-upload-failed-fix",
   ];
 
   const uniquePaths = Array.from(
