@@ -74,6 +74,7 @@ export default function CompressPdfForPortalUploadPage() {
 
           <section className="bg-blue-50 p-6 rounded-lg text-center">
             <h2 className="text-xl font-semibold text-gray-900">Compress now</h2>
+            
             <p className="mt-2 text-gray-700">Pick a safe size and upload again.</p>
             <Link
               href="/"
@@ -82,6 +83,41 @@ export default function CompressPdfForPortalUploadPage() {
               Go to PDF Compressor
             </Link>
           </section>
+          <section className="mt-10">
+  <h2 className="text-2xl font-semibold">Related upload guides</h2>
+
+  <div className="mt-4 flex flex-wrap gap-3">
+
+    <Link
+      href="/compress-pdf-for-online-application"
+      className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Compress PDF for online application
+    </Link>
+
+    <Link
+      href="/immigration-pdf-upload-guide"
+      className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Immigration PDF upload guide
+    </Link>
+
+    <Link
+      href="/visa-document-upload-size-limit"
+      className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Visa document upload size limits
+    </Link>
+
+    <Link
+      href="/pdf-too-large-to-upload"
+      className="rounded-xl bg-gray-50 px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      PDF too large to upload
+    </Link>
+
+  </div>
+</section>
         </div>
       </div>
     </main>
