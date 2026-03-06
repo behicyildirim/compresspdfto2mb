@@ -412,6 +412,50 @@ export default function ImmigrationPdfUploadGuidePage() {
           </section>
         </div>
       </div>
+      <section className="mt-10 rounded-2xl border border-gray-200 bg-gray-50 p-6">
+  <h2 className="text-xl font-semibold text-gray-900">
+    Related visa upload guides
+  </h2>
+
+  <div className="mt-4 flex flex-wrap gap-3">
+
+    <Link
+      href="/visa-document-upload-size-limit"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Visa document upload size limits
+    </Link>
+
+    <Link
+      href="/pdf-size-limit-for-uscis"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      USCIS PDF size limit
+    </Link>
+
+    <Link
+      href="/canada-immigration-pdf-size-limit"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Canada immigration PDF size limit
+    </Link>
+
+    <Link
+      href="/uk-visa-pdf-size-limit"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      UK visa PDF size limit
+    </Link>
+
+    <Link
+      href="/schengen-visa-pdf-size-limit"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Schengen visa PDF size limit
+    </Link>
+
+  </div>
+</section>
     </main>
   );
 }
