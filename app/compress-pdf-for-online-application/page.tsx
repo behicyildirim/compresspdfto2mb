@@ -54,6 +54,12 @@ export default function Page() {
       </h2>
 
       <div className="mt-4 flex flex-wrap gap-3">
+        <Link
+  href="/immigration-pdf-upload-guide"
+  className="text-blue-700 underline"
+>
+  Immigration PDF upload guide
+</Link>
 
         <Link
           href="/pdf-upload-failed-fix"

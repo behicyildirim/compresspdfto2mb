@@ -152,11 +152,11 @@ export default function HomeClient() {
           <p>
             Having issues? See{" "}
             <Link
-              href="/pdf-upload-failed"
-              className="font-semibold text-blue-700 hover:underline"
-            >
-              PDF upload failed fixes
-            </Link>{" "}
+  href="/pdf-upload-failed-fix"
+  className="font-semibold text-blue-700 hover:underline"
+>
+  PDF upload failed fixes
+</Link>
             or{" "}
             <Link
               href="/pdf-too-large-to-upload"
@@ -217,6 +217,16 @@ or multiple pages combined in one file. Compressing the PDF usually solves
 the problem instantly.
 </p>
 </section>
+<p className="mt-4 text-sm text-gray-600">
+  Applying through a portal? See{" "}
+  <Link
+    href="/compress-pdf-for-online-application"
+    className="font-semibold text-blue-700 hover:underline"
+  >
+    compress PDF for online application
+  </Link>
+  .
+</p>
 <section className="mt-12 text-left">
 <h2 className="text-2xl font-semibold text-gray-900 mb-4">
 Frequently Asked Questions

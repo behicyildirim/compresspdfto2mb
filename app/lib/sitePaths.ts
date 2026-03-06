@@ -34,6 +34,7 @@ export const USE_CASE_PAGES: Item[] = [
   { href: "/compress-pdf-for-email", label: "Compress PDF for Email" },
   { href: "/compress-pdf-for-whatsapp", label: "Compress PDF for WhatsApp" },
   { href: "/reduce-pdf-under-2mb", label: "Reduce PDF under 2MB" },
+  { href: "/compress-pdf-for-online-application", label: "Compress PDF for Online Application" },
 ];
 
 // ✅ Support/problem pages (sitemap only, also useful for UX)
