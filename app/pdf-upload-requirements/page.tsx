@@ -165,6 +165,41 @@ export default function PdfUploadRequirementsPage() {
 
         <InternalLinks />
       </div>
+      <section className="mt-10 rounded-2xl border border-gray-200 bg-gray-50 p-6">
+  <h2 className="text-xl font-semibold text-gray-900">
+    Related upload help
+  </h2>
+
+  <div className="mt-4 flex flex-wrap gap-3">
+    <Link
+      href="/pdf-upload-failed-fix"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      PDF upload failed fixes
+    </Link>
+
+    <Link
+      href="/pdf-too-large-to-upload"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      PDF too large to upload
+    </Link>
+
+    <Link
+      href="/immigration-pdf-upload-guide"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Immigration upload guide
+    </Link>
+
+    <Link
+      href="/visa-document-upload-size-limit"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Visa document upload limits
+    </Link>
+  </div>
+</section>
     </main>
   );
 }
