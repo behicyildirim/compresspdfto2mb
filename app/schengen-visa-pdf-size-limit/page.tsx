@@ -237,9 +237,12 @@ compress your PDF online
           </section>
         </div>
 
-        <p className="mt-10 text-sm text-gray-500 text-center">
-          Looking for a different file size? Try compressing to 100KB, 200KB, 500KB or 2MB depending on your needs.
-        </p>
+  <Link
+  href="/compress-pdf-to-2mb"
+  className="inline-block mt-3 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition"
+>
+Compress your PDF to under 2MB
+</Link>
         <InternalLinks />
       </div>
     </main>

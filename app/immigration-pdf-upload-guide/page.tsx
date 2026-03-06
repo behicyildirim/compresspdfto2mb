@@ -455,10 +455,13 @@ export default function ImmigrationPdfUploadGuidePage() {
     </Link>
 
   </div>
-</section>
-<Link href="/compress-pdf-to-2mb" className="text-blue-700 underline ml-1">
-compress your PDF online
+  <Link
+  href="/compress-pdf-to-2mb"
+  className="inline-block mt-3 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition"
+>
+Compress your PDF to under 2MB
 </Link>
+</section>
     </main>
   );
 }
