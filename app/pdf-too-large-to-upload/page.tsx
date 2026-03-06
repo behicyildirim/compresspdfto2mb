@@ -390,6 +390,41 @@ export default function PdfTooLargeToUploadPage() {
           </section>
         </div>
       </div>
+      <section className="mt-10 rounded-2xl border border-gray-200 bg-gray-50 p-6">
+  <h2 className="text-xl font-semibold text-gray-900">
+    Related upload guides
+  </h2>
+
+  <div className="mt-4 flex flex-wrap gap-3">
+    <Link
+      href="/pdf-upload-failed-fix"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      PDF upload failed fixes
+    </Link>
+
+    <Link
+      href="/pdf-upload-requirements"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      PDF upload requirements
+    </Link>
+
+    <Link
+      href="/compress-pdf-to-2mb"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Compress to 2MB
+    </Link>
+
+    <Link
+      href="/compress-pdf-to-1mb"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Compress to 1MB
+    </Link>
+  </div>
+</section>
     </main>
   );
 }
