@@ -124,6 +124,48 @@ Looking for a different file size? Try compressing your PDF to 100KB, 200KB, 500
 </p>
         <InternalLinks />
       </div>
+      <section className="mt-10 rounded-2xl border border-gray-200 bg-gray-50 p-6">
+  <h2 className="text-xl font-semibold text-gray-900">
+    Related email upload guides
+  </h2>
+
+  <div className="mt-4 flex flex-wrap gap-3">
+    <Link
+      href="/pdf-size-limit-for-email"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      PDF size limit for email
+    </Link>
+
+    <Link
+      href="/gmail-attachment-size-limit"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Gmail attachment size limit
+    </Link>
+
+    <Link
+      href="/outlook-attachment-size-limit"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Outlook attachment size limit
+    </Link>
+
+    <Link
+      href="/compress-pdf-to-10mb"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Compress to 10MB
+    </Link>
+
+    <Link
+      href="/compress-pdf-to-5mb"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-blue-700 ring-1 ring-gray-200 hover:bg-blue-50 transition"
+    >
+      Compress to 5MB
+    </Link>
+  </div>
+</section>
     </main>
   );
 }
